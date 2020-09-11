@@ -1,0 +1,21 @@
+/*
+// ======================================
+// CSS for the Filter Clear All Button
+// ======================================
+*/
+
+
+.clear-all-button {
+	
+	display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: .75em;
+    letter-spacing: .1em;
+    background-color: white;
+    border: none;
+    background-color: black;
+    padding: .5em;
+    color: white;
+    cursor: pointer;
+}

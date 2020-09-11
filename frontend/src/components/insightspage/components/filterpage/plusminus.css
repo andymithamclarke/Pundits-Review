@@ -1,0 +1,44 @@
+/*
+// ======================================
+// CSS to style plus minus animation
+// Code to animate plus minus taken from codepenn by Matthew Nudsen
+// https://codepen.io/matthewknudsen/pen/PpzJdq
+// Accessed 20 August 2020
+// ======================================
+*/
+
+.plus-minus-container {
+	cursor: pointer;
+  display: grid;
+  margin-left: 1em;
+}
+
+.plus-minus-bar {
+	grid-row: 1/2;
+  grid-column: 1/2;
+  height: 2px;
+  width: 15px;
+  background-color: black;
+}
+
+@keyframes plus {
+  100% {
+    transform: rotate(450deg);
+  }
+}
+
+@keyframes minus {
+  100% {
+    transform: rotate(-360deg);
+  }
+}
+
+.plus {
+	animation: plus 0.5s ease;
+	animation-fill-mode: forwards;
+}
+
+.minus {
+	animation: minus 0.5s ease;
+	animation-fill-mode: forwards;
+}

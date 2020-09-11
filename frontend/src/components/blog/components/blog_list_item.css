@@ -1,0 +1,112 @@
+/*
+// ======================================
+// CSS for Blog List Item
+// ======================================
+*/
+
+
+.blog-list-item-wrapper {
+	
+	display: flex;
+	flex-direction: column;
+	cursor: pointer;
+	align-items: center;
+	justify-content: center;
+	padding: 2em 0;
+	max-width: 15em;
+
+}
+
+.blog-list-item-image {
+	height: 10em;
+    width: 15em;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border: solid black 2px;
+}
+
+
+.blog-list-item-headline {
+	font-size: 1em;
+	letter-spacing: .2em;
+	text-align: center;
+	padding-bottom: 1em;
+	color: black;
+}
+
+.blog-list-item-date {
+	font-size: .65em;
+	letter-spacing: .2em;
+	padding: 1em 0;
+	color: black;
+}
+
+.blog-list-item-description {
+	font-size: .65em;
+	letter-spacing: .1em;
+	padding: 1em 0;
+	text-align: center;
+	color: black;
+}
+
+
+
+
+/*
+// ======================================
+// MEDIA QUERIES
+// ======================================
+*/
+
+
+
+@media (min-width: 550px) {
+
+	.blog-list-item-wrapper {
+	
+		padding: 3em 0;
+		max-width: 20em;
+
+	}
+
+	.blog-list-item-image {
+		height: 12em;
+	    width: 20em;
+	}
+
+
+	.blog-list-item-headline {
+		font-size: 1.25em;
+	}
+
+	.blog-list-item-date, .blog-list-item-description {
+		font-size: .85em;
+		padding: 1.75em 0;
+	}
+
+}
+
+
+@media (min-width: 1200px) {
+
+	.blog-list-item-wrapper {
+	
+		padding: 4em 0;
+		max-width: 30em;
+
+	}
+
+	.blog-list-item-image {
+		height: 20em;
+	    width: 30em;
+	}
+
+
+	.blog-list-item-headline {
+		font-size: 1.75em;
+	}
+
+
+
+}

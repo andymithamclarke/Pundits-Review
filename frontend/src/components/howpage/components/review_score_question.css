@@ -1,0 +1,52 @@
+/*
+// ======================================
+// CSS for Review Score Question Wrapper - How Page
+// ======================================
+*/
+
+
+.review-score-question-wrapper {
+	display: flex;
+	width: 70%;
+	justify-content: center;
+	align-items: center;
+    padding-top: 2em;
+}
+
+.arrow-question-image {
+    width: 100%;
+    height: 15em;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-image: url(./../resources/top-image.png);
+}
+
+
+
+
+
+/*
+// ======================================
+// MEDIA QUERIES
+// ======================================
+*/
+
+@media (min-width: 600px) {
+
+    .review-score-question-wrapper {
+        padding-top: 4em;
+    }
+
+}
+
+
+
+@media (min-width: 900px) {
+
+
+    .arrow-question-image {
+        height: 20em;
+    }
+
+}

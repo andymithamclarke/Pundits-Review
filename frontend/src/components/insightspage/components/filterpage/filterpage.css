@@ -1,0 +1,53 @@
+/*
+// ======================================
+// CSS for Filter page - top level wrapper
+// ======================================
+*/
+
+
+.filter-page-wrapper {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	width: 90%;
+	margin-top: 2.5vh;
+	padding-bottom: 10em;
+}
+
+
+
+/*
+// ======================================
+// MEDIA QUERIES
+// ======================================
+*/
+
+@media (min-width: 800px) {
+
+	.filter-page-wrapper {
+		width: 80%;
+	}
+
+}
+
+
+@media (min-width: 1200px) {
+
+	.filter-page-wrapper {
+		width: 70%;
+	}
+
+}
+
+
+
+@media (min-width: 1600px) {
+
+	.filter-page-wrapper {
+		width: 60%;
+	}
+
+}
+
+

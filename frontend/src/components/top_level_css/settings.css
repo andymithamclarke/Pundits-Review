@@ -1,0 +1,145 @@
+/*
+// ======================================
+// This file contains the general CSS styles used throughout the app
+// ======================================
+*/
+
+body, * {
+	margin: 0;
+	font-size: 1em;
+}
+
+button {
+	outline: 1;
+}
+
+#app {
+	max-width: 100vw;
+    height: 100%;
+}
+
+
+.swiper-button-prev:after, .swiper-button-next:after {
+    font-family: swiper-icons;
+    font-size: var(--swiper-navigation-size);
+    text-transform: none !important;
+    letter-spacing: 0;
+    text-transform: none;
+    font-variant: initial;
+    line-height: 1;
+}
+
+
+.swiper-button-next:after {
+    content: "next";
+}
+
+.swiper-button-next {
+    right: 2vw !important;
+}
+
+.swiper-button-prev {
+    left: 2vw !important;
+}
+
+.swiper-button-prev:after {
+    content: "prev";
+
+}
+
+.swiper-notification {
+    margin-top: 1em;
+    display: flex;
+    width: 100vw;
+    text-align: center;
+    font-family: DIN Light;
+    min-width: 100vw;
+    /* margin-left: 40vw; */
+    justify-content: center;
+}
+
+.opaque-link {
+    opacity: .5;
+    text-decoration: underline !important;
+}
+
+
+/*
+// ======================================
+// MEDIA QUERIES
+// ======================================
+*/
+
+@media (min-width: 550px) {
+
+    .swiper-button-next {
+        right: 10vw !important;
+    }
+
+    .swiper-button-prev {
+        left: 10vw !important;
+    }
+}
+
+
+
+@media (min-width: 800px) {
+
+    .swiper-button-next {
+        right: 17.5vw !important;
+    }
+
+    .swiper-button-prev {
+        left: 17.5vw !important;
+    }
+}
+
+
+@media (min-width: 1000px) {
+
+    .swiper-button-next {
+        right: 20vw !important;
+    }
+
+    .swiper-button-prev {
+        left: 20vw !important;
+    }
+}
+
+
+
+@media (min-width: 1200px) {
+
+    .swiper-button-next {
+        right: 22.5vw !important;
+    }
+
+    .swiper-button-prev {
+        left: 22.5vw !important;
+    }
+}
+
+
+@media (min-width: 1400px) {
+
+    .swiper-button-next {
+        right: 25vw !important;
+    }
+
+    .swiper-button-prev {
+        left: 25vw !important;
+    }
+}
+
+
+@media (min-width: 1600px) {
+
+    .swiper-button-next {
+        right: 27.5vw !important;
+    }
+
+    .swiper-button-prev {
+        left: 27.5vw !important;
+    }
+}
+

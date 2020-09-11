@@ -1,0 +1,274 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Blog Post Tests BlogDate should render correctly 1`] = `
+<div
+  class="blog-date-wrapper"
+>
+  <p
+    class="blog-date-text body-text-light"
+  />
+</div>
+`;
+
+exports[`Blog Post Tests BlogHeaderImage should render correctly 1`] = `
+<span
+  class="blog-header-image"
+  style="background-image:url(undefined)"
+/>
+`;
+
+exports[`Blog Post Tests BlogParagraph should render correctly 1`] = `
+<p
+  class="blog-paragraph-text body-text-light"
+/>
+`;
+
+exports[`Blog Post Tests BlogPlayerCard should render correctly 1`] = `<span />`;
+
+exports[`Blog Post Tests BlogPost should render correctly 1`] = `
+<div
+  class="blog-post-content-wrapper"
+>
+  <p
+    class="blog-headline-text body-text-light"
+  />
+  <span
+    class="blog-header-image"
+    style="background-image:url(undefined)"
+  />
+  <div
+    class="blog-date-wrapper"
+  >
+    <p
+      class="blog-date-text body-text-light"
+    />
+  </div>
+  <span
+    class="blog-list-dot"
+  />
+  <p
+    class="blog-paragraph-text body-text-light"
+  />
+  <span />
+  <p
+    class="blog-paragraph-text body-text-light"
+  />
+  <p
+    class="blog-pull-quote-text body-text-light"
+  />
+  <p
+    class="blog-paragraph-text body-text-light"
+  />
+  <span />
+  <p
+    class="blog-paragraph-text body-text-light"
+  />
+  <p
+    class="blog-pull-quote-text body-text-light"
+  />
+  <p
+    class="blog-paragraph-text body-text-light"
+  />
+  <p
+    class="blog-pull-quote-text body-text-light"
+  />
+  <p
+    class="blog-paragraph-text body-text-light"
+  />
+  <p
+    class="blog-paragraph-text body-text-light"
+  />
+  <p
+    class="blog-paragraph-text body-text-light"
+  />
+  <div
+    class="footer-wrapper"
+  >
+    <p
+      class="footer-title body-text-light"
+    >
+      GET IN TOUCH
+    </p>
+    <div
+      class="footer-logo-wrapper"
+    >
+      <a
+        class="react-link"
+        href="https://twitter.com/AndyClarkeMedia"
+        target="_blank"
+      >
+        <i
+          aria-hidden="true"
+          class="fa fa-twitter media-icon"
+        />
+      </a>
+      <a
+        class="footer-logo heading-text react-link"
+        href="/"
+      >
+        PR
+      </a>
+      <a
+        class="react-link"
+        href="mailto:clarkeAJ3@cardiff.ac.uk"
+        target="_blank"
+      >
+        <i
+          aria-hidden="true"
+          class="fa fa-envelope media-icon"
+        />
+      </a>
+    </div>
+    <p
+      class="footer-copyright-notice body-text-light"
+    >
+      © Andy Clarke, 2020
+    </p>
+  </div>
+</div>
+`;
+
+exports[`Blog Post Tests BlogPostContent should render correctly 1`] = `
+<div
+  class="blog-post-content-wrapper"
+>
+  <p
+    class="blog-headline-text body-text-light"
+  />
+  <span
+    class="blog-header-image"
+    style="background-image:url(undefined)"
+  />
+  <div
+    class="blog-date-wrapper"
+  >
+    <p
+      class="blog-date-text body-text-light"
+    />
+  </div>
+  <span
+    class="blog-list-dot"
+  />
+  <p
+    class="blog-paragraph-text body-text-light"
+  />
+  <span />
+  <p
+    class="blog-paragraph-text body-text-light"
+  />
+  <p
+    class="blog-pull-quote-text body-text-light"
+  />
+  <p
+    class="blog-paragraph-text body-text-light"
+  />
+  <span />
+  <p
+    class="blog-paragraph-text body-text-light"
+  />
+  <p
+    class="blog-pull-quote-text body-text-light"
+  />
+  <p
+    class="blog-paragraph-text body-text-light"
+  />
+  <p
+    class="blog-pull-quote-text body-text-light"
+  />
+  <p
+    class="blog-paragraph-text body-text-light"
+  />
+  <p
+    class="blog-paragraph-text body-text-light"
+  />
+  <p
+    class="blog-paragraph-text body-text-light"
+  />
+  <div
+    class="footer-wrapper"
+  >
+    <p
+      class="footer-title body-text-light"
+    >
+      GET IN TOUCH
+    </p>
+    <div
+      class="footer-logo-wrapper"
+    >
+      <a
+        class="react-link"
+        href="https://twitter.com/AndyClarkeMedia"
+        target="_blank"
+      >
+        <i
+          aria-hidden="true"
+          class="fa fa-twitter media-icon"
+        />
+      </a>
+      <a
+        class="footer-logo heading-text react-link"
+        href="/"
+      >
+        PR
+      </a>
+      <a
+        class="react-link"
+        href="mailto:clarkeAJ3@cardiff.ac.uk"
+        target="_blank"
+      >
+        <i
+          aria-hidden="true"
+          class="fa fa-envelope media-icon"
+        />
+      </a>
+    </div>
+    <p
+      class="footer-copyright-notice body-text-light"
+    >
+      © Andy Clarke, 2020
+    </p>
+  </div>
+</div>
+`;
+
+exports[`Blog Post Tests BlogPostHeadline should render correctly 1`] = `
+<ContextProvider
+  value={
+    Object {
+      "store": Object {
+        "dispatch": [Function],
+        "getState": [Function],
+        "replaceReducer": [Function],
+        "subscribe": [Function],
+        Symbol(observable): [Function],
+      },
+      "subscription": Subscription {
+        "handleChangeWrapper": [Function],
+        "listeners": Object {
+          "notify": [Function],
+        },
+        "onStateChange": [Function],
+        "parentSub": undefined,
+        "store": Object {
+          "dispatch": [Function],
+          "getState": [Function],
+          "replaceReducer": [Function],
+          "subscribe": [Function],
+          Symbol(observable): [Function],
+        },
+        "unsubscribe": null,
+      },
+    }
+  }
+>
+  <Component />
+</ContextProvider>
+`;
+
+exports[`Blog Post Tests BlogPullQuote should render correctly 1`] = `
+<p
+  class="blog-pull-quote-text body-text-light"
+/>
+`;
+
+exports[`Blog Post Tests BlogSnippets should render correctly 1`] = `<span />`;

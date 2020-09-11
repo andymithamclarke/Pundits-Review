@@ -1,0 +1,41 @@
+/*
+// ======================================
+// CSS for Grid View Table on the Insights Page
+// ======================================
+*/
+
+
+.grid-view-wrapper {
+    margin-top: 5vh;
+	width: 95vw;
+}
+
+
+
+
+/*
+// ======================================
+// MEDIA QUERIES
+// ======================================
+*/
+
+
+@media (min-width: 1000px) {
+
+
+    .grid-view-wrapper {
+		width: 75vw;
+	}
+
+}
+
+
+
+@media (min-width: 1400px) {
+
+
+    .grid-view-wrapper {
+		width: 65vw;
+	}
+
+}

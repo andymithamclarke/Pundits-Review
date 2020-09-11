@@ -1,0 +1,69 @@
+/*
+// ======================================
+// CSS for Grid View - Grid Table Header
+// ======================================
+*/
+
+
+.grid-table-header-wrapper {
+	display: flex;
+    background-color: grey;
+    height: 1em;
+    align-items: center;
+    padding: .25em 0;
+	
+}
+
+.grid-table-column-headers {
+	font-size: .55em;
+    letter-spacing: .2em;
+}
+
+.rank-header {
+	width: 10%;
+	text-align: center;
+}
+
+.player-header {
+	width: 27.5%;
+	margin-left: 1em;
+}
+
+.club-header {
+	width: 45%;
+}
+
+.score-header {
+	width: 17.5%;
+	text-align: center;
+}
+
+
+
+
+/*
+// ======================================
+// MEDIA QUERIES
+// ======================================
+*/
+
+@media (min-width: 500px) {
+
+
+    .grid-table-column-headers {
+		font-size: .65em;
+	}
+
+
+}
+
+
+@media (min-width: 800px) {
+
+
+    .grid-table-column-headers {
+		font-size: .75em;
+	}
+
+
+}

@@ -1,0 +1,308 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`HowPage Component Tests HowPage should render correctly 1`] = `
+<div
+  class="how-page-wrapper"
+>
+  <p
+    class="how-page-title heading-text"
+  >
+    How It Works
+  </p>
+  <div
+    class="how-page-body-text-wrapper"
+  >
+    <p
+      class="how-page-body-text body-text-light"
+    >
+      Every week, Pundits Review collects articles about the Premier League, analyses them and then gives a score to players and clubs based on how they were reviewed within them.
+    </p>
+  </div>
+  <div
+    class="review-score-question-wrapper"
+  >
+    <span
+      class="arrow-question-image"
+    />
+  </div>
+  <div
+    class="how-section-wrapper"
+  >
+    <div
+      class="how-page-subheading-wrapper"
+    >
+      <p
+        class="how-page-subheading-text heading-text"
+      >
+        Collecting Content
+      </p>
+    </div>
+    <div
+      class="how-page-body-text-wrapper"
+    >
+      <p
+        class="how-page-body-text body-text-light"
+      >
+        Our system makes weekly visits to over 60 football websites and finds new articles about the Premier League.
+      </p>
+    </div>
+    <div
+      class="how-page-image-container"
+    >
+      <span
+        class="article-outline-image howpage-image"
+      />
+    </div>
+  </div>
+  <div
+    class="dividing-line background-dark"
+  />
+  <div
+    class="how-section-wrapper"
+  >
+    <div
+      class="how-page-subheading-wrapper"
+    >
+      <p
+        class="how-page-subheading-text heading-text"
+      >
+        Picking Out Phrases
+      </p>
+    </div>
+    <div
+      class="how-page-body-text-wrapper"
+    >
+      <p
+        class="how-page-body-text body-text-light"
+      >
+        We collect the text from each new article we find, then divide it into short phrases.
+      </p>
+    </div>
+    <div
+      class="how-page-image-container"
+    >
+      <span
+        class="article-phrases-image howpage-image"
+      />
+    </div>
+  </div>
+  <div
+    class="dividing-line background-dark"
+  />
+  <div
+    class="how-section-wrapper"
+  >
+    <div
+      class="how-page-subheading-wrapper"
+    >
+      <p
+        class="how-page-subheading-text heading-text"
+      >
+        Identifying Targets
+      </p>
+    </div>
+    <div
+      class="how-page-body-text-wrapper"
+    >
+      <p
+        class="how-page-body-text body-text-light"
+      >
+        We process the article phrases one at a time, firstly looking out for which player or club is being written about.
+      </p>
+    </div>
+    <div
+      class="how-page-image-container-short"
+    >
+      <span
+        class="target-identifier-image howpage-image"
+      />
+    </div>
+  </div>
+  <div
+    class="dividing-line background-dark"
+  />
+  <div
+    class="how-section-wrapper"
+  >
+    <div
+      class="how-page-subheading-wrapper"
+    >
+      <p
+        class="how-page-subheading-text heading-text"
+      >
+        Predicting Sentiment
+      </p>
+    </div>
+    <div
+      class="how-page-body-text-wrapper"
+    >
+      <p
+        class="how-page-body-text body-text-light"
+      >
+        Based on the other words in the phrase, our model predicts whether it is a positive, negative or neutral review. You might not always agree with our predictions!
+      </p>
+    </div>
+    <div
+      class="how-page-image-container"
+    >
+      <span
+        class="predict-sentiment-image howpage-image"
+      />
+    </div>
+  </div>
+  <div
+    class="dividing-line background-dark"
+  />
+  <div
+    class="how-section-wrapper"
+  >
+    <div
+      class="how-page-subheading-wrapper"
+    >
+      <p
+        class="how-page-subheading-text heading-text"
+      >
+        Calculating Review Scores
+      </p>
+    </div>
+    <div
+      class="how-page-body-text-wrapper"
+    >
+      <p
+        class="how-page-body-text body-text-light"
+      >
+        After every phrase has been processed, we calculate review scores for players and clubs.
+      </p>
+    </div>
+    <div
+      class="how-page-image-container"
+    >
+      <span
+        class="calculate-score-image howpage-image"
+      />
+    </div>
+  </div>
+  <div
+    class="dividing-line background-dark"
+  />
+  <div
+    class="our-sources-wrapper"
+  >
+    <p
+      class="body-text-light our-sources-title"
+    >
+      OUR SOURCES
+    </p>
+    <p
+      class="body-text-light our-sources-subtitle"
+    >
+      Our information is collected from digital football media publishers. We avoid fansites, blogs and official club pages where possible but are always open to new suggestions.
+    </p>
+    <button
+      class="view-sources-button body-text-light"
+    >
+      VIEW OUR SOURCES
+    </button>
+    <span />
+  </div>
+  <div
+    class="footer-wrapper"
+  >
+    <p
+      class="footer-title body-text-light"
+    >
+      GET IN TOUCH
+    </p>
+    <div
+      class="footer-logo-wrapper"
+    >
+      <a
+        class="react-link"
+        href="https://twitter.com/AndyClarkeMedia"
+        target="_blank"
+      >
+        <i
+          aria-hidden="true"
+          class="fa fa-twitter media-icon"
+        />
+      </a>
+      <a
+        class="footer-logo heading-text react-link"
+        href="/"
+      >
+        PR
+      </a>
+      <a
+        class="react-link"
+        href="mailto:clarkeAJ3@cardiff.ac.uk"
+        target="_blank"
+      >
+        <i
+          aria-hidden="true"
+          class="fa fa-envelope media-icon"
+        />
+      </a>
+    </div>
+    <p
+      class="footer-copyright-notice body-text-light"
+    >
+      © Andy Clarke, 2020
+    </p>
+  </div>
+</div>
+`;
+
+exports[`HowPage Component Tests HowPageBodyText should render correctly 1`] = `
+<div
+  class="how-page-body-text-wrapper"
+>
+  <p
+    class="how-page-body-text body-text-light"
+  />
+</div>
+`;
+
+exports[`HowPage Component Tests HowPageSubHeading should render correctly 1`] = `
+<div
+  class="how-page-subheading-wrapper"
+>
+  <p
+    class="how-page-subheading-text heading-text"
+  />
+</div>
+`;
+
+exports[`HowPage Component Tests OurSourcesWrapper should render correctly 1`] = `
+<div
+  class="our-sources-wrapper"
+>
+  <p
+    class="body-text-light our-sources-title"
+  >
+    OUR SOURCES
+  </p>
+  <p
+    class="body-text-light our-sources-subtitle"
+  >
+    Our information is collected from digital football media publishers. We avoid fansites, blogs and official club pages where possible but are always open to new suggestions.
+  </p>
+  <button
+    class="view-sources-button body-text-light"
+  >
+    VIEW OUR SOURCES
+  </button>
+  <span />
+</div>
+`;
+
+exports[`HowPage Component Tests ReviewScoreQuestion should render correctly 1`] = `
+<div
+  class="review-score-question-wrapper"
+>
+  <span
+    class="arrow-question-image"
+  />
+</div>
+`;
+
+exports[`HowPage Component Tests SourceList should render correctly 1`] = `<span />`;

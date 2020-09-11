@@ -1,0 +1,22 @@
+/*
+// ======================================
+// CSS for Blog Post Component 
+// ======================================
+*/
+
+
+.blog-post-wrapper {
+	display: flex;
+	justify-content: center;
+	flex-direction: column;
+	align-items: center;
+}
+
+
+.blog-loading-container {
+	display: flex;
+	justify-content: center;
+	flex-direction: column;
+	margin-top: 15vh;
+	align-items: center;
+}

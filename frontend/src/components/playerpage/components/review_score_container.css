@@ -1,0 +1,131 @@
+/*
+// ======================================
+// CSS for the Review Score Container used in both the players page and clubs page
+// ======================================
+*/
+
+
+.review-score-container-wrapper {
+
+	display: flex;
+	flex-direction: column;
+	justify-content: space-around;
+	padding: 1em 0;
+	align-items: center;
+	height: 35vh;
+}
+
+
+.review-score-pundits-title {
+	font-size: 1.25em;
+}
+
+.review-score-positive-negative-total-grid {
+	display: grid;
+    grid-template-columns: repeat(6,1fr);
+    grid-template-rows: repeat(3,1fr);
+    align-items: center;
+    grid-gap: .5em;
+    width: 50vw;
+    font-size: .85em;
+}
+
+
+.review-score-form-text {
+	font-size: 1.15em;
+}
+
+.review-score-positive-text {
+	grid-row: 1;
+	grid-column: 3/7;
+}
+
+.review-score-negative-text {
+	grid-row: 2;
+	grid-column: 3/7;
+}
+
+.review-score-total-text {
+	grid-row: 3;
+	grid-column: 3/7;
+}
+
+.review-score-positive-number {
+	grid-row: 1;
+	grid-column: 1;
+	justify-self: right;
+}
+
+.review-score-negative-number {
+	grid-row: 2;
+	grid-column: 1;
+	justify-self: right;
+}
+
+.review-score-total-number {
+	grid-row: 3;
+	grid-column: 1;
+	justify-self: right;
+}
+
+
+@media (min-width: 600px) {
+
+	.review-score-positive-negative-total-grid {
+
+		width: 40vw;
+	}
+}
+
+
+@media (min-width: 800px) {
+
+	.review-score-positive-negative-total-grid {
+
+		width: 25vw;
+	}
+
+	.review-score-pundits-title {
+		font-size: 1.5em;
+	}
+}
+
+@media (min-width: 1000px) {
+
+	.review-score-positive-negative-total-grid {
+
+		width: 25vw;
+    	font-size: 1.25em;
+	}
+
+	.review-score-pundits-title {
+		font-size: 1.75em;
+	}
+
+
+	.review-score-container-wrapper {
+		height: 40vh;
+	}
+
+}
+
+
+@media (min-width: 1400px) {
+
+	.review-score-positive-negative-total-grid {
+
+		width: 20vw;
+	}
+
+}
+
+
+@media (min-width: 1600px) {
+
+	.review-score-positive-negative-total-grid {
+
+		width: 15vw;
+	}
+
+}
+

@@ -1,0 +1,68 @@
+/*
+// ======================================
+// CSS for Blog Headline
+// ======================================
+*/
+
+.blog-headline-text {
+
+	font-size: 1.25em;
+    letter-spacing: .15em;
+    text-align: center;
+    margin: 2em 0;
+    width: 80vw;
+}
+
+
+/*
+// ======================================
+// MEDIA QUERIES
+// ======================================
+*/
+
+
+
+@media (min-width: 500px) {
+
+	.blog-headline-text {
+		
+		font-size: 1.5em;
+
+	}
+}
+
+
+
+@media (min-width: 700px) {
+
+	.blog-headline-text {
+		
+		font-size: 2em;
+
+	}
+}
+
+
+
+@media (min-width: 1000px) {
+
+	.blog-headline-text {
+		
+		font-size: 2.5em;
+		width: 70vw;
+
+	}
+}
+
+
+
+
+@media (min-width: 1200px) {
+
+	.blog-headline-text {
+		
+		font-size: 3em;
+		width: 70vw;
+
+	}
+}

@@ -1,0 +1,161 @@
+/*
+// ======================================
+// This file contains the top level CSS for the landing page
+// ======================================
+*/
+
+
+.landing-logo-text {
+	font-size: 7.5em;
+
+}
+
+.landing-site-name-text {
+	margin-bottom: 1em;
+	font-size: 1.75em;
+	letter-spacing: .15em;
+}
+
+
+.landing-page-text-inner-wrapper {
+	position: absolute;
+    display: flex;
+    flex-direction: column;
+    top: 12.5vh;
+    height: 52.5%;
+    width: 100vw;
+    justify-content: center;
+    align-items: center;
+}
+
+.landing-description-text {
+	text-align: center;
+    letter-spacing: .1em;
+    font-size: .725em;
+    width: 70%;
+}
+
+
+.landing-page-search-inner-wrapper {
+	position: absolute;
+    display: flex;
+    flex-direction: column;
+    bottom: 0;
+    width: 95%;
+    height: 35%;
+    justify-content: flex-start;
+    align-items: center;
+
+}
+
+
+
+/*
+// ======================================
+// MEDIA QUERIES - HEIGHT
+// ======================================
+*/
+
+@media (max-height: 550px) {
+
+
+    .landing-description-text {
+        display: none;
+    }
+
+    .landing-site-name-text {
+        display: none;
+    }
+
+    .landing-page-text-inner-wrapper {
+        height: 30%;
+    }
+
+    .landing-page-search-inner-wrapper {
+        height: 50%;
+    }
+}
+
+
+/*
+// ======================================
+// MEDIA QUERIES - WIDTH
+// ======================================
+*/
+
+@media (min-width: 500px) {
+
+    .landing-logo-text {
+        font-size: 8.5em;
+    }
+
+    .landing-site-name-text {
+        font-size: 2em;
+    }
+
+    .landing-description-text {
+        font-size: .825em;
+    }
+}
+
+
+@media (min-width: 800px) {
+
+    .search-box {
+        width: 50vw;
+    }
+
+    .landing-logo-text {
+        font-size: 9.5em;
+    }
+
+
+    .landing-description-text {
+        font-size: .9em;
+    }
+}
+
+
+
+@media (min-width: 1000px) {
+
+    .landing-description-text {
+        width: 50%;
+    }
+
+}
+
+
+@media (min-width: 1200px) {
+
+    .landing-logo-text {
+        font-size: 10.5em;
+    }
+
+    .landing-site-name-text {
+        font-size: 2.25em;
+    }
+
+    .landing-description-text {
+        font-size: 1em;
+
+    }
+}
+
+
+
+@media (min-width: 1500px) {
+
+    .landing-logo-text {
+        font-size: 11.5em;
+    }
+
+    .landing-site-name-text {
+        font-size: 2.5em;
+    }
+
+    .landing-description-text {
+        font-size: 1.15em;
+        width: 40%;
+    }
+}

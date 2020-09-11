@@ -1,0 +1,89 @@
+/*
+// ======================================
+// CSS for agree / disagree buttons and container
+// ======================================
+*/
+
+
+.agree-disagree-wrapper {
+	padding: 2.5em;
+    display: flex;
+    width: 50vw;
+    justify-content: space-around;
+
+}
+
+.agree-disagree-button-container {
+	display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 15vh;
+    align-items: center;
+}
+
+.agree-disagree-heading-text {
+	letter-spacing: .1em;
+	font-size: .75em;
+}
+
+.agree-disagree-button {
+	background-color: #a2aab0;
+    height: 3em;
+    border-radius: 2em;
+    cursor: pointer;
+    width: 3em;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border: none;
+    opacity: .5;
+    box-shadow: black 2px 2px 5px;
+    transition: transform 0.25s ease,
+                opacity 0.25s ease;
+}
+
+.agree-disagree-icon {
+	font-size: 2em;
+	color: white;
+}
+
+.agree-disagree-database-score {
+	font-size: .75em;
+}
+
+.agree-disagree-button:active {
+    transform: scale(.80);
+    opacity: .4;
+}
+
+.agree-disagree-button:disabled {
+    transform: none;
+    box-shadow: grey 2px 2px 5px;
+    background-color: #cccccc;
+    color: #666666;
+}
+
+/*
+// ======================================
+// MEDIA QUERIES
+// ======================================
+*/
+
+
+@media (min-width: 800px) {
+
+    .agree-disagree-wrapper {
+
+        width: 30vw;
+    }
+}
+
+
+@media (min-width: 1200px) {
+
+    .agree-disagree-wrapper {
+
+        width: 20vw;
+    }
+}

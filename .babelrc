@@ -1,0 +1,15 @@
+{
+    "presets": [
+        "@babel/env",
+        "@babel/react"
+    ],
+    "plugins": [
+    ["@babel/plugin-transform-runtime",
+      {
+        "regenerator": true
+      }
+    ],
+    "@babel/plugin-syntax-jsx",
+    "@babel/plugin-proposal-class-properties",
+    "@babel/plugin-proposal-export-default-from"]
+}

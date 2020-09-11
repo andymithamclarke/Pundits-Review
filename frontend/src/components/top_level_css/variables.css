@@ -1,0 +1,109 @@
+/*
+// ======================================
+// This file contains the constant CSS variables used globally in the application
+// ======================================
+*/
+
+/*
+// ======================================
+// FONTS
+// ======================================
+*/
+
+@font-face {
+  font-family: 'DIN';
+  src: url('./fonts/din-alternate-bold.ttf'); /* IE9 Compat Modes */
+}
+
+@font-face {
+  font-family: 'DIN Light';
+  src: url('./fonts/DIN-Light.ttf'); /* IE9 Compat Modes */
+}
+
+@font-face {
+  font-family: 'Casual';
+  src: url('./fonts/Casual-Regular.ttf'); /* IE9 Compat Modes */
+}
+
+
+/*
+// ======================================
+// SET THE VARIABLES
+// ======================================
+*/
+
+:root {
+  --black-color: #000000;
+  --white-color: #EBECED;
+  --grey-color: grey;
+  --heading-text: 'Casual';
+  --body-text: 'DIN';
+  --body-text-light: 'DIN Light';
+  --top-menu-height: 50px;
+  --left-right-page-margin: 2.5vw;
+}
+
+
+/*
+// ======================================
+// GENERIC STYLE CLASSES 
+// ======================================
+*/
+
+
+.background-dark {
+	background-color: var(--black-color);
+}
+
+.background-light {
+  background-color: var(--white-color);;
+}
+
+.white-text {
+	color: var(--white-color);
+}
+
+.black-text {
+  color: var(--black-color);
+}
+
+.grey-text {
+  color: var(--grey-color);
+}
+
+.heading-text {
+	font-family: var(--heading-text);
+}
+
+.body-text {
+	font-family: var(--body-text);
+}
+
+.body-text-light {
+  font-family: var(--body-text-light);
+}
+
+.react-link {
+  text-decoration: none;
+}
+
+
+/*
+// ======================================
+// GENERIC POSITION CLASSES 
+// ======================================
+*/
+
+.top-menu-height {
+  height: var(--top-menu-height);
+}
+
+.top-margin {
+  margin-top: var(--top-menu-height);
+}
+
+.side-margin {
+  margin-left: var(--left-right-page-margin);
+  margin-right: var(--left-right-page-margin);
+}
+

@@ -1,0 +1,211 @@
+/*
+// ======================================
+// CSS to set background images for each of the Premier League club badges
+// ======================================
+*/
+
+.club-badge {
+	background-size: cover;
+    justify-self: center;
+}
+
+
+.bournemouth-badge {
+	background-image: url(./club_badges/bournemouth-badge.png);
+}
+
+.arsenal-badge {
+	background-image: url(./club_badges/arsenal-badge.png);
+}
+
+.villa-badge {
+	background-image: url(./club_badges/villa-badge.png);
+}
+
+.brighton-badge {
+	background-image: url(./club_badges/brighton-badge.png);
+}
+
+.burnley-badge {
+	background-image: url(./club_badges/burnley-badge.png);
+}
+
+.chelsea-badge {
+	background-image: url(./club_badges/chelsea-badge.png);
+}
+
+.palace-badge {
+	background-image: url(./club_badges/palace-badge.png);
+}
+
+.everton-badge {
+	background-image: url(./club_badges/everton-badge.png);
+}
+
+.leicester-badge {
+	background-image: url(club_badges/leicester-badge.png);
+}
+
+.liverpool-badge {
+	background-image: url(./club_badges/liverpool-badge.png);
+}
+
+.city-badge {
+	background-image: url(./club_badges/city-badge.png);
+}
+
+.united-badge {
+	background-image: url(./club_badges/united-badge.png);
+}
+
+.newcastle-badge {
+	background-image: url(club_badges/newcastle-badge.png);
+}
+
+.norwich-badge {
+	background-image: url(./club_badges/norwich-badge.png);
+}
+
+.sheffield-badge {
+	background-image: url(./club_badges/sheffield-badge.png);
+}
+
+.southampton-badge {
+	background-image: url(./club_badges/southampton-badge.png);
+}
+
+.spurs-badge {
+	background-image: url(./club_badges/spurs-badge.png);
+}
+
+.watford-badge {
+	background-image: url(./club_badges/watford-badge.png);
+}
+
+.westham-badge {
+	background-image: url(./club_badges/westham-badge.png);
+}
+
+.wolves-badge {
+	background-image: url(./club_badges/wolves-badge.png);
+}
+
+.leeds-badge {
+	background-image: url(./club_badges/leeds-badge.png);
+}
+
+.westbrom-badge {
+	background-image: url(./club_badges/westbrom-badge.png);
+}
+
+.fulham-badge {
+	background-image: url(./club_badges/fulham-badge.png);
+}
+
+
+
+
+/*
+// ======================================
+// CSS to set background images for each of the Premier League club badges
+// ======================================
+*/
+
+.club-badge {
+	background-size: cover;
+    justify-self: center;
+}
+
+
+.bournemouth-badge-grey {
+	background-image: url(./club_badges/bournemouth-badge-grey.png);
+}
+
+.arsenal-badge-grey  {
+	background-image: url(./club_badges/arsenal-badge-grey.png);
+}
+
+.villa-badge-grey  {
+	background-image: url(./club_badges/villa-badge-grey.png);
+}
+
+.brighton-badge-grey  {
+	background-image: url(./club_badges/brighton-badge-grey.png);
+}
+
+.burnley-badge-grey  {
+	background-image: url(./club_badges/burnley-badge-grey.png);
+}
+
+.chelsea-badge-grey  {
+	background-image: url(./club_badges/chelsea-badge-grey.png);
+}
+
+.palace-badge-grey  {
+	background-image: url(./club_badges/palace-badge-grey.png);
+}
+
+.everton-badge-grey  {
+	background-image: url(./club_badges/everton-badge-grey.png);
+}
+
+.leicester-badge-grey  {
+	background-image: url(./club_badges/leicester-badge-grey.png);
+}
+
+.liverpool-badge-grey  {
+	background-image: url(./club_badges/liverpool-badge-grey.png);
+}
+
+.city-badge-grey  {
+	background-image: url(./club_badges/city-badge-grey.png);
+}
+
+.united-badge-grey  {
+	background-image: url(./club_badges/united-badge-grey.png);
+}
+
+.newcastle-badge-grey  {
+	background-image: url(./club_badges/newcastle-badge-grey.png);
+}
+
+.norwich-badge-grey  {
+	background-image: url(./club_badges/norwich-badge-grey.png);
+}
+
+.sheffield-badge-grey  {
+	background-image: url(./club_badges/sheffield-badge-grey.png);
+}
+
+.southampton-badge-grey  {
+	background-image: url(./club_badges/southampton-badge-grey.png);
+}
+
+.spurs-badge-grey  {
+	background-image: url(./club_badges/spurs-badge-grey.png);
+}
+
+.watford-badge-grey  {
+	background-image: url(./club_badges/watford-badge-grey.png);
+}
+
+.westham-badge-grey  {
+	background-image: url(./club_badges/westham-badge-grey.png);
+}
+
+.wolves-badge-grey  {
+	background-image: url(./club_badges/wolves-badge-grey.png);
+}
+
+.leeds-badge-grey  {
+	background-image: url(./club_badges/leeds-badge-grey.png);
+}
+
+.westbrom-badge-grey  {
+	background-image: url(./club_badges/westbrom-badge-grey.png);
+}
+
+.fulham-badge-grey  {
+	background-image: url(./club_badges/fulham-badge-grey.png);
+}
+

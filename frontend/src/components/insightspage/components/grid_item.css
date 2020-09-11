@@ -1,0 +1,101 @@
+/*
+// ======================================
+// CSS for grid item component - individual player container
+// ======================================
+*/
+
+.grid-item-wrapper {
+	display: flex;
+	align-items: center;
+	width: 100%;
+	height: 2em;
+	cursor: pointer;
+}
+
+.grid-item-border-white {
+	border-right: solid 1px white; 
+}
+
+.grid-item-border-grey {
+	border-right: solid 1px #EBECED; 
+}
+
+.grid-item-wrapper-white {
+	background-color: white;
+}
+
+.grid-item-wrapper-grey {
+	background-color: #EBECED;
+}
+
+.grid-item-text {
+	font-size: .55em;
+	letter-spacing: .1em;
+	color: black;
+}
+
+.grid-item-rank {
+	display: flex;
+    width: 10%;
+    height: 90%;
+    align-items: center;
+    justify-content: center;
+}
+
+.grid-item-playername {
+	width: 27.5%;
+	margin-left: 1em;
+}
+
+.grid-item-clubname {
+	display: flex;
+    width: 45%;
+    height: 90%;
+    align-items: center;
+}
+
+.grid-item-club-badge {
+	width: 2.5em;
+    height: 2.5em;
+    margin-right: 1em;
+}
+
+.grid-item-score {
+	width: 17.5%;
+	text-align: center;
+}
+
+
+
+/*
+// ======================================
+// MEDIA QUERIES
+// ======================================
+*/
+
+@media (min-width: 500px) {
+
+
+    .grid-item-text {
+		font-size: .65em;
+	}
+
+	.grid-item-wrapper {
+		height: 2.5em;
+	}
+
+}
+
+
+@media (min-width: 800px) {
+
+
+    .grid-item-text {
+		font-size: .75em;
+	}
+
+	.grid-item-wrapper {
+		height: 3em;
+	}
+
+}

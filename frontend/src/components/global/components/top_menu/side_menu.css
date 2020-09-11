@@ -1,0 +1,90 @@
+/*
+// ======================================
+// This file contains the CSS for the side menu used within the top menu component
+// ======================================
+*/
+
+
+#side-menu-container {
+	height: 95%;
+    width: 100vw;
+    position: fixed;
+    top: 50px;
+    left: -100vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    transition: left 0.5s cubic-bezier(0.77,0.2,0.05,1.0);    
+    z-index: 99;    	
+}
+
+.side-menu-active {
+	left: 0vw !important;
+}
+
+.side-menu-text-container {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-around;
+	align-items: center;
+	height: 40vh;
+
+}
+
+.side-menu-text {
+	font-size: 1.5em;
+    letter-spacing: .1em;
+}
+
+
+.side-menu-logo-container {
+	display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    width: 100vw;
+    height: 20vh;
+    align-items: center;
+    margin-top: 10vh;
+
+}
+
+.side-menu-logo {
+	font-size: 4.5em;
+}
+
+
+.dividing-line-hamburger {
+	height: 1px;
+    width: 50%;
+    opacity: .75;
+    border-radius: 1em;
+
+}
+
+
+/*
+// ======================================
+// MEDIA QUERIES
+// ======================================
+*/
+
+@media (min-width: 800px) {
+
+   .dividing-line-hamburger {
+    
+        width: 40%;
+
+   }
+
+}
+
+
+@media (min-width: 1200px) {
+
+   .dividing-line-hamburger {
+    
+        width: 30%;
+
+   }
+
+}

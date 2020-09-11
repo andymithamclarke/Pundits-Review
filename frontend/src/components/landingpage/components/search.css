@@ -1,0 +1,74 @@
+/*
+// ======================================
+// CSS for the search bar
+// ======================================
+*/
+
+.search-bar-wrapper {
+    border-radius: 1em;
+    box-shadow: #909090 1px 1px 10px;
+    opacity: .85;
+    z-index: 80;
+}
+
+.search-box {
+	width: 65vw;
+    padding: .85em 1em;
+    border: none;
+    background: none;
+    letter-spacing: .05em;
+    font-size: .85em;
+}
+
+.search-button {
+	padding: 0em 1em;
+    border: none;
+    background: none;
+    font-size: 1.25em;
+    opacity: .5;
+    cursor: pointer;
+    height: 100%;
+    max-height: 1.75em;
+}
+
+.search-button:focus, .search-box:focus {
+	outline: none;
+}
+
+.fa-search {
+    color: black;
+}
+
+
+/*
+// ======================================
+// MEDIA QUERIES
+// ======================================
+*/
+
+@media (min-width: 800px) {
+
+    .search-box {
+        font-size: .95em;
+        width: 50vw;
+    }
+}
+
+
+
+@media (min-width: 1000px) {
+
+    .search-box {
+
+        width: 40vw !important;
+    }
+}
+
+
+@media (min-width: 1200px) {
+
+    .search-box {
+
+        width: 35vw !important ;
+    }
+}

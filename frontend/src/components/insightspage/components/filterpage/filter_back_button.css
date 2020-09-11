@@ -1,0 +1,27 @@
+/*
+// ======================================
+// CSS for the Filter Back Button
+// ======================================
+*/
+
+
+.filter-back-button-container {
+    cursor: pointer;
+    display: flex;
+    align-items: flex-end;
+    width: fit-content;
+    justify-content: space-between;
+    border: none;
+    background-color: white;
+}
+
+.filter-back-button-text {
+	letter-spacing: .2em;
+    font-size: .75em;
+    margin: 4px;
+    padding-left: .5em;
+}
+
+.filter-back-button-icon {
+	font-size: 1.5em;
+}

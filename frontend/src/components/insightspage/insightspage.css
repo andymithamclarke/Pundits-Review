@@ -1,0 +1,49 @@
+/*
+// ======================================
+// This file contains the top level CSS for the INSIGHTS page
+// ======================================
+*/
+
+
+
+.insights-page-wrapper {
+	display: flex;
+	flex-direction: column;
+	margin-top: 10vh;
+	justify-content: center;
+	align-items: center;
+}
+
+.insights-page-title {
+
+	font-size: 2em;
+    padding: 1em;
+    letter-spacing: .1em;
+    text-align: center;
+}
+
+
+
+/*
+// ======================================
+// MEDIA QUERIES
+// ======================================
+*/
+
+
+@media (min-width: 550px) {
+
+    .insights-page-title {
+    	font-size: 2.25em
+    }
+
+}
+
+
+@media (min-width: 1200px) {
+
+    .insights-page-title {
+    	font-size: 2.5em
+    }
+
+}

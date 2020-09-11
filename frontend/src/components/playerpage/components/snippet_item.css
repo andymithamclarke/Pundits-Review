@@ -1,0 +1,166 @@
+/*
+// ======================================
+// CSS for Individual Snippet Item
+// ======================================
+*/
+
+.snippet-item-wrapper {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	height: 40vh;
+	width: 75vw;
+	box-shadow: 4px 4px 10px grey;
+	justify-content: space-between;
+
+}
+
+.snippet-item-header-container, .snippet-item-bottom-container {
+	display: flex;
+	width: 100%;
+	justify-content: space-between;
+	height: 12.5%;
+	align-items: center;
+	margin-bottom: .25em;
+}
+
+
+.snippet-item-media-source {
+	font-size: .65em;
+	margin-left: 1em;
+	letter-spacing: .05em;
+
+}
+
+.snippet-item-published-date {
+	font-size: .5em;
+	margin-right: 1.5em;
+	letter-spacing: .25em;
+}
+
+.snippet-item-article-phrase {
+	font-size: .8em;
+	align-self: center;
+    width: 85%;
+}
+
+
+.snippet-item-read-article-button {
+	letter-spacing: .15em;
+	cursor: pointer;
+	font-size: .5em;
+	background-color: transparent;
+	border: 1px solid black;
+	padding: .75em;
+	margin-left: .5em;
+}
+
+
+.snippet-item-forward-backward-control-container {
+	display: flex;
+	justify-content: space-between;
+	width: 20%;
+	margin-right: 1em;
+}
+
+
+.swiper-button-prev, .swiper-button-next {
+    position: absolute;
+    top: 50%;
+    width: calc(var(--swiper-navigation-size) / 44 * 27);
+    height: var(--swiper-navigation-size);
+    margin-top: calc(-1 * var(--swiper-navigation-size) / 2);
+    z-index: 10;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--swiper-navigation-color, var(--swiper-theme-color));
+
+}
+
+
+.swiper-button-prev:after, .swiper-button-next:after {
+    font-family: swiper-icons;
+    font-size: var(--swiper-navigation-size);
+    text-transform: none !important;
+    letter-spacing: 0;
+    text-transform: none;
+    font-variant: initial;
+    line-height: 1;
+}
+
+.swiper-button-prev:after, .swiper-container-rtl .swiper-button-next:after {
+    content: "prev";
+}
+
+
+@media (min-width: 500px) {
+
+	.snippet-item-wrapper {
+
+		width: 60vw;
+	}
+
+}
+
+@media (min-width: 650px) {
+
+	.snippet-item-wrapper {
+
+		width: 55vw;
+	}
+
+}
+
+@media (min-width: 800px) {
+
+	.snippet-item-wrapper {
+
+		height: 50vh;
+		width: 50vw;
+		font-size: 1.2em;
+	}
+
+}
+
+
+@media (min-width: 1000px) {
+
+	.snippet-item-wrapper {
+
+		width: 45vw;
+	}
+
+}
+
+
+@media (min-width: 1200px) {
+
+	.snippet-item-wrapper {
+
+		width: 40vw;
+		font-size: 1.35em;
+	}
+
+}
+
+
+@media (min-width: 1400px) {
+
+	.snippet-item-wrapper {
+
+		width: 35vw;
+	}
+
+}
+
+
+@media (min-width: 1600px) {
+
+	.snippet-item-wrapper {
+
+		width: 30vw;
+	}
+
+}

@@ -1,0 +1,105 @@
+/*
+// ======================================
+// CSS for CARD/GRID toggle menu
+// ======================================
+*/
+
+
+.card-grid-toggle-wrapper {
+	display: flex;
+	justify-content: flex-end;
+	height: 1.25em;
+	width: 95vw;
+}
+
+.card-grid-button-container {
+	width: 35%;
+	display: flex;
+}
+
+.card-grid-button {
+	width: 50%;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	background-color: white;
+	border: solid black 1px;
+	letter-spacing: .2em;
+	font-size: .65em;
+	cursor: pointer;
+}
+
+.card-grid-button-active {
+	background-color: black;
+	color: white;
+}
+
+
+
+/*
+// ======================================
+// MEDIA QUERIES
+// ======================================
+*/
+
+@media (min-width: 600px) {
+
+
+    .card-grid-button-container {
+		width: 25%;
+	}
+
+	.card-grid-toggle-wrapper {
+		width: 85vw;
+	}
+
+	 .card-grid-button {
+        font-size: 0.75em;
+    }
+
+}
+
+
+
+@media (min-width: 800px) {
+
+
+    .card-grid-button-container {
+		width: 20%;
+	}
+
+}
+
+
+@media (min-width: 1000px) {
+
+
+    .card-grid-toggle-wrapper {
+		width: 75vw;
+	}
+
+}
+
+
+@media (min-width: 1200px) {
+
+
+    .card-grid-button-container {
+		width: 17.5%;
+	}
+
+	 .card-grid-button {
+        font-size: 0.8em;
+    }
+
+}
+
+
+
+@media (min-width: 1400px) {
+
+
+   .card-grid-toggle-wrapper {
+		width: 65vw;
+	}
+}

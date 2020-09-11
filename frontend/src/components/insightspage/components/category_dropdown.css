@@ -1,0 +1,151 @@
+/*
+// ======================================
+// CSS for Category Dropdown 
+// ======================================
+*/
+
+
+.category-dropdown-container {
+	display: flex;
+	width: 100%;
+	height: 2.5em;
+    margin: .5em 0;
+    z-index: 2;
+    
+}
+
+.category-key-container {
+	width: 35%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    letter-spacing: .2em;
+    border-right: white solid;
+}
+
+.category-key-text {
+	font-size: 0.7em;
+	letter-spacing: .2em;
+}
+
+.category-dropdown-menu-wrapper {
+    width: 65%;
+    list-style: none;
+}
+
+.category-dropdown-select {
+	width: 100%;
+}
+
+.current-select-option, .select-option {
+	margin-left: 1em;
+	font-size: 0.7em;
+	letter-spacing: .2em;
+}
+
+
+ .custom-select__trigger {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    letter-spacing: .2em;
+    height: 2.5em;
+    cursor: pointer;
+    list-style: none;
+    padding: 0;
+}
+
+.custom-options {
+     transition: all 0.5s;
+     display: none;
+     z-index: 2;
+     padding: 0;
+}
+
+
+.custom-option {
+    cursor: pointer;
+    transition: all 0.5s;
+    height: 2.5em;
+    display: flex;
+    align-items: center;
+    border-top: solid 1px;
+}
+
+
+.custom-option:hover {
+     cursor: pointer;
+     background-color: #b2b2b2;
+}
+
+
+.custom-options.open {
+    display: block;
+}
+
+
+.arrow {
+     position: relative;
+     height: 15px;
+     width: 15px;
+     margin-right: .5em;
+}
+ .arrow::before, .arrow::after {
+     content: "";
+     position: absolute;
+     bottom: 0px;
+     width: 0.15rem;
+     height: 100%;
+     transition: all 0.5s;
+}
+ .arrow::before {
+     left: -5px;
+     transform: rotate(45deg);
+     background-color: #f2f2f2;
+}
+ .arrow::after {
+     left: 5px;
+     transform: rotate(-45deg);
+     background-color: #f2f2f2;
+}
+ .open .arrow::before {
+     left: -5px;
+     transform: rotate(-45deg);
+}
+ .open .arrow::after {
+     left: 5px;
+     transform: rotate(45deg);
+}
+
+
+
+/*
+// ======================================
+// MEDIA QUERIES
+// ======================================
+*/
+
+
+@media (min-width: 550px) {
+
+    .current-select-option, .select-option, .category-key-text {
+        font-size: 0.85em;
+    }
+
+}
+
+
+
+@media (min-width: 1200px) {
+
+    .current-select-option, .select-option, .category-key-text {
+        font-size: .9em;
+        letter-spacing: .25em;
+    }
+
+}
+
+
+

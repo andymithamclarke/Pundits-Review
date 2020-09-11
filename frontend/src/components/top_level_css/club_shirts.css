@@ -1,0 +1,104 @@
+/*
+// ======================================
+// CSS to set background images for each of the Premier League club SHIRTS
+// ======================================
+*/
+
+
+.club-shirt {
+	background-size: cover;
+    justify-self: center;
+}
+
+
+.bournemouth-shirt {
+	background-image: url(./club_shirts/bournemouth_shirt.png);
+}
+
+.arsenal-shirt {
+	background-image: url(./club_shirts/arsenal_shirt.png);
+}
+
+.villa-shirt {
+	background-image: url(./club_shirts/villa_shirt.png);
+}
+
+.brighton-shirt {
+	background-image: url(./club_shirts/brighton_shirt.png);
+}
+
+.burnley-shirt {
+	background-image: url(./club_shirts/burnley_shirt.png);
+}
+
+.chelsea-shirt {
+	background-image: url(./club_shirts/chelsea_shirt.png);
+}
+
+.palace-shirt {
+	background-image: url(./club_shirts/palace_shirt.png);
+}
+
+.everton-shirt {
+	background-image: url(./club_shirts/everton_shirt.png);
+}
+
+.leicester-shirt {
+	background-image: url(./club_shirts/leicester_shirt.png);
+}
+
+.liverpool-shirt {
+	background-image: url(./club_shirts/liverpool_shirt.png);
+}
+
+.city-shirt {
+	background-image: url(./club_shirts/city_shirt.png);
+}
+
+.united-shirt {
+	background-image: url(./club_shirts/united_shirt.png);
+}
+
+.newcastle-shirt {
+	background-image: url(./club_shirts/newcastle_shirt.png);
+}
+
+.norwich-shirt {
+	background-image: url(./club_shirts/norwich_shirt.png);
+}
+
+.sheffield-shirt {
+	background-image: url(./club_shirts/sheffield_shirt.png);
+}
+
+.southampton-shirt {
+	background-image: url(./club_shirts/southampton_shirt.png);
+}
+
+.spurs-shirt {
+	background-image: url(./club_shirts/spurs_shirt.png);
+}
+
+.watford-shirt {
+	background-image: url(./club_shirts/watford_shirt.png);
+}
+
+.westham-shirt {
+	background-image: url(./club_shirts/westham_shirt.png);
+}
+
+.wolves-shirt {
+	background-image: url(./club_shirts/wolves_shirt.png);
+}
+
+.fulham-shirt {
+	background-image: url(./club_shirts/fulham_shirt.png);
+}
+
+.westbrom-shirt {
+	background-image: url(./club_shirts/westbrom_shirt.png);
+}
+
+.leeds-shirt {
+	background-image: url(./club_shirts/leeds_shirt.png);
+}

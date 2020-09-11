@@ -1,0 +1,99 @@
+/*
+// ======================================
+// CSS to set background colors for each of the Premier League clubs
+// ======================================
+*/
+
+
+.bournemouth-color {
+	background-color: #B00918;
+}
+
+.arsenal-color {
+	background-color: #A60227;
+}
+
+.villa-color {
+	background-color: #8A001C;
+}
+
+.brighton-color {
+	background-color: #0158C3;
+}
+
+.burnley-color {
+	background-color: #66000E;
+}
+
+.chelsea-color {
+	background-color: #2D438B;
+}
+
+.palace-color {
+	background-color: #BB0125;
+}
+
+.everton-color {
+	background-color: #002C68;
+}
+
+.leicester-color {
+	background-color: #00479E;
+}
+
+.liverpool-color {
+	background-color: #B60002;
+}
+
+.city-color {
+	background-color: #5DA4EA;
+}
+
+.united-color {
+	background-color: #C7122B;
+}
+
+.newcastle-color {
+	background-color: #1C1B24;
+}
+
+.norwich-color {
+	background-color: #00AA44;
+}
+
+.sheffield-color {
+	background-color: #CE000F;
+}
+
+.southampton-color {
+	background-color: #FD0034;
+}
+
+.spurs-color {
+	background-color: #202545;
+}
+
+.watford-color {
+	background-color: #F8C100;
+}
+
+.westham-color {
+	background-color: #861233;
+}
+
+.wolves-color {
+	background-color: #DC9100;
+}
+
+.leeds-color {
+	background-color: #040230;
+}
+
+.westbrom-color {
+	background-color: #0E2558;
+}
+
+.fulham-color {
+	background-color: #1E1E1E;
+}
+

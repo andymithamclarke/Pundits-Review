@@ -1,0 +1,984 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Filter Page Component Tests ApplyFilterButton should render correctly 1`] = `
+<div
+  class="apply-filter-button-wrapper"
+>
+  <button
+    class="apply-filter-button body-text-light"
+  >
+    APPLY FILTER
+  </button>
+</div>
+`;
+
+exports[`Filter Page Component Tests BackClearWrapper should render correctly 1`] = `
+<div
+  class="filter-page-back-clear-wrapper"
+>
+  <button
+    class="filter-back-button-container"
+  >
+    <i
+      aria-hidden="true"
+      class="fa fa-angle-left filter-back-button-icon"
+    />
+    <p
+      class="filter-back-button-text body-text-light"
+    >
+      BACK
+    </p>
+  </button>
+  <button
+    class="clear-all-button body-text-light"
+  >
+    CLEAR ALL
+  </button>
+</div>
+`;
+
+exports[`Filter Page Component Tests ClearAllButton should render correctly 1`] = `
+<Router
+  history={
+    Object {
+      "action": "POP",
+      "block": [Function],
+      "createHref": [Function],
+      "go": [Function],
+      "goBack": [Function],
+      "goForward": [Function],
+      "length": 1,
+      "listen": [Function],
+      "location": Object {
+        "hash": "",
+        "pathname": "/",
+        "search": "",
+        "state": undefined,
+      },
+      "push": [Function],
+      "replace": [Function],
+    }
+  }
+>
+  <Provider
+    store={
+      Object {
+        "dispatch": [Function],
+        "getState": [Function],
+        "replaceReducer": [Function],
+        "subscribe": [Function],
+        Symbol(observable): [Function],
+      }
+    }
+  >
+    <Connect(ClearAllButtonWrapper) />
+  </Provider>
+</Router>
+`;
+
+exports[`Filter Page Component Tests ClubFilter should render correctly 1`] = `
+<Router
+  history={
+    Object {
+      "action": "POP",
+      "block": [Function],
+      "createHref": [Function],
+      "go": [Function],
+      "goBack": [Function],
+      "goForward": [Function],
+      "length": 1,
+      "listen": [Function],
+      "location": Object {
+        "hash": "",
+        "pathname": "/",
+        "search": "",
+        "state": undefined,
+      },
+      "push": [Function],
+      "replace": [Function],
+    }
+  }
+>
+  <Provider
+    store={
+      Object {
+        "dispatch": [Function],
+        "getState": [Function],
+        "replaceReducer": [Function],
+        "subscribe": [Function],
+        Symbol(observable): [Function],
+      }
+    }
+  >
+    <ClubFilter />
+  </Provider>
+</Router>
+`;
+
+exports[`Filter Page Component Tests ClubFilterElement should render correctly 1`] = `
+<button
+  class="club-filter-element"
+>
+  <div
+    class="filter-tick-container"
+  >
+    <i
+      aria-hidden="true"
+      class="fa fa-check filter-tick"
+    />
+  </div>
+  <span
+    class="undefined club-badge club-filter-element-club-badge"
+  />
+  <p
+    class="club-filter-element-text body-text-light undefined"
+  />
+</button>
+`;
+
+exports[`Filter Page Component Tests FilterBackButton should render correctly 1`] = `
+<button
+  class="filter-back-button-container"
+>
+  <i
+    aria-hidden="true"
+    class="fa fa-angle-left filter-back-button-icon"
+  />
+  <p
+    class="filter-back-button-text body-text-light"
+  >
+    BACK
+  </p>
+</button>
+`;
+
+exports[`Filter Page Component Tests FilterPage should render correctly 1`] = `
+<div
+  class="filter-page-wrapper"
+>
+  <div
+    class="filter-page-back-clear-wrapper"
+  >
+    <button
+      class="filter-back-button-container"
+    >
+      <i
+        aria-hidden="true"
+        class="fa fa-angle-left filter-back-button-icon"
+      />
+      <p
+        class="filter-back-button-text body-text-light"
+      >
+        BACK
+      </p>
+    </button>
+    <button
+      class="clear-all-button body-text-light"
+    >
+      CLEAR ALL
+    </button>
+  </div>
+  <div
+    class="filter-item-wrapper"
+  >
+    <button
+      aria-required="true"
+      class="filter-bar-dropdown position-filter-bar background-light"
+    >
+      <div
+        class="plus-minus-container"
+        id="position-container-plus-minus"
+      >
+        <div
+          class="plus-minus-bar plus-minus-bar--vertical"
+        />
+        <div
+          class="plus-minus-bar plus-minus-bar--horizontal plus"
+          id="position-bar-plus-minus"
+        />
+      </div>
+      <p
+        class="filter-bar-title-text body-text-light"
+      >
+        POSITION
+      </p>
+    </button>
+    <div
+      class="position-filter-elements-wrapper"
+    >
+      <div
+        class="position-filter-elements-container"
+      >
+        <button
+          class="position-filter-element"
+        >
+          <p
+            class="position-filter-element-text body-text-light"
+          >
+            GK
+          </p>
+          <div
+            class="filter-tick-container"
+            id="position-gk-tick"
+          >
+            <i
+              aria-hidden="true"
+              class="fa fa-check filter-tick"
+            />
+          </div>
+        </button>
+        <button
+          class="position-filter-element"
+        >
+          <p
+            class="position-filter-element-text body-text-light"
+          >
+            DF
+          </p>
+          <div
+            class="filter-tick-container"
+            id="position-df-tick"
+          >
+            <i
+              aria-hidden="true"
+              class="fa fa-check filter-tick"
+            />
+          </div>
+        </button>
+      </div>
+      <div
+        class="position-filter-elements-container"
+      >
+        <button
+          class="position-filter-element"
+        >
+          <p
+            class="position-filter-element-text body-text-light"
+          >
+            MD
+          </p>
+          <div
+            class="filter-tick-container"
+            id="position-md-tick"
+          >
+            <i
+              aria-hidden="true"
+              class="fa fa-check filter-tick"
+            />
+          </div>
+        </button>
+        <button
+          class="position-filter-element"
+        >
+          <p
+            class="position-filter-element-text body-text-light"
+          >
+            FWD
+          </p>
+          <div
+            class="filter-tick-container"
+            id="position-fwd-tick"
+          >
+            <i
+              aria-hidden="true"
+              class="fa fa-check filter-tick"
+            />
+          </div>
+        </button>
+      </div>
+    </div>
+  </div>
+  <div
+    class="filter-item-wrapper"
+  >
+    <button
+      aria-required="true"
+      class="filter-bar-dropdown position-filter-bar background-light"
+    >
+      <div
+        class="plus-minus-container"
+        id="club-container-plus-minus"
+      >
+        <div
+          class="plus-minus-bar plus-minus-bar--vertical"
+        />
+        <div
+          class="plus-minus-bar plus-minus-bar--horizontal plus"
+          id="club-bar-plus-minus"
+        />
+      </div>
+      <p
+        class="filter-bar-title-text body-text-light"
+      >
+        CLUB
+      </p>
+    </button>
+    <div
+      class="club-filter-element-wrapper"
+    >
+      <button
+        class="club-filter-element"
+      >
+        <div
+          class="filter-tick-container"
+          id="bournemouth-badge-club-tick"
+        >
+          <i
+            aria-hidden="true"
+            class="fa fa-check filter-tick"
+          />
+        </div>
+        <span
+          class="bournemouth-badge club-badge club-filter-element-club-badge"
+        />
+        <p
+          class="club-filter-element-text body-text-light bournemouth-color"
+        >
+          Bournemouth
+        </p>
+      </button>
+      <button
+        class="club-filter-element"
+      >
+        <div
+          class="filter-tick-container"
+          id="arsenal-badge-club-tick"
+        >
+          <i
+            aria-hidden="true"
+            class="fa fa-check filter-tick"
+          />
+        </div>
+        <span
+          class="arsenal-badge club-badge club-filter-element-club-badge"
+        />
+        <p
+          class="club-filter-element-text body-text-light arsenal-color"
+        >
+          Arsenal
+        </p>
+      </button>
+      <button
+        class="club-filter-element"
+      >
+        <div
+          class="filter-tick-container"
+          id="villa-badge-club-tick"
+        >
+          <i
+            aria-hidden="true"
+            class="fa fa-check filter-tick"
+          />
+        </div>
+        <span
+          class="villa-badge club-badge club-filter-element-club-badge"
+        />
+        <p
+          class="club-filter-element-text body-text-light villa-color"
+        >
+          Aston Villa
+        </p>
+      </button>
+      <button
+        class="club-filter-element"
+      >
+        <div
+          class="filter-tick-container"
+          id="brighton-badge-club-tick"
+        >
+          <i
+            aria-hidden="true"
+            class="fa fa-check filter-tick"
+          />
+        </div>
+        <span
+          class="brighton-badge club-badge club-filter-element-club-badge"
+        />
+        <p
+          class="club-filter-element-text body-text-light brighton-color"
+        >
+          Brighton
+        </p>
+      </button>
+      <button
+        class="club-filter-element"
+      >
+        <div
+          class="filter-tick-container"
+          id="burnley-badge-club-tick"
+        >
+          <i
+            aria-hidden="true"
+            class="fa fa-check filter-tick"
+          />
+        </div>
+        <span
+          class="burnley-badge club-badge club-filter-element-club-badge"
+        />
+        <p
+          class="club-filter-element-text body-text-light burnley-color"
+        >
+          Burnley
+        </p>
+      </button>
+      <button
+        class="club-filter-element"
+      >
+        <div
+          class="filter-tick-container"
+          id="chelsea-badge-club-tick"
+        >
+          <i
+            aria-hidden="true"
+            class="fa fa-check filter-tick"
+          />
+        </div>
+        <span
+          class="chelsea-badge club-badge club-filter-element-club-badge"
+        />
+        <p
+          class="club-filter-element-text body-text-light chelsea-color"
+        >
+          Chelsea
+        </p>
+      </button>
+      <button
+        class="club-filter-element"
+      >
+        <div
+          class="filter-tick-container"
+          id="palace-badge-club-tick"
+        >
+          <i
+            aria-hidden="true"
+            class="fa fa-check filter-tick"
+          />
+        </div>
+        <span
+          class="palace-badge club-badge club-filter-element-club-badge"
+        />
+        <p
+          class="club-filter-element-text body-text-light palace-color"
+        >
+          C. Palace
+        </p>
+      </button>
+      <button
+        class="club-filter-element"
+      >
+        <div
+          class="filter-tick-container"
+          id="everton-badge-club-tick"
+        >
+          <i
+            aria-hidden="true"
+            class="fa fa-check filter-tick"
+          />
+        </div>
+        <span
+          class="everton-badge club-badge club-filter-element-club-badge"
+        />
+        <p
+          class="club-filter-element-text body-text-light everton-color"
+        >
+          Everton
+        </p>
+      </button>
+      <button
+        class="club-filter-element"
+      >
+        <div
+          class="filter-tick-container"
+          id="leicester-badge-club-tick"
+        >
+          <i
+            aria-hidden="true"
+            class="fa fa-check filter-tick"
+          />
+        </div>
+        <span
+          class="leicester-badge club-badge club-filter-element-club-badge"
+        />
+        <p
+          class="club-filter-element-text body-text-light leicester-color"
+        >
+          Leicester
+        </p>
+      </button>
+      <button
+        class="club-filter-element"
+      >
+        <div
+          class="filter-tick-container"
+          id="liverpool-badge-club-tick"
+        >
+          <i
+            aria-hidden="true"
+            class="fa fa-check filter-tick"
+          />
+        </div>
+        <span
+          class="liverpool-badge club-badge club-filter-element-club-badge"
+        />
+        <p
+          class="club-filter-element-text body-text-light liverpool-color"
+        >
+          Liverpool
+        </p>
+      </button>
+      <button
+        class="club-filter-element"
+      >
+        <div
+          class="filter-tick-container"
+          id="city-badge-club-tick"
+        >
+          <i
+            aria-hidden="true"
+            class="fa fa-check filter-tick"
+          />
+        </div>
+        <span
+          class="city-badge club-badge club-filter-element-club-badge"
+        />
+        <p
+          class="club-filter-element-text body-text-light city-color"
+        >
+          Man City
+        </p>
+      </button>
+      <button
+        class="club-filter-element"
+      >
+        <div
+          class="filter-tick-container"
+          id="united-badge-club-tick"
+        >
+          <i
+            aria-hidden="true"
+            class="fa fa-check filter-tick"
+          />
+        </div>
+        <span
+          class="united-badge club-badge club-filter-element-club-badge"
+        />
+        <p
+          class="club-filter-element-text body-text-light united-color"
+        >
+          Man Utd
+        </p>
+      </button>
+      <button
+        class="club-filter-element"
+      >
+        <div
+          class="filter-tick-container"
+          id="newcastle-badge-club-tick"
+        >
+          <i
+            aria-hidden="true"
+            class="fa fa-check filter-tick"
+          />
+        </div>
+        <span
+          class="newcastle-badge club-badge club-filter-element-club-badge"
+        />
+        <p
+          class="club-filter-element-text body-text-light newcastle-color"
+        >
+          Newcastle
+        </p>
+      </button>
+      <button
+        class="club-filter-element"
+      >
+        <div
+          class="filter-tick-container"
+          id="norwich-badge-club-tick"
+        >
+          <i
+            aria-hidden="true"
+            class="fa fa-check filter-tick"
+          />
+        </div>
+        <span
+          class="norwich-badge club-badge club-filter-element-club-badge"
+        />
+        <p
+          class="club-filter-element-text body-text-light norwich-color"
+        >
+          Norwich
+        </p>
+      </button>
+      <button
+        class="club-filter-element"
+      >
+        <div
+          class="filter-tick-container"
+          id="sheffield-badge-club-tick"
+        >
+          <i
+            aria-hidden="true"
+            class="fa fa-check filter-tick"
+          />
+        </div>
+        <span
+          class="sheffield-badge club-badge club-filter-element-club-badge"
+        />
+        <p
+          class="club-filter-element-text body-text-light sheffield-color"
+        >
+          Sheffield Utd
+        </p>
+      </button>
+      <button
+        class="club-filter-element"
+      >
+        <div
+          class="filter-tick-container"
+          id="southampton-badge-club-tick"
+        >
+          <i
+            aria-hidden="true"
+            class="fa fa-check filter-tick"
+          />
+        </div>
+        <span
+          class="southampton-badge club-badge club-filter-element-club-badge"
+        />
+        <p
+          class="club-filter-element-text body-text-light southampton-color"
+        >
+          Southampton
+        </p>
+      </button>
+      <button
+        class="club-filter-element"
+      >
+        <div
+          class="filter-tick-container"
+          id="spurs-badge-club-tick"
+        >
+          <i
+            aria-hidden="true"
+            class="fa fa-check filter-tick"
+          />
+        </div>
+        <span
+          class="spurs-badge club-badge club-filter-element-club-badge"
+        />
+        <p
+          class="club-filter-element-text body-text-light spurs-color"
+        >
+          Spurs
+        </p>
+      </button>
+      <button
+        class="club-filter-element"
+      >
+        <div
+          class="filter-tick-container"
+          id="watford-badge-club-tick"
+        >
+          <i
+            aria-hidden="true"
+            class="fa fa-check filter-tick"
+          />
+        </div>
+        <span
+          class="watford-badge club-badge club-filter-element-club-badge"
+        />
+        <p
+          class="club-filter-element-text body-text-light watford-color"
+        >
+          Watford
+        </p>
+      </button>
+      <button
+        class="club-filter-element"
+      >
+        <div
+          class="filter-tick-container"
+          id="westham-badge-club-tick"
+        >
+          <i
+            aria-hidden="true"
+            class="fa fa-check filter-tick"
+          />
+        </div>
+        <span
+          class="westham-badge club-badge club-filter-element-club-badge"
+        />
+        <p
+          class="club-filter-element-text body-text-light westham-color"
+        >
+          West Ham
+        </p>
+      </button>
+      <button
+        class="club-filter-element"
+      >
+        <div
+          class="filter-tick-container"
+          id="wolves-badge-club-tick"
+        >
+          <i
+            aria-hidden="true"
+            class="fa fa-check filter-tick"
+          />
+        </div>
+        <span
+          class="wolves-badge club-badge club-filter-element-club-badge"
+        />
+        <p
+          class="club-filter-element-text body-text-light wolves-color"
+        >
+          Wolves
+        </p>
+      </button>
+    </div>
+  </div>
+  <div
+    class="filter-item-wrapper"
+  >
+    <button
+      aria-required="true"
+      class="filter-bar-dropdown position-filter-bar background-light"
+    >
+      <div
+        class="plus-minus-container"
+        id="nationality-container-plus-minus"
+      >
+        <div
+          class="plus-minus-bar plus-minus-bar--vertical"
+        />
+        <div
+          class="plus-minus-bar plus-minus-bar--horizontal plus"
+          id="nationality-bar-plus-minus"
+        />
+      </div>
+      <p
+        class="filter-bar-title-text body-text-light"
+      >
+        NATIONALITY
+      </p>
+    </button>
+    <div
+      class="nationality-filter-element-wrapper"
+    />
+  </div>
+  <div
+    class="apply-filter-button-wrapper"
+  >
+    <button
+      class="apply-filter-button body-text-light"
+    >
+      APPLY FILTER
+    </button>
+  </div>
+</div>
+`;
+
+exports[`Filter Page Component Tests NationalityFilter should render correctly 1`] = `
+<Router
+  history={
+    Object {
+      "action": "POP",
+      "block": [Function],
+      "createHref": [Function],
+      "go": [Function],
+      "goBack": [Function],
+      "goForward": [Function],
+      "length": 1,
+      "listen": [Function],
+      "location": Object {
+        "hash": "",
+        "pathname": "/",
+        "search": "",
+        "state": undefined,
+      },
+      "push": [Function],
+      "replace": [Function],
+    }
+  }
+>
+  <Provider
+    store={
+      Object {
+        "dispatch": [Function],
+        "getState": [Function],
+        "replaceReducer": [Function],
+        "subscribe": [Function],
+        Symbol(observable): [Function],
+      }
+    }
+  >
+    <Connect(NationalityFilterWrapper) />
+  </Provider>
+</Router>
+`;
+
+exports[`Filter Page Component Tests NationalityFilterElement should render correctly 1`] = `
+<button
+  class="nationality-filter-element"
+>
+  <div
+    class="filter-tick-container"
+  >
+    <i
+      aria-hidden="true"
+      class="fa fa-check filter-tick"
+    />
+  </div>
+  <span
+    class="undefined nationality-filter-element-flag"
+  />
+  <p
+    class="nationality-filter-element-text body-text-light"
+  />
+</button>
+`;
+
+exports[`Filter Page Component Tests PlusMinus should render correctly 1`] = `
+<div
+  class="plus-minus-container"
+>
+  <div
+    class="plus-minus-bar plus-minus-bar--vertical"
+  />
+  <div
+    class="plus-minus-bar plus-minus-bar--horizontal plus"
+  />
+</div>
+`;
+
+exports[`Filter Page Component Tests PositionFilter should render correctly 1`] = `
+<div
+  class="filter-item-wrapper"
+>
+  <button
+    aria-required="true"
+    class="filter-bar-dropdown position-filter-bar background-light"
+  >
+    <div
+      class="plus-minus-container"
+      id="position-container-plus-minus"
+    >
+      <div
+        class="plus-minus-bar plus-minus-bar--vertical"
+      />
+      <div
+        class="plus-minus-bar plus-minus-bar--horizontal plus"
+        id="position-bar-plus-minus"
+      />
+    </div>
+    <p
+      class="filter-bar-title-text body-text-light"
+    >
+      POSITION
+    </p>
+  </button>
+  <div
+    class="position-filter-elements-wrapper"
+  >
+    <div
+      class="position-filter-elements-container"
+    >
+      <button
+        class="position-filter-element"
+      >
+        <p
+          class="position-filter-element-text body-text-light"
+        >
+          GK
+        </p>
+        <div
+          class="filter-tick-container"
+          id="position-gk-tick"
+        >
+          <i
+            aria-hidden="true"
+            class="fa fa-check filter-tick"
+          />
+        </div>
+      </button>
+      <button
+        class="position-filter-element"
+      >
+        <p
+          class="position-filter-element-text body-text-light"
+        >
+          DF
+        </p>
+        <div
+          class="filter-tick-container"
+          id="position-df-tick"
+        >
+          <i
+            aria-hidden="true"
+            class="fa fa-check filter-tick"
+          />
+        </div>
+      </button>
+    </div>
+    <div
+      class="position-filter-elements-container"
+    >
+      <button
+        class="position-filter-element"
+      >
+        <p
+          class="position-filter-element-text body-text-light"
+        >
+          MD
+        </p>
+        <div
+          class="filter-tick-container"
+          id="position-md-tick"
+        >
+          <i
+            aria-hidden="true"
+            class="fa fa-check filter-tick"
+          />
+        </div>
+      </button>
+      <button
+        class="position-filter-element"
+      >
+        <p
+          class="position-filter-element-text body-text-light"
+        >
+          FWD
+        </p>
+        <div
+          class="filter-tick-container"
+          id="position-fwd-tick"
+        >
+          <i
+            aria-hidden="true"
+            class="fa fa-check filter-tick"
+          />
+        </div>
+      </button>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`Filter Page Component Tests PositionFilterElement should render correctly 1`] = `
+<button
+  class="position-filter-element"
+>
+  <p
+    class="position-filter-element-text body-text-light"
+  />
+  <div
+    class="filter-tick-container"
+  >
+    <i
+      aria-hidden="true"
+      class="fa fa-check filter-tick"
+    />
+  </div>
+</button>
+`;

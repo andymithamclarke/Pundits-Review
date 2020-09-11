@@ -1,0 +1,24 @@
+/*
+// ======================================
+// CSS for BLOG LIST Component 
+// ======================================
+*/
+
+
+
+.blog-list-loading-container {
+	display: flex;
+	height: 50vh;
+	width: 100vw;
+	justify-content: center;
+	align-items: center;
+}
+
+
+.blog-list-wrapper {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+

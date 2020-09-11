@@ -1,0 +1,307 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Player Page Component Tests AgreeDisagree should render correctly 1`] = `
+<div
+  class="agree-disagree-wrapper"
+>
+  <div
+    class="agree-disagree-button-container"
+  >
+    <p
+      class="agree-disagree-heading-text body-text-light"
+    >
+      AGREE
+    </p>
+    <button
+      class="agree-disagree-button"
+      id="agree-button"
+    >
+      <span
+        class="agree-disagree-icon fa fa-check"
+      />
+    </button>
+    <span />
+  </div>
+  <div
+    class="agree-disagree-button-container"
+  >
+    <p
+      class="agree-disagree-heading-text body-text-light"
+    >
+      DISAGREE
+    </p>
+    <button
+      class="agree-disagree-button"
+      id="disagree-button"
+    >
+      <span
+        class="agree-disagree-icon fa fa-times"
+      />
+    </button>
+    <span />
+  </div>
+</div>
+`;
+
+exports[`Player Page Component Tests AgreeDisagreeScore should render correctly 1`] = `
+<Router
+  history={
+    Object {
+      "action": "POP",
+      "block": [Function],
+      "createHref": [Function],
+      "go": [Function],
+      "goBack": [Function],
+      "goForward": [Function],
+      "length": 1,
+      "listen": [Function],
+      "location": Object {
+        "hash": "",
+        "pathname": "/",
+        "search": "",
+        "state": undefined,
+      },
+      "push": [Function],
+      "replace": [Function],
+    }
+  }
+>
+  <Provider
+    store={
+      Object {
+        "dispatch": [Function],
+        "getState": [Function],
+        "replaceReducer": [Function],
+        "subscribe": [Function],
+        Symbol(observable): [Function],
+      }
+    }
+  >
+    <Connect(AgreeDisagreeScoreWrapper) />
+  </Provider>
+</Router>
+`;
+
+exports[`Player Page Component Tests PlayerInfoContainer should render correctly 1`] = `
+<Router
+  history={
+    Object {
+      "action": "POP",
+      "block": [Function],
+      "createHref": [Function],
+      "go": [Function],
+      "goBack": [Function],
+      "goForward": [Function],
+      "length": 1,
+      "listen": [Function],
+      "location": Object {
+        "hash": "",
+        "pathname": "/",
+        "search": "",
+        "state": undefined,
+      },
+      "push": [Function],
+      "replace": [Function],
+    }
+  }
+>
+  <Provider
+    store={
+      Object {
+        "dispatch": [Function],
+        "getState": [Function],
+        "replaceReducer": [Function],
+        "subscribe": [Function],
+        Symbol(observable): [Function],
+      }
+    }
+  >
+    <Connect(PlayerInfo) />
+  </Provider>
+</Router>
+`;
+
+exports[`Player Page Component Tests PlayerPage should render correctly 1`] = `
+<div
+  class="empty-page-wrapper"
+>
+  <p
+    class="no-results-text body-text-light"
+  >
+    It looks like you haven't selected a player 
+  </p>
+  <div
+    class="dividing-line background-dark"
+  />
+  <p
+    class="no-results-sub-text body-text-light"
+  >
+    Head back to the homepage to make a new search for a player
+  </p>
+  <a
+    class="react-link empty-page-home-link body-text-light"
+    href="/"
+  >
+    HOME
+  </a>
+</div>
+`;
+
+exports[`Player Page Component Tests ReviewScoreContainer should render correctly 1`] = `
+<div
+  class="review-score-container-wrapper"
+>
+  <p
+    class="review-score-pundits-title heading-text"
+  >
+    Pundits Review
+  </p>
+  <div
+    class="review-score-circle body-text-light white-text background-light"
+  />
+  <div
+    class="review-score-positive-negative-total-grid"
+  >
+    <p
+      class="review-score-positive-text body-text-light"
+    >
+      Positive Reviews
+    </p>
+    <p
+      class="review-score-negative-text body-text-light"
+    >
+      Negative Reviews
+    </p>
+    <p
+      class="review-score-total-text body-text-light"
+    >
+      Total Reviews
+    </p>
+    <p
+      class="review-score-positive-number body-text-light"
+    />
+    <p
+      class="review-score-negative-number body-text-light"
+    />
+    <p
+      class="review-score-total-number body-text-light"
+    />
+  </div>
+</div>
+`;
+
+exports[`Player Page Component Tests SeasonPerformanceContainer should render correctly 1`] = `
+<div
+  class="season-performance-wrapper"
+>
+  <p
+    class="season-performance-title heading-text"
+  >
+    Season Performance
+  </p>
+  <div
+    id="season-performance-graph-canvas"
+  >
+    <svg
+      class="body-text-light"
+      id="performance-graph-svg-container"
+    />
+  </div>
+  <p
+    class="graph-description-text body-text-light"
+  >
+    * Data collection for the 2019/20 season ran from JUL 13 to JUL 27
+  </p>
+</div>
+`;
+
+exports[`Player Page Component Tests SeasonPerformanceGraphWrapper should render correctly 1`] = `
+<svg
+  class="body-text-light"
+  id="performance-graph-svg-container"
+/>
+`;
+
+exports[`Player Page Component Tests SnippetItem should render correctly 1`] = `
+<div
+  class="snippet-item-wrapper background-light"
+>
+  <div
+    class="snippet-item-header-container background-dark"
+  >
+    <p
+      class="snippet-item-media-source body-text-light white-text"
+    />
+    <p
+      class="snippet-item-published-date body-text-light white-text"
+    />
+  </div>
+  <p
+    class="snippet-item-article-phrase body-text-light"
+  >
+    <span
+      class="snippet-item-quote-icon"
+    >
+      “
+    </span>
+    <span
+      class="snippet-item-quote-icon"
+    >
+      ”
+    </span>
+  </p>
+  <div
+    class="snippet-item-bottom-container"
+  >
+    <a
+      class="react-link"
+      target="_blank"
+    >
+      <button
+        class="snippet-item-read-article-button body-text-light"
+      >
+        READ THE ARTICLE
+      </button>
+    </a>
+  </div>
+</div>
+`;
+
+exports[`Player Page Component Tests SnippetsContainer should render correctly 1`] = `
+<Router
+  history={
+    Object {
+      "action": "POP",
+      "block": [Function],
+      "createHref": [Function],
+      "go": [Function],
+      "goBack": [Function],
+      "goForward": [Function],
+      "length": 1,
+      "listen": [Function],
+      "location": Object {
+        "hash": "",
+        "pathname": "/",
+        "search": "",
+        "state": undefined,
+      },
+      "push": [Function],
+      "replace": [Function],
+    }
+  }
+>
+  <Provider
+    store={
+      Object {
+        "dispatch": [Function],
+        "getState": [Function],
+        "replaceReducer": [Function],
+        "subscribe": [Function],
+        Symbol(observable): [Function],
+      }
+    }
+  >
+    <SnippetsContainer />
+  </Provider>
+</Router>
+`;

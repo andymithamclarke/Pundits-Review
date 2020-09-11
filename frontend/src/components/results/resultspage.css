@@ -1,0 +1,37 @@
+/*
+// ======================================
+// Core CSS for results page
+// ======================================
+*/
+
+
+.results-page-wrapper {
+	display: flex;
+	flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    height: 100vh;
+}
+
+
+.search-bar-results-wrapper {
+	position: absolute;
+    display: flex;
+    flex-direction: column;
+	width: 95%;
+	top: 12.5%;
+    justify-content: flex-start;
+    align-items: center;
+    background-color: white;
+}
+
+
+.results-info-text {
+    display: none;
+	margin: 2vh 8vw;
+    align-self: flex-start;
+    position: absolute;
+    top: 5vh;
+    z-index: -1;
+}

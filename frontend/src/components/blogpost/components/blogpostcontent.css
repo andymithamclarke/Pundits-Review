@@ -1,0 +1,13 @@
+/*
+// ======================================
+// CSS for Blog Post Inner Content Component 
+// ======================================
+*/
+
+.blog-post-content-wrapper {
+	display: flex;
+	justify-content: center;
+	flex-direction: column;
+	margin-top: 7.25vh;
+	align-items: center;
+}

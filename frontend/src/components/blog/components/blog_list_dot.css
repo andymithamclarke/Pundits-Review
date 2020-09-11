@@ -1,0 +1,14 @@
+
+/*
+// ======================================
+// CSS for BLOG List  dot
+// ======================================
+*/
+
+
+.blog-list-dot {
+	height: 5px;
+    width: 5px;
+    border-radius: 2em;
+    background-color: black;
+}

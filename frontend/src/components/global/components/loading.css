@@ -1,0 +1,18 @@
+/*// ======================================
+// LOADING SCREEN CSS - contains CSS for the icon and text to show user that page is loading
+// ======================================*/
+
+
+.loading-screen-wrapper {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-around;
+	text-align: center;
+	height: 50vh;
+	width: 100vw;
+}
+
+.loading-screen-text {
+	font-size: 2em;
+	letter-spacing: .25em;
+}

@@ -1,0 +1,66 @@
+/*
+// ======================================
+// CSS for no results component 
+// ======================================
+*/
+
+.no-results-wrapper {
+	display: flex;
+	flex-direction: column;
+    text-align: center;
+    padding: 2em;
+    align-items: center;
+}
+
+.empty-page-wrapper {
+	justify-content: center;
+    height: 60vh;
+    display: flex;
+	flex-direction: column;
+    text-align: center;
+    padding: 2em;
+    align-items: center;
+}
+
+.no-results-text {
+	font-size: 1.25em;
+	letter-spacing: .1em;
+	padding: 1em 0;
+}
+
+.no-results-sub-text {
+	font-size: .85em;
+	letter-spacing: .05em;
+	padding: 1em 0; 
+}
+
+
+.empty-page-home-link {
+	color: black;
+	font-size: 1.25em;
+	padding: 1em;
+	cursor: pointer;
+	letter-spacing: .2em;
+}
+
+/*
+// ======================================
+// MEDIA QUERIES
+// ======================================
+*/
+
+
+@media (min-width: 1000px) {
+
+	.no-results-text, .empty-page-home-link  {
+		font-size: 1.5em;
+		padding: 2em 0;
+	}
+
+	.no-results-sub-text {
+		font-size: 1.15em;
+		width: 50vw;
+		padding: 2em 0;
+	}
+
+}

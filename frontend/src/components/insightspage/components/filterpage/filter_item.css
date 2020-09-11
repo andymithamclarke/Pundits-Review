@@ -1,0 +1,79 @@
+/*
+// ======================================
+// CSS for all filter items: position/nationality/club
+// ======================================
+*/
+
+
+.filter-item-wrapper {
+	width: 100%;
+}
+
+.filter-bar-dropdown {
+	padding: 1em 0;
+	display: flex;
+	align-items: center;
+	margin: .5em 0;
+	cursor: pointer;
+    border: 0;
+    width: 100%;
+}
+
+.filter-bar-title-text {
+	letter-spacing: .25em;
+    font-size: 1em;
+    margin-left: 2.5em;
+}
+
+.filter-container-active {
+	display: flex !important;
+}
+
+.filter-tick-container {
+	grid-row: 1 !important;
+    grid-column: 3 !important;
+    display: flex;
+    visibility: hidden;
+    height: .75em;
+    width: .75em;
+    align-items: center;
+    justify-content: center;
+    justify-self: right;
+    border-radius: 5em;
+    background-color: green;
+}
+
+.filter-tick {
+    font-size: .55em;
+    color: white;
+}
+
+.filter-tick-active {
+	visibility: visible;
+}
+
+
+
+/*
+// ======================================
+// MEDIA QUERIES
+// ======================================
+*/
+
+@media (min-width: 800px) {
+
+    .filter-bar-dropdown {
+        margin: .75em 0;
+    }
+
+}
+
+
+@media (min-width: 1200px) {
+
+    .filter-bar-dropdown {
+        margin: 1em 0;
+    }
+
+}
+

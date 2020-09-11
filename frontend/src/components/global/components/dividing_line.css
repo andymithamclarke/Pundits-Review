@@ -1,0 +1,34 @@
+/*
+// ======================================
+// CSS for dividing line
+// ======================================
+*/
+
+.dividing-line {
+	
+	width: 60vw;
+    height: 1px;
+    opacity: .2;
+}
+
+
+/*
+// ======================================
+// MEDIA QUERIES
+// ======================================
+*/
+
+
+@media (min-width: 650px) {
+
+	.dividing-line {
+		width: 40vw;
+	}
+}
+
+@media (min-width: 800px) {
+
+	.dividing-line {
+		width: 30vw;
+	}
+}

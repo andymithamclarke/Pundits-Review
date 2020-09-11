@@ -1,0 +1,60 @@
+/*
+// ======================================
+// CSS for Info Bar 
+// ======================================
+*/
+
+
+.info-bar-wrapper {
+
+	position: fixed;
+	width: 100vw;
+	top: -100px;
+	height: 40px;
+	z-index: 50;
+	display: flex;
+	align-items: center;
+	justify-content: space-around;
+	transition: top 0.5s ease;
+	background-color: white;
+
+}
+
+.info-bar-player-name {
+	
+	font-size: 1.25em;
+
+}
+
+.infobar-badge {
+	width: 2em;
+	height: 2em;
+}
+
+
+
+/*
+// ======================================
+// MEDIA QUERIES
+// ======================================
+*/
+
+
+@media (min-width: 1000px) {
+
+
+	.info-bar-wrapper {
+		height: 60px;
+	}
+
+   .info-bar-player-name {
+	
+		font-size: 1.5em;
+
+	}
+
+		.infobar-badge {
+		width: 3em;
+		height: 3em;
+	}
+}

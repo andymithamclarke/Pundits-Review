@@ -1,0 +1,10 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Redux Action Tests defineSearchTerm should match snapshot 1`] = `
+Array [
+  Object {
+    "payload": "Liverpool",
+    "type": "DEFINE_SEARCH_TERM",
+  },
+]
+`;

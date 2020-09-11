@@ -1,0 +1,31 @@
+/*
+// ======================================
+// CSS for Source List Component 
+// ======================================
+*/
+
+.source-list-wrapper {
+	display: none;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 3em;
+}
+
+.how-page-source-item {
+	letter-spacing: .1em;
+	font-size: .9em;
+	padding: 2em 0;
+	text-align: center;
+	color: black;
+	cursor: pointer;
+
+}
+
+.source-item-wrapper {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+}
+

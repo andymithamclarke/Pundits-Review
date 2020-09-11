@@ -1,0 +1,654 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Insights Page Component Tests CardGridToggle should render correctly 1`] = `
+<div
+  class="card-grid-toggle-wrapper"
+>
+  <div
+    class="card-grid-button-container"
+  >
+    <button
+      class="body-text-light card-grid-button card-grid-button-active"
+      id="card-button"
+    >
+      CARDS
+    </button>
+    <button
+      class="body-text-light card-grid-button "
+      id="grid-button"
+    >
+      GRID
+    </button>
+  </div>
+</div>
+`;
+
+exports[`Insights Page Component Tests CardItem should render correctly 1`] = `
+<Router
+  history={
+    Object {
+      "action": "POP",
+      "block": [Function],
+      "createHref": [Function],
+      "go": [Function],
+      "goBack": [Function],
+      "goForward": [Function],
+      "length": 1,
+      "listen": [Function],
+      "location": Object {
+        "hash": "",
+        "pathname": "/",
+        "search": "",
+        "state": undefined,
+      },
+      "push": [Function],
+      "replace": [Function],
+    }
+  }
+>
+  <Provider
+    store={
+      Object {
+        "dispatch": [Function],
+        "getState": [Function],
+        "replaceReducer": [Function],
+        "subscribe": [Function],
+        Symbol(observable): [Function],
+      }
+    }
+  >
+    <Connect(CardItemWrapper) />
+  </Provider>
+</Router>
+`;
+
+exports[`Insights Page Component Tests CategoryDropdown should render correctly 1`] = `
+<div
+  class="category-dropdown-container background-dark"
+>
+  <div
+    class="category-key-container"
+  >
+    <p
+      class="category-key-text body-text-light white-text"
+    >
+      CATEGORY:
+    </p>
+  </div>
+  <div
+    class="category-dropdown-menu-wrapper white-text body-text-light"
+  >
+    <ul
+      class="custom-select__trigger"
+    >
+      <li
+        class="body-text-light current-select-option"
+        id="current-category"
+        role="button"
+        tabindex="0"
+      >
+        REVIEW SCORE
+      </li>
+      <div
+        class="arrow"
+      />
+    </ul>
+    <ul
+      class="custom-options"
+      role="list"
+    >
+      <li
+        class="custom-option background-dark"
+        id="review-score-dropdown"
+        role="button"
+        tabindex="0"
+      >
+        <span
+          class="body-text-light select-option"
+        >
+          REVIEW SCORE
+        </span>
+      </li>
+      <li
+        class="custom-option background-dark "
+        id="season-avg-score-dropdown"
+        role="button"
+        tabindex="0"
+      >
+        <span
+          class="body-text-light select-option"
+        >
+          SEASON AVG SCORE
+        </span>
+      </li>
+      <li
+        class="custom-option background-dark "
+        id="mentions-dropdown"
+        role="button"
+        tabindex="0"
+      >
+        <span
+          class="body-text-light select-option"
+        >
+          MENTIONS
+        </span>
+      </li>
+      <li
+        class="custom-option background-dark "
+        id="positive-score-dropdown"
+        role="button"
+        tabindex="0"
+      >
+        <span
+          class="body-text-light select-option"
+        >
+          POSITIVE REVIEWS
+        </span>
+      </li>
+      <li
+        class="custom-option background-dark "
+        id="negative-score-dropdown"
+        role="button"
+        tabindex="0"
+      >
+        <span
+          class="body-text-light select-option"
+        >
+          NEGATIVE REVIEWS
+        </span>
+      </li>
+    </ul>
+  </div>
+</div>
+`;
+
+exports[`Insights Page Component Tests Filter should render correctly 1`] = `
+<div
+  class="filter-button-container"
+>
+  <button
+    class="filter-button body-text-light"
+  >
+    FILTER
+  </button>
+</div>
+`;
+
+exports[`Insights Page Component Tests GridItem should render correctly 1`] = `
+<a
+  class="react-link grid-item-wrapper grid-item-wrapper-white"
+  href="/players/undefined"
+  role="button"
+>
+  <p
+    class="body-text-light grid-item-text grid-item-rank grid-item-border-grey"
+  />
+  <p
+    class="body-text-light grid-item-text grid-item-playername"
+  />
+  <div
+    class="body-text-light grid-item-text grid-item-clubname grid-item-border-grey"
+  >
+    <span
+      class="undefined club-badge grid-item-club-badge"
+    />
+    <span />
+  </div>
+  <p
+    class="body-text-light grid-item-text grid-item-score"
+  />
+</a>
+`;
+
+exports[`Insights Page Component Tests GridTableHeader should render correctly 1`] = `
+<div
+  class="grid-table-header-wrapper body-text-light white-text"
+>
+  <p
+    class="grid-table-column-headers rank-header"
+  >
+    RANK
+  </p>
+  <p
+    class="grid-table-column-headers player-header"
+  >
+    PLAYER
+  </p>
+  <p
+    class="grid-table-column-headers club-header"
+  >
+    CLUB
+  </p>
+  <p
+    class="grid-table-column-headers score-header"
+  />
+</div>
+`;
+
+exports[`Insights Page Component Tests InsightsCards should render correctly 1`] = `
+<div
+  class="card-view-wrapper"
+>
+  <div
+    class="swiper-container"
+  >
+    <div
+      class="swiper-button-prev"
+    />
+    <div
+      class="swiper-button-next"
+    />
+    <div
+      class="swiper-wrapper"
+    />
+  </div>
+</div>
+`;
+
+exports[`Insights Page Component Tests InsightsGrid should render correctly 1`] = `
+<div
+  class="loading-screen-wrapper"
+>
+  <p
+    class="loading-screen-text body-text-light"
+  >
+    LOADING
+  </p>
+</div>
+`;
+
+exports[`Insights Page Component Tests InsightsPage should render correctly 1`] = `
+<div
+  class="insights-page-wrapper"
+>
+  <p
+    class="insights-page-title heading-text"
+  >
+    Player Rankings
+  </p>
+  <div
+    class="insights-top-bottom-control-wrapper"
+  >
+    <div
+      class="top-bottom-toggle-wrapper"
+    >
+      <div
+        aria-required="true"
+        class="top-bottom-inner-container insights-toggle-active"
+        id="top-toggle"
+        role="button"
+        tabindex="0"
+      >
+        <p
+          class="top-bottom-menu-text heading-text"
+        >
+          Top
+        </p>
+      </div>
+      <div
+        aria-required="true"
+        class="top-bottom-inner-container"
+        id="bottom-toggle"
+        role="button"
+        tabindex="0"
+      >
+        <p
+          class="top-bottom-menu-text heading-text"
+        >
+          Bottom
+        </p>
+      </div>
+    </div>
+    <div
+      class="category-dropdown-container background-dark"
+    >
+      <div
+        class="category-key-container"
+      >
+        <p
+          class="category-key-text body-text-light white-text"
+        >
+          CATEGORY:
+        </p>
+      </div>
+      <div
+        class="category-dropdown-menu-wrapper white-text body-text-light"
+      >
+        <ul
+          class="custom-select__trigger"
+        >
+          <li
+            class="body-text-light current-select-option"
+            id="current-category"
+            role="button"
+            tabindex="0"
+          >
+            REVIEW SCORE
+          </li>
+          <div
+            class="arrow"
+          />
+        </ul>
+        <ul
+          class="custom-options"
+          role="list"
+        >
+          <li
+            class="custom-option background-dark"
+            id="review-score-dropdown"
+            role="button"
+            tabindex="0"
+          >
+            <span
+              class="body-text-light select-option"
+            >
+              REVIEW SCORE
+            </span>
+          </li>
+          <li
+            class="custom-option background-dark "
+            id="season-avg-score-dropdown"
+            role="button"
+            tabindex="0"
+          >
+            <span
+              class="body-text-light select-option"
+            >
+              SEASON AVG SCORE
+            </span>
+          </li>
+          <li
+            class="custom-option background-dark "
+            id="mentions-dropdown"
+            role="button"
+            tabindex="0"
+          >
+            <span
+              class="body-text-light select-option"
+            >
+              MENTIONS
+            </span>
+          </li>
+          <li
+            class="custom-option background-dark "
+            id="positive-score-dropdown"
+            role="button"
+            tabindex="0"
+          >
+            <span
+              class="body-text-light select-option"
+            >
+              POSITIVE REVIEWS
+            </span>
+          </li>
+          <li
+            class="custom-option background-dark "
+            id="negative-score-dropdown"
+            role="button"
+            tabindex="0"
+          >
+            <span
+              class="body-text-light select-option"
+            >
+              NEGATIVE REVIEWS
+            </span>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <div
+      class="filter-button-container"
+    >
+      <button
+        class="filter-button body-text-light"
+      >
+        FILTER
+      </button>
+    </div>
+  </div>
+  <div
+    class="card-grid-toggle-wrapper"
+  >
+    <div
+      class="card-grid-button-container"
+    >
+      <button
+        class="body-text-light card-grid-button card-grid-button-active"
+        id="card-button"
+      >
+        CARDS
+      </button>
+      <button
+        class="body-text-light card-grid-button "
+        id="grid-button"
+      >
+        GRID
+      </button>
+    </div>
+  </div>
+  <div
+    class="card-view-wrapper"
+  >
+    <div
+      class="swiper-container"
+    >
+      <div
+        class="swiper-button-prev"
+      />
+      <div
+        class="swiper-button-next"
+      />
+      <div
+        class="swiper-wrapper"
+      />
+    </div>
+  </div>
+  <div
+    class="footer-wrapper"
+  >
+    <p
+      class="footer-title body-text-light"
+    >
+      GET IN TOUCH
+    </p>
+    <div
+      class="footer-logo-wrapper"
+    >
+      <a
+        class="react-link"
+        href="https://twitter.com/AndyClarkeMedia"
+        target="_blank"
+      >
+        <i
+          aria-hidden="true"
+          class="fa fa-twitter media-icon"
+        />
+      </a>
+      <a
+        class="footer-logo heading-text react-link"
+        href="/"
+      >
+        PR
+      </a>
+      <a
+        class="react-link"
+        href="mailto:clarkeAJ3@cardiff.ac.uk"
+        target="_blank"
+      >
+        <i
+          aria-hidden="true"
+          class="fa fa-envelope media-icon"
+        />
+      </a>
+    </div>
+    <p
+      class="footer-copyright-notice body-text-light"
+    >
+      © Andy Clarke, 2020
+    </p>
+  </div>
+</div>
+`;
+
+exports[`Insights Page Component Tests InsightsResults should render correctly 1`] = `
+<div
+  class="card-view-wrapper"
+>
+  <div
+    class="swiper-container"
+  >
+    <div
+      class="swiper-button-prev"
+    />
+    <div
+      class="swiper-button-next"
+    />
+    <div
+      class="swiper-wrapper"
+    />
+  </div>
+</div>
+`;
+
+exports[`Insights Page Component Tests TopBottomToggle should render correctly 1`] = `
+<div
+  class="insights-top-bottom-control-wrapper"
+>
+  <div
+    class="top-bottom-toggle-wrapper"
+  >
+    <div
+      aria-required="true"
+      class="top-bottom-inner-container insights-toggle-active"
+      id="top-toggle"
+      role="button"
+      tabindex="0"
+    >
+      <p
+        class="top-bottom-menu-text heading-text"
+      >
+        Top
+      </p>
+    </div>
+    <div
+      aria-required="true"
+      class="top-bottom-inner-container"
+      id="bottom-toggle"
+      role="button"
+      tabindex="0"
+    >
+      <p
+        class="top-bottom-menu-text heading-text"
+      >
+        Bottom
+      </p>
+    </div>
+  </div>
+  <div
+    class="category-dropdown-container background-dark"
+  >
+    <div
+      class="category-key-container"
+    >
+      <p
+        class="category-key-text body-text-light white-text"
+      >
+        CATEGORY:
+      </p>
+    </div>
+    <div
+      class="category-dropdown-menu-wrapper white-text body-text-light"
+    >
+      <ul
+        class="custom-select__trigger"
+      >
+        <li
+          class="body-text-light current-select-option"
+          id="current-category"
+          role="button"
+          tabindex="0"
+        >
+          REVIEW SCORE
+        </li>
+        <div
+          class="arrow"
+        />
+      </ul>
+      <ul
+        class="custom-options"
+        role="list"
+      >
+        <li
+          class="custom-option background-dark"
+          id="review-score-dropdown"
+          role="button"
+          tabindex="0"
+        >
+          <span
+            class="body-text-light select-option"
+          >
+            REVIEW SCORE
+          </span>
+        </li>
+        <li
+          class="custom-option background-dark "
+          id="season-avg-score-dropdown"
+          role="button"
+          tabindex="0"
+        >
+          <span
+            class="body-text-light select-option"
+          >
+            SEASON AVG SCORE
+          </span>
+        </li>
+        <li
+          class="custom-option background-dark "
+          id="mentions-dropdown"
+          role="button"
+          tabindex="0"
+        >
+          <span
+            class="body-text-light select-option"
+          >
+            MENTIONS
+          </span>
+        </li>
+        <li
+          class="custom-option background-dark "
+          id="positive-score-dropdown"
+          role="button"
+          tabindex="0"
+        >
+          <span
+            class="body-text-light select-option"
+          >
+            POSITIVE REVIEWS
+          </span>
+        </li>
+        <li
+          class="custom-option background-dark "
+          id="negative-score-dropdown"
+          role="button"
+          tabindex="0"
+        >
+          <span
+            class="body-text-light select-option"
+          >
+            NEGATIVE REVIEWS
+          </span>
+        </li>
+      </ul>
+    </div>
+  </div>
+  <div
+    class="filter-button-container"
+  >
+    <button
+      class="filter-button body-text-light"
+    >
+      FILTER
+    </button>
+  </div>
+</div>
+`;

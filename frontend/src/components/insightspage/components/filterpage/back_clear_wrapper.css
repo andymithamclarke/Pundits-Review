@@ -1,0 +1,48 @@
+/*
+// ======================================
+// CSS for the Back Clear Wrapper
+// ======================================
+*/
+
+
+.filter-page-back-clear-wrapper {
+
+	display: flex;
+	width: 90vw;
+	justify-content: space-between;
+	margin: 1.5em 0;
+}
+
+
+/*
+// ======================================
+// MEDIA QUERIES
+// ======================================
+*/
+
+@media (min-width: 800px) {
+
+	.filter-page-back-clear-wrapper {
+		width: 80vw;
+	}
+
+}
+
+
+@media (min-width: 1200px) {
+
+	.filter-page-back-clear-wrapper {
+		width: 70vw;
+	}
+
+}
+
+
+
+@media (min-width: 1600px) {
+
+	.filter-page-back-clear-wrapper {
+		width: 60vw;
+	}
+
+}

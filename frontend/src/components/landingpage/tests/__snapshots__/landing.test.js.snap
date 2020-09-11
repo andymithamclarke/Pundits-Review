@@ -1,0 +1,118 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Landing Page Component Tests LandingBackground should render correctly 1`] = `
+<div
+  class="landing-background-image"
+/>
+`;
+
+exports[`Landing Page Component Tests LandingPage should render correctly 1`] = `
+<div
+  class="landing-page-wrapper"
+>
+  <div
+    class="landing-background-image"
+  />
+  <div
+    class="landing-page-text-inner-wrapper"
+  >
+    <p
+      class="landing-logo-text heading-text white-text"
+    >
+      PR
+    </p>
+    <p
+      class="landing-site-name-text heading-text white-text"
+    >
+      Pundits Review
+    </p>
+    <p
+      class="landing-description-text body-text-light white-text side-margin"
+    >
+      The scoring system that shows you how Premier League players and teams were reviewed by the media
+    </p>
+  </div>
+  <div
+    class="landing-page-search-inner-wrapper side-margin"
+  >
+    <div
+      class="search-bar-wrapper background-light"
+    >
+      <input
+        aria-label="Search for a player or a club"
+        aria-required="true"
+        autocomplete="off"
+        class="search-box body-text-light"
+        id="search-bar-input"
+        name="Search input to search for Premier League players or clubs."
+        placeholder="Search for a player or a club ..."
+        type="text"
+        value=""
+      />
+      <a
+        class="react-link"
+        href="/results"
+      >
+        <button
+          class="search-button"
+          id="search-button"
+          type="submit"
+        >
+          <i
+            class="fa fa-search"
+          />
+        </button>
+      </a>
+      <span />
+    </div>
+  </div>
+</div>
+`;
+
+exports[`Landing Page Component Tests Search should render correctly 1`] = `
+<Router
+  history={
+    Object {
+      "action": "POP",
+      "block": [Function],
+      "createHref": [Function],
+      "go": [Function],
+      "goBack": [Function],
+      "goForward": [Function],
+      "length": 1,
+      "listen": [Function],
+      "location": Object {
+        "hash": "",
+        "pathname": "/",
+        "search": "",
+        "state": undefined,
+      },
+      "push": [Function],
+      "replace": [Function],
+    }
+  }
+>
+  <Provider
+    store={
+      Object {
+        "dispatch": [Function],
+        "getState": [Function],
+        "replaceReducer": [Function],
+        "subscribe": [Function],
+        Symbol(observable): [Function],
+      }
+    }
+  >
+    <Search />
+  </Provider>
+</Router>
+`;
+
+exports[`Landing Page Component Tests SearchDropdown should render correctly 1`] = `
+<div
+  class="search-dropdown-wrapper background-light"
+>
+  <span />
+  <span />
+</div>
+`;

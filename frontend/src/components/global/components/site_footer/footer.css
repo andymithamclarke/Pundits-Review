@@ -1,0 +1,48 @@
+/*
+// ======================================
+// CSS for Site Footer 
+// ======================================
+*/
+
+
+.footer-wrapper {
+    display: flex;
+    flex-direction: column;
+    height: 20vh;
+    width: 60vw;
+    justify-content: center;
+    align-items: center;
+    bottom: 0;
+    margin: 2em 0;
+}
+
+.footer-logo-wrapper {
+	display: flex;
+	justify-content: center;
+    align-items: center;
+}
+
+.media-icon {
+    font-size: 2em;
+    padding: .5em;
+    color: black;
+}
+
+.footer-logo {
+	font-size: 3em;
+	padding: .5em;
+    color: black;
+}
+
+.footer-copyright-notice {
+	opacity: .5em;
+	font-size: .5em;
+	letter-spacing: .2em;
+	margin: .5em 0;
+}
+
+
+.footer-title {
+    font-size: .75em;
+    letter-spacing: .2em;
+}

@@ -1,0 +1,42 @@
+/*
+// ======================================
+// CSS for Card View Carousel on the Insights Page
+// ======================================
+*/
+
+
+.card-view-wrapper {
+	margin-top: 2.5vh;
+}
+
+.swiper-wrapper {
+	padding: 1em 0;
+}
+
+
+/*
+// ======================================
+// MEDIA QUERIES
+// ======================================
+*/
+
+
+@media (min-width: 800px) {
+
+
+    .card-view-wrapper {
+		margin-top: 5vh;
+	}
+
+}
+
+
+
+@media (min-width: 1000px) {
+
+
+    .card-view-wrapper {
+		margin-top: 7.5vh;
+	}
+
+}

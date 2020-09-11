@@ -1,0 +1,53 @@
+/*
+// ======================================
+// CSS for How It Works Sub Heading Element
+// ======================================
+*/
+
+.how-page-subheading-wrapper {
+	display: flex;
+	align-items: center;
+	padding: 1em 0;
+	margin-top: 1em;
+}
+
+
+.how-page-subheading-text {
+
+	letter-spacing: .1em;
+	font-size: 1.25em;
+}
+
+
+
+
+/*
+// ======================================
+// MEDIA QUERIES
+// ======================================
+*/
+
+@media (min-width: 600px) {
+
+	.how-page-subheading-wrapper {
+		padding: 2em 0;
+	}
+
+	.how-page-subheading-text {
+		font-size: 1.5em;
+	}
+
+}
+
+
+@media (min-width: 900px) {
+
+	.how-page-subheading-wrapper {
+		padding: 3em 0;
+	}
+
+	.how-page-subheading-text {
+		font-size: 2em;
+	}
+
+}

@@ -1,0 +1,93 @@
+/*
+// ======================================
+// CSS for Nationality Filter 
+// ======================================
+*/
+
+
+.nationality-filter-element-wrapper {
+	display: none;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+
+
+.nationality-filter-element-flag {
+	grid-row: 2/5;
+    grid-column: 1/4;
+    align-self: flex-start;
+    justify-self: center;
+    width: 3em;
+    height: 3em;
+}
+
+
+.nationality-filter-element-text {
+	grid-row: 6/8;
+    grid-column: 1/4;
+    font-size: .5em;
+    letter-spacing: .15em;
+    align-self: flex-start;
+    margin-top: .5em;
+}
+
+.nationality-filter-element {
+	cursor: pointer;
+    background-color: white;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(7, 1fr);
+    height: 6em;
+    width: 5em;
+    margin: .5em .25em;
+    border: none;
+    user-select: none;
+}
+
+
+/*
+// ======================================
+// CSS for Nationality Filter 
+// ======================================
+*/
+
+@media (min-width: 500px) {
+
+    .nationality-filter-element {
+        height: 6.5em;
+        width: 5.5em;
+        margin: .75em .5em;
+    }
+
+    .nationality-filter-element-flag {
+        width: 3.5em;
+        height: 3.5em;
+    }
+
+    .nationality-filter-element-text {
+        font-size: .65em;
+    }
+
+}
+
+
+
+@media (min-width: 800px) {
+
+    .nationality-filter-element {
+        height: 10em;
+        width: 7em;
+        margin: 1.5em 1.5em;
+    }
+
+    .nationality-filter-element-flag {
+        width: 4.25em;
+        height: 4.25em;
+    }
+
+    .nationality-filter-element-text {
+        font-size: .75em;
+    }
+
+}

@@ -1,0 +1,62 @@
+/*
+// ======================================
+// CSS for the Individual Player Item Container - used within Club Player List
+// ======================================
+*/
+
+.club-player-list-player-item-container {
+	
+	display: flex;
+	justify-content: space-around;
+	width: 80vw;
+    padding: 1em 0;
+    align-items: center;
+}
+
+.club-player-list-player-item-name {
+	width: 80%;
+	font-size: 1.25em;
+	color: black;
+}
+
+
+/*
+// ======================================
+// MEDIA QUERIES
+// ======================================
+*/
+
+@media (min-width: 650px) {
+
+	.club-player-list-player-item-container {
+
+		width: 50vw;
+	}
+}
+
+
+@media (min-width: 1000px) {
+
+	.club-player-list-player-item-container {
+
+		padding: 2em 0;
+	}
+
+	
+	.club-player-list-player-item-name {
+		width: 80%;
+		font-size: 1.5em;
+		color: black;
+	}
+
+}
+
+
+
+@media (min-width: 1200px) {
+
+	.club-player-list-player-item-container {
+
+		width: 40vw;
+	}
+}

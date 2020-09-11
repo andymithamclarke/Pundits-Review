@@ -1,0 +1,30 @@
+/*
+// ======================================
+// CSS for Snippets Swiper Carousel
+// ======================================
+*/
+
+
+.swiper-container {
+	width: 100vw;
+	margin: 0;
+}
+
+.swiper-scrollbar {
+	display: none;
+}
+
+.swiper-pagination {
+	display: none;
+}
+
+.swiper-slide {
+	display: flex;
+	justify-content: center;
+}
+
+
+.swiper-button-next, .swiper-button-prev {
+	color: black;
+	font-size: 2.5em !important;
+}

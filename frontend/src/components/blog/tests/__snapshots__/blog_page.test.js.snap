@@ -1,0 +1,72 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Blog Tests BlogHome should render 2 p elements 1`] = `
+Array [
+  <p
+    class="heading-text blog-page-title"
+  >
+    Pundits Review Blog
+  </p>,
+  <p
+    class="body-text-light blog-page-description"
+  >
+    LATEST STORIES
+  </p>,
+]
+`;
+
+exports[`Blog Tests BlogHome should render correctly 1`] = `
+<div
+  class="blog-page-wrapper"
+>
+  <p
+    class="heading-text blog-page-title"
+  >
+    Pundits Review Blog
+  </p>
+  <p
+    class="body-text-light blog-page-description"
+  >
+    LATEST STORIES
+  </p>
+  <div
+    class="blog-list-wrapper"
+  />
+</div>
+`;
+
+exports[`Blog Tests BlogList should render correctly 1`] = `
+<div
+  class="blog-list-wrapper"
+/>
+`;
+
+exports[`Blog Tests BlogListItem should render correctly 1`] = `
+<Link
+  className="react-link"
+  to="/blogpost/undefined"
+>
+  <div
+    className="blog-list-item-wrapper"
+  >
+    <span
+      className="blog-list-item-image"
+      style={
+        Object {
+          "backgroundImage": "url(undefined)",
+        }
+      }
+    />
+    <p
+      className="body-text-light blog-list-item-date"
+    />
+    <p
+      className="body-text-light blog-list-item-headline"
+    />
+    <BlogListDot />
+    <p
+      className="body-text-light blog-list-item-description"
+    />
+  </div>
+</Link>
+`;

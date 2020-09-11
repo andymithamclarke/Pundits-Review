@@ -1,0 +1,89 @@
+/*
+// ======================================
+// CSS for Snippets Container
+// ======================================
+*/
+
+
+
+
+.snippets-container-wrapper {
+
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: space-between;
+	padding: 2em 0;
+	width: 95vw;
+	height: auto;
+
+}
+
+
+.snippets-title {
+
+	padding-top: 1em;
+	font-size: 1.25em;
+
+}
+
+
+.no-snippets-container-wrapper {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	padding: 2em 0;
+	width: 95vw;
+	height: 30vh;
+}
+
+.no-snippets-text {
+	text-align: center;
+	font-size: 1.25em;
+	letter-spacing: .2em;
+	width: 80%;
+
+}
+
+
+
+
+@media (min-width: 800px) {
+
+	.no-snippets-container-wrapper {
+		height: 40vh;
+	}
+
+	.snippets-title {
+		padding-top: 2em; 
+		font-size: 1.5em;
+
+	}
+
+}
+
+
+
+@media (min-width: 850px) {
+
+	.no-snippets-container-wrapper {
+		height: 40vh;
+	}
+
+
+}
+
+
+
+
+@media (min-width: 1000px) {
+
+	.snippets-title {
+		padding-top: 3em; 
+		font-size: 1.75em;
+
+	}
+
+}
+
+

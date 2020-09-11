@@ -1,0 +1,71 @@
+/*
+// ======================================
+// CSS specific to POSITION Filter
+// ======================================
+*/
+
+.position-filter-elements-wrapper {
+	display: none;
+    flex-direction: column;
+}
+
+.position-filter-elements-container {
+	display: flex;
+	justify-content: center;
+
+}
+
+.position-filter-element {
+	cursor: pointer;
+    background-color: white;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    height: 3em;
+    width: 6em;
+    margin: 1em;
+    border: none;
+    user-select: none;
+}
+
+.position-filter-element-text {
+	letter-spacing: .2em;
+	grid-row: 2;
+    grid-column: 2;
+}
+
+
+/*
+// ======================================
+// MEDIA QUERIES
+// ======================================
+*/
+
+@media (min-width: 600px) {
+
+
+    .position-filter-element-text {
+        font-size: 1.25em;
+    }
+
+    .position-filter-element {
+        height: 5em;
+        width: 8em;
+        margin: 2em;
+    }
+
+}
+
+
+@media (min-width: 800px) {
+
+
+    .position-filter-element-text {
+        font-size: 1.35em;
+    }
+
+    .position-filter-element {
+        margin: 3em;
+    }
+
+}

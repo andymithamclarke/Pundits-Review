@@ -1,0 +1,57 @@
+/*
+// ======================================
+// CSS to style review_score_circle
+// ======================================
+*/
+
+
+.review-score-circle {
+    border-radius: 2em;
+    width: 2em;
+    height: 2em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.35em;
+    justify-self: center;
+    grid-row: 2/4;
+    grid-column: 3/4;
+    align-self: center;
+}
+
+.green-circle {
+	background-color: #006f3c;
+}
+
+.yellow-circle {
+	background-color: #f9a73e;
+}
+
+.red-circle {
+	background-color: #bf212f;
+}
+
+.black-circle {
+    background-color: black;
+    opacity: .5;
+}
+
+
+
+
+/*
+// ======================================
+// MEDIA QUERIES
+// ======================================
+*/
+
+
+
+@media (min-width: 1000px) {
+
+
+    .review-score-circle {
+        font-size: 1.75em;
+    }
+
+}

@@ -1,0 +1,125 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`ClubPage Tests ClubAgreeDisagree should render correctly 1`] = `
+<div
+  class="agree-disagree-wrapper"
+>
+  <div
+    class="agree-disagree-button-container"
+  >
+    <p
+      class="agree-disagree-heading-text body-text-light"
+    >
+      AGREE
+    </p>
+    <button
+      class="agree-disagree-button"
+      id="agree-button"
+    >
+      <span
+        class="agree-disagree-icon fa fa-check"
+      />
+    </button>
+    <span />
+  </div>
+  <div
+    class="agree-disagree-button-container"
+  >
+    <p
+      class="agree-disagree-heading-text body-text-light"
+    >
+      DISAGREE
+    </p>
+    <button
+      class="agree-disagree-button"
+      id="disagree-button"
+    >
+      <span
+        class="agree-disagree-icon fa fa-times"
+      />
+    </button>
+    <span />
+  </div>
+</div>
+`;
+
+exports[`ClubPage Tests ClubInfoContainer should render correctly 1`] = `
+<Router
+  history={
+    Object {
+      "action": "POP",
+      "block": [Function],
+      "createHref": [Function],
+      "go": [Function],
+      "goBack": [Function],
+      "goForward": [Function],
+      "length": 1,
+      "listen": [Function],
+      "location": Object {
+        "hash": "",
+        "pathname": "/",
+        "search": "",
+        "state": undefined,
+      },
+      "push": [Function],
+      "replace": [Function],
+    }
+  }
+>
+  <Provider
+    store={
+      Object {
+        "dispatch": [Function],
+        "getState": [Function],
+        "replaceReducer": [Function],
+        "subscribe": [Function],
+        Symbol(observable): [Function],
+      }
+    }
+  >
+    <ClubInfoContainer />
+  </Provider>
+</Router>
+`;
+
+exports[`ClubPage Tests ClubPage should render correctly 1`] = `
+<div
+  class="empty-page-wrapper"
+>
+  <p
+    class="no-results-text body-text-light"
+  >
+    It looks like you haven't selected a club 
+  </p>
+  <div
+    class="dividing-line background-dark"
+  />
+  <p
+    class="no-results-sub-text body-text-light"
+  >
+    Head back to the homepage to make a new search for a club
+  </p>
+  <a
+    class="react-link empty-page-home-link body-text-light"
+    href="/"
+  >
+    HOME
+  </a>
+</div>
+`;
+
+exports[`ClubPage Tests ClubPlayerList should render correctly 1`] = `<span />`;
+
+exports[`ClubPage Tests ClubPlayerListPlayerItem should render correctly 1`] = `
+<a
+  class="club-player-list-player-item-container react-link"
+  href="/players/undefined"
+>
+  <p
+    class="club-player-list-player-item-name body-text-light"
+  />
+  <div
+    class="review-score-circle body-text-light white-text background-light"
+  />
+</a>
+`;

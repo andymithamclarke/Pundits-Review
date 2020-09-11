@@ -1,0 +1,76 @@
+/*
+// ======================================
+// CSS for How Page Body Text Component 
+// ======================================
+*/
+
+
+.how-page-body-text-wrapper {
+	display: flex;
+	width: 80%;
+	align-items: center;
+	justify-content: center;
+}
+
+
+.how-page-body-text {
+	font-size: .85em;
+	letter-spacing: .05em;
+	text-align: center;
+}
+
+
+
+/*
+// ======================================
+// MEDIA QUERIES
+// ======================================
+*/
+
+@media (min-width: 600px) {
+
+
+	.how-page-body-text-wrapper {
+	
+		width: 70%;
+
+	}
+
+	.how-page-body-text {
+		font-size: 1em;
+		padding: .5em 0;
+	}
+
+}
+
+
+@media (min-width: 900px) {
+
+	.how-page-body-text-wrapper {
+	
+		width: 60%;
+
+	}
+
+	.how-page-body-text {
+		font-size: 1.15em;
+		padding: 1em 0;
+	}
+
+}
+
+
+
+@media (min-width: 1200px) {
+
+	.how-page-body-text-wrapper {
+	
+		width: 50%;
+
+	}
+
+	.how-page-body-text {
+		padding: 1.5em 0;
+	}
+
+}

@@ -1,0 +1,49 @@
+/*
+// ======================================
+// CSS for Blog Date Component 
+// ======================================
+*/
+
+.blog-date-wrapper {
+    padding: 2em 0;
+}
+
+.blog-date-text {
+	font-size: .75em;
+	letter-spacing: .2em;
+	text-align: center;
+}
+
+
+/*
+// ======================================
+// MEDIA QUERIES
+// ======================================
+*/
+
+
+
+@media (min-width: 750px) {
+
+	.blog-date-text {
+		
+		font-size: 1em;
+
+	}
+}
+
+
+
+@media (min-width: 1200px) {
+
+	.blog-date-text {
+		
+		font-size: 1.5em;
+
+	}
+
+
+	.blog-date-wrapper {
+	    padding: 4em 0;
+	}
+}

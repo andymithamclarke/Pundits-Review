@@ -1,0 +1,280 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Global Component Tests EmptyPlayerClubPage should render correctly 1`] = `
+<div
+  class="empty-page-wrapper"
+>
+  <p
+    class="no-results-text body-text-light"
+  >
+    It looks like you haven't selected a  
+  </p>
+  <div
+    class="dividing-line background-dark"
+  />
+  <p
+    class="no-results-sub-text body-text-light"
+  >
+    Head back to the homepage to make a new search for a 
+  </p>
+  <a
+    class="react-link empty-page-home-link body-text-light"
+    href="/"
+  >
+    HOME
+  </a>
+</div>
+`;
+
+exports[`Global Component Tests Footer should render correctly 1`] = `
+<Router
+  history={
+    Object {
+      "action": "POP",
+      "block": [Function],
+      "createHref": [Function],
+      "go": [Function],
+      "goBack": [Function],
+      "goForward": [Function],
+      "length": 1,
+      "listen": [Function],
+      "location": Object {
+        "hash": "",
+        "pathname": "/",
+        "search": "",
+        "state": undefined,
+      },
+      "push": [Function],
+      "replace": [Function],
+    }
+  }
+>
+  <Provider
+    store={
+      Object {
+        "dispatch": [Function],
+        "getState": [Function],
+        "replaceReducer": [Function],
+        "subscribe": [Function],
+        Symbol(observable): [Function],
+      }
+    }
+  >
+    <Footer />
+  </Provider>
+</Router>
+`;
+
+exports[`Global Component Tests Hamburger should render correctly 1`] = `
+<div
+  class="hamburger-container"
+  role="button"
+  tabindex="0"
+>
+  <span
+    class="hamburger-bar background-light"
+    id="top-hamburger-bar"
+  />
+  <span
+    class="hamburger-bar background-light"
+    id="middle-hamburger-bar"
+  />
+  <span
+    class="hamburger-bar background-light"
+    id="bottom-hamburger-bar"
+  />
+</div>
+`;
+
+exports[`Global Component Tests Loading should render correctly 1`] = `
+<div
+  class="loading-screen-wrapper"
+>
+  <p
+    class="loading-screen-text body-text-light"
+  >
+    LOADING
+  </p>
+</div>
+`;
+
+exports[`Global Component Tests NoResults should render correctly 1`] = `
+<div
+  class="no-results-wrapper"
+>
+  <p
+    class="no-results-text body-text-light"
+  >
+    We couldn't find any  matching " "
+  </p>
+  <div
+    class="dividing-line background-dark"
+  />
+  <p
+    class="no-results-sub-text body-text-light"
+  >
+    It doesn't look like we have data this week for ' '. Try looking under 'ALL WEEKS' to see if we have older results matching your search.
+  </p>
+</div>
+`;
+
+exports[`Global Component Tests PageNotFound should render correctly 1`] = `
+<div
+  class="empty-page-wrapper"
+>
+  <p
+    class="no-results-text body-text-light"
+  >
+    URMM ... NOTHING TO SEE HERE
+  </p>
+  <div
+    class="dividing-line background-dark"
+  />
+  <p
+    class="no-results-sub-text body-text-light"
+  >
+    Tip: Use the filter on the 
+    <a
+      class="react-link black-text opaque-link"
+      href="/playerrankings"
+    >
+      player rankings page
+    </a>
+     to filter players by club, nationality & position.
+  </p>
+  <a
+    class="react-link empty-page-home-link body-text-light"
+    href="/"
+  >
+    HOME
+  </a>
+</div>
+`;
+
+exports[`Global Component Tests SideMenu should render correctly 1`] = `
+<div
+  class="background-dark"
+  id="side-menu-container"
+>
+  <div
+    class="side-menu-text-container"
+  >
+    <a
+      class="body-text-light side-menu-text white-text react-link"
+      href="/"
+    >
+      HOME
+    </a>
+    <a
+      class="body-text-light side-menu-text white-text react-link"
+      href="/playerrankings"
+    >
+      PLAYER RANKINGS
+    </a>
+    <a
+      class="body-text-light side-menu-text white-text react-link"
+      href="/howitworks"
+    >
+      HOW IT WORKS
+    </a>
+    <a
+      class="body-text-light side-menu-text white-text react-link"
+      href="/blog"
+    >
+      PUNDITS REVIEW BLOG
+    </a>
+  </div>
+  <div
+    class="side-menu-logo-container"
+  >
+    <a
+      class="heading-text side-menu-logo white-text react-link"
+      href="/"
+    >
+      PR
+    </a>
+  </div>
+</div>
+`;
+
+exports[`Global Component Tests TopMenu should render correctly 1`] = `
+<div
+  class="nav-wrapper"
+>
+  <div
+    class="background-dark"
+    id="side-menu-container"
+  >
+    <div
+      class="side-menu-text-container"
+    >
+      <a
+        class="body-text-light side-menu-text white-text react-link"
+        href="/"
+      >
+        HOME
+      </a>
+      <a
+        class="body-text-light side-menu-text white-text react-link"
+        href="/playerrankings"
+      >
+        PLAYER RANKINGS
+      </a>
+      <a
+        class="body-text-light side-menu-text white-text react-link"
+        href="/howitworks"
+      >
+        HOW IT WORKS
+      </a>
+      <a
+        class="body-text-light side-menu-text white-text react-link"
+        href="/blog"
+      >
+        PUNDITS REVIEW BLOG
+      </a>
+    </div>
+    <div
+      class="side-menu-logo-container"
+    >
+      <a
+        class="heading-text side-menu-logo white-text react-link"
+        href="/"
+      >
+        PR
+      </a>
+    </div>
+  </div>
+  <div
+    class="top-menu-container background-dark top-menu-height"
+  >
+    <div
+      class="hamburger-container"
+      role="button"
+      tabindex="0"
+    >
+      <span
+        class="hamburger-bar background-light"
+        id="top-hamburger-bar"
+      />
+      <span
+        class="hamburger-bar background-light"
+        id="middle-hamburger-bar"
+      />
+      <span
+        class="hamburger-bar background-light"
+        id="bottom-hamburger-bar"
+      />
+    </div>
+    <a
+      class="react-link"
+      href="/"
+    >
+      <p
+        class="white-text heading-text logo"
+      >
+        Pundits Review
+      </p>
+    </a>
+  </div>
+</div>
+`;

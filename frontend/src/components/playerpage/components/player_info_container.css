@@ -1,0 +1,144 @@
+/*
+// ======================================
+// CSS for the Player Info container on the PLAYER PAGE
+// ======================================
+*/
+
+
+.player-info-container-wrapper {
+	display: grid;
+    grid-template-columns: repeat(6,1fr);
+    grid-template-rows: repeat(5,1fr);
+    grid-gap: .5em;
+    width: 90vw;
+    padding: 2em 0;
+    align-items: center;
+    margin-top: 7.5vh;
+}
+
+.player-page-player-shirt {
+	grid-row: 2/6;
+    grid-column: 1/3;
+    width: 8em;
+    height: 9em;
+    align-self: center;
+}
+
+.player-page-player-info-name {
+	grid-row: 1/3;
+    grid-column: 3/7;
+    font-size: 1.25em;
+}
+
+.player-page-player-info-position {
+	grid-row: 3;
+	grid-column: 4/7;
+	font-size: 1em;
+	margin-left: 1em;
+}
+
+.player-page-player-info-club-text {
+	grid-row: 4;
+	grid-column: 4/7;
+	font-size: 1em;
+	color: black;
+	margin-left: 1em;
+}
+
+.player-page-player-info-nationality-text {
+	grid-row: 5;
+	grid-column: 4/7;
+	font-size: 1em;
+	margin-left: 1em;
+}
+
+
+.flag-icon-player-page-info-container {
+	font-size: 1.25em;
+    grid-row: 5;
+    grid-column: 3;
+    justify-self: center;
+}
+
+.club-badge-player-page-info-container {
+	width: 2em;
+    height: 2em;
+    grid-row: 4;
+    grid-column: 3;
+}
+
+
+/*
+// ======================================
+// MEDIA QUERIES
+// ======================================
+*/
+
+
+
+@media (min-width: 600px) {
+
+	.player-info-container-wrapper {
+		width: 75vw;
+	}
+
+	.player-page-player-info-name {
+		font-size: 1.5em;
+	}
+
+	.player-page-player-shirt {
+		width: 10em;
+    	height: 11em;
+	}
+}
+
+
+@media (min-width: 800px) {
+
+	.player-info-container-wrapper {
+		width: 55vw !important;
+		padding: 3em 0;
+		grid-gap: 1em;
+	}
+
+
+	.player-page-player-shirt {
+		width: 12em;
+    	height: 13em;
+	}
+}
+
+
+@media (min-width: 1000px) {
+
+
+	.player-page-player-info-name {
+		font-size: 2em;
+	}
+
+
+	.player-page-player-info-club-text, .player-page-player-info-nationality-text, .player-page-player-info-position {
+		font-size: 1.25em;
+	}
+
+	.flag-icon-player-page-info-container {
+		font-size: 1.5em;
+	}
+
+
+	.club-badge-player-page-info-container {
+		width: 3em;
+	    height: 3em;
+	}
+
+}
+
+@media (min-width: 1400px) {
+
+	.player-info-container-wrapper {
+		width: 35vw !important;
+		padding: 4em 0;
+		grid-gap: 1.5em;
+	}
+
+}

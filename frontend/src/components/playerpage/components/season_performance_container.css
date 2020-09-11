@@ -1,0 +1,128 @@
+/*
+// ======================================
+// CSS for Season Performance Container
+// ======================================
+*/
+
+.season-performance-wrapper {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	padding: 1em 0;
+	width: 90vw;
+	height: 50vh;
+	margin-bottom: 2em;
+}
+
+.season-performance-title {
+	font-size: 1.25em;
+	margin-bottom: 2em;
+}
+
+.graph-description-text {
+	font-size: .5em;
+	letter-spacing: .15em;
+	margin-top: 5em;
+	
+}
+
+#season-performance-graph-canvas {
+	width: 80%;
+    height: 70%;
+}
+
+
+
+/*
+// ======================================
+// MEDIA QUERIES
+// ======================================
+*/
+
+@media (min-width: 650px) {
+
+	.season-performance-wrapper {
+		width: 75vw;
+		height: 55vh; 
+	}
+
+
+	.graph-description-text {
+		font-size: .65em
+	}
+
+}
+
+
+@media (min-width: 800px) {
+
+
+	.season-performance-title {
+
+		font-size: 1.5em;
+
+	}
+
+}
+
+
+
+@media (min-width: 850px) {
+
+	.season-performance-wrapper {
+		padding: 2em 0;
+		width: 70vw;
+		height: 60vh;
+		
+	}
+
+	.graph-description-text {
+		font-size: .75em
+	}
+
+}
+
+
+
+
+@media (min-width: 1000px) {
+
+	.season-performance-title {
+
+		font-size: 1.75em;
+
+	}
+
+	.graph-description-text {
+		font-size: .8em
+	}
+
+	.season-performance-wrapper {
+		padding: 3em 0;
+		width: 65vw;
+		height: 65vh;
+		
+	}
+
+}
+
+
+@media (min-width: 1200px) {
+
+	.season-performance-wrapper {
+		padding: 4em 0;
+		width: 60vw;
+		
+	}
+
+}
+
+
+@media (min-width: 1400px) {
+
+
+	.season-performance-wrapper {
+		width: 50vw;	
+	}
+
+}

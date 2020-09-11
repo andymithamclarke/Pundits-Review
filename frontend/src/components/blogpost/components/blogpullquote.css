@@ -1,0 +1,80 @@
+/*
+// ======================================
+// CSS for Blog Pull Quote Component 
+// ======================================
+*/
+
+.blog-pull-quote-text {
+
+	font-size: 1em;
+    letter-spacing: .125em;
+    color: darkgrey;
+    line-height: 2em;
+    width: 70vw;
+    padding: 2em 0;
+
+}
+
+
+
+/*
+// ======================================
+// MEDIA QUERIES
+// ======================================
+*/
+
+
+
+@media (min-width: 650px) {
+
+	.blog-pull-quote-text {
+		
+		font-size: 1.15em;
+		padding: 3em 0;
+
+	}
+}
+
+
+
+@media (min-width: 750px) {
+
+	.blog-pull-quote-text {
+		
+		width: 60vw;
+
+	}
+}
+
+
+
+@media (min-width: 1100px) {
+
+	.blog-pull-quote-text {
+		
+		font-size: 1.25em;
+		width: 50vw;
+
+	}
+}
+
+
+
+@media (min-width: 1400px) {
+
+	.blog-pull-quote-text {
+		
+		width: 45vw;
+
+	}
+}
+
+
+@media (min-width: 1600px) {
+
+	.blog-pull-quote-text {
+		
+		width: 40vw;
+
+	}
+}

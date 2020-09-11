@@ -1,0 +1,40 @@
+/*
+// ======================================
+// CSS for live search dropdown list
+// ======================================
+*/
+
+
+.search-dropdown-wrapper {
+
+	max-height: 175px;
+	overflow: scroll;
+	display: flex;
+	flex-direction: column;
+	border-radius: 0 0 1em 1em;
+
+}
+
+.inner-dropdown-container {
+	cursor: pointer;
+	color: black;
+}
+
+.inner-dropdown-container:hover {
+	background-color: lightgrey !important;
+}
+
+.search-dropdown-text {
+	margin: 1em 1em;
+	font-size: .8em;
+}
+
+
+
+
+@media (min-width: 800px) {
+
+    .search-dropdown-text  {
+        font-size: .9em;
+    }
+}

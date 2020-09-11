@@ -1,0 +1,101 @@
+/*
+// ======================================
+// CSS for Our Sources section of How it works page
+// ======================================
+*/
+
+
+
+.our-sources-wrapper {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	padding: 2em 0;
+}
+
+.our-sources-title {
+	margin: 2em 0;
+	letter-spacing: .2em;
+	font-size: 1.5em;
+}
+
+
+.our-sources-subtitle {
+	margin: 2em 0;
+    letter-spacing: .05em;
+    font-size: .85em;
+    width: 80%;
+    text-align: center;
+}
+
+.view-sources-button {
+	margin: 1em 0;
+	cursor: pointer;
+	letter-spacing: .2em;
+	font-size: .85em;
+	border: solid 1px black;
+	background-color: transparent;
+	padding: 1em;
+}
+
+
+
+/*
+// ======================================
+// MEDIA QUERIES
+// ======================================
+*/
+
+@media (min-width: 600px) {
+
+    .our-sources-title {
+		font-size: 1.75em;
+	}
+
+	.our-sources-subtitle {
+	    font-size: 1em;
+	    width: 70%;
+	}
+
+
+}
+
+
+@media (min-width: 900px) {
+
+    .our-sources-title {
+		font-size: 2em;
+	}
+
+	.our-sources-subtitle {
+	    width: 60%;
+	}
+
+	.view-sources-button {
+		font-size: 1em;
+		padding: 1.25em;
+	}
+
+
+}
+
+
+
+@media (min-width: 1200px) {
+
+    .our-sources-title {
+		font-size: 2.5em;
+	}
+
+	.our-sources-subtitle {
+	    font-size: 1.15em;
+	    width: 50%;
+	}
+
+
+}
+
+
+
+

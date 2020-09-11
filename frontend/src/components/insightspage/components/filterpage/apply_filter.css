@@ -1,0 +1,24 @@
+/*
+// ======================================
+// CSS for Apply Filter Button
+// ======================================
+*/
+
+.apply-filter-button-wrapper {
+	width: 100vw;
+	position: fixed;
+	bottom: 10vh;
+	display: flex;
+	justify-content: center;
+}
+
+.apply-filter-button {
+	background-color: white;
+    bottom: 10vh;
+    border: 1px solid black;
+    box-shadow: 4px 4px 10px grey;
+    letter-spacing: .2em;
+    padding: .75em;
+    cursor: pointer;
+
+}

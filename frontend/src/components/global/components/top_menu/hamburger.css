@@ -1,0 +1,74 @@
+/*
+// ======================================
+// This file contains the CSS for the hamburger menu
+// ======================================
+*/
+
+
+.hamburger-container {
+  cursor: pointer;
+	position: absolute;
+    left: 3vw;
+    width: 40px;
+  	height: 32px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.hamburger-bar {
+	width: 36px;
+  height: 4px;
+  border-radius: .05em;
+  transform-origin: 4px 0px;
+ 	transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0),
+              opacity 0.55s ease;
+}
+
+#middle-hamburger-bar {
+	width: 30px;
+}
+
+
+
+/*
+// ======================================
+// REFERENCED CODE
+
+Code to animate hamburger bars adapted from codepen by Eric Terwan, 24 Nov, 2015
+https://codepen.io/erikterwan/pen/EVzeRP
+Code adapted to scale for my specific purposes
+
+// ======================================
+*/
+
+.hamburger-bar:first-child {
+  transform-origin: 0% 0%;
+}
+
+.hamburger-bar:nth-last-child(2) {
+  transform-origin: 0% 100%;
+}
+
+.hamburger-container span.isactive {
+  opacity: 1;
+  transform: rotate(-45deg) translate(-2px, -1px);
+
+}
+
+/*
+ * Hide the middle one.
+ */
+
+.hamburger-container span.isactive:nth-last-child(2) {
+  opacity: 0;
+  transform: rotate(0deg) scale(0.2, 0.2);
+}
+
+/*
+ * last one should go the other direction
+ */
+.hamburger-container span.isactive:nth-last-child(3) {
+  transform: rotate(45deg) translate(0, -1px);
+}
+

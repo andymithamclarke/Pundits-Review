@@ -1,0 +1,47 @@
+/*
+// ======================================
+// CSS for the Club Player List Component
+// ======================================
+*/
+
+.club-player-list-wrapper {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	width: 95vw;
+	padding: 1em 0;
+
+}
+
+.club-player-list-title {
+	font-size: 1.25em;
+	margin: 2em 0;
+}
+
+
+
+/*
+// ======================================
+// MEDIA QUERIES
+// ======================================
+*/
+
+@media (min-width: 800px) {
+
+	.club-player-list-title {
+		font-size: 1.5em;
+		margin: 3em 0;
+	}
+
+}
+
+
+
+@media (min-width: 1000px) {
+
+	.club-player-list-title {
+		font-size: 1.75em;
+
+	}
+
+}

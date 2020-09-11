@@ -1,0 +1,356 @@
+/*
+// ======================================
+// CSS for card item component - individual player container (INSIGHTS PAGE)
+// ======================================
+*/
+
+
+.insights-card-item-wrapper {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	height: min-content;
+	width: 70vw;
+	box-shadow: 4px 4px 10px grey;
+	justify-content: space-between;
+}
+
+.insights-card-item-header-container {
+	display: flex;
+	width: 100%;
+	justify-content: space-between;
+	height: 5%;
+	align-items: center;
+    padding: .5em 0;
+}
+
+.insights-card-item-player-name-header {
+	font-size: .65em;
+	margin-left: 1em;
+	letter-spacing: .25em;
+}
+
+.insights-card-item-rank-header {
+	font-size: .65em;
+	margin-right: 1.5em;
+	letter-spacing: .25em;
+}
+
+.insights-card-item-player-image-container {
+	background-color: white;
+	display: grid;
+	grid-template-columns: repeat(8,1fr);
+    grid-template-rows: repeat(3,1fr);
+    height: 20vh;
+    min-height: 120px;
+    width: 100%;
+}
+
+
+.insights-card-club-badge  {
+	grid-row: 1/2;
+    grid-column: 1/3;
+    align-self: center;
+    width: 3em;
+    height: 3em;
+    margin: .1em;
+}
+
+.insights-card-player-shirt {
+	grid-row: 2/4;
+    grid-column: 3/7;
+    align-self: flex-end;
+    justify-self: center;
+    width: 6em;
+    height: 6em;
+    z-index: 60;
+}
+
+.insights-card-player-name-inner {
+	grid-row: 2;
+    grid-column: 1/9;
+    justify-self: center;
+    align-self: center;
+    color: #EBECED;
+    letter-spacing: .25em;
+    font-size: 1.5em;
+    text-align: center;
+    z-index: 50;
+    overflow: auto;
+}
+
+.insights-card-club-name {
+	grid-row: 1/2;
+    grid-column: 3/9;
+    height: min-content;
+    justify-self: flex-end;
+    align-self: flex-start;
+    margin: 1em;
+    font-size: .5em;
+    letter-spacing: .2em;
+    padding: .5em;
+    background-color: black;
+}
+
+
+.insights-card-item-review-score-container {
+	width: 100%;
+    /* height: 40%; */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    padding: .5em 0;
+
+}
+
+.insights-card-item-score-category {
+	letter-spacing: .2em;
+	font-size: .75em;
+}
+
+.insights-card-item-score-category-score  {
+	letter-spacing: .25em;
+    padding: .5em 0;
+}
+
+.insights-card-item-positive-negative-neutral-grid-container {
+	display: grid;
+	grid-template-columns: repeat(6,1fr);
+    grid-template-rows: repeat(4,1fr);
+    align-items: center;
+    grid-gap: .5em;
+    width: 50%;
+    font-size: .55em;
+    letter-spacing: .05em;
+}
+
+.insights-card-grid-title {
+	grid-row: 1;
+    grid-column: 1/7;
+    justify-self: center;
+    font-size: .85em;
+    letter-spacing: .2em;
+    margin-bottom: .5em;
+}
+
+.insights-card-positive-text {
+	grid-row: 2;
+	grid-column: 3/7;
+}
+
+.insights-card-negative-text {
+	grid-row: 3;
+	grid-column: 3/7;
+}
+
+.insights-card-total-text {
+	grid-row: 4;
+	grid-column: 3/7;
+}
+
+.insights-card-positive-score {
+	grid-row: 2;
+	grid-column: 1;
+	justify-self: right;
+}
+
+.insights-card-negative-score {
+	grid-row: 3;
+	grid-column: 1;
+	justify-self: right;
+}
+
+.insights-card-total-score {
+	grid-row: 4;
+	grid-column: 1;
+	justify-self: right;
+}
+
+.insights-card-item-button-container {
+	display: flex;
+	width: 100%;
+	justify-content: flex-start;
+	height: 10%;
+	align-items: center;
+}
+
+.insights-card-item-view-player-button {
+    display: flex;
+    margin: 1em .5em;
+    border: 1px solid black;
+    letter-spacing: .2em;
+    font-size: .5em;
+    align-items: center;
+    padding: .75em 1em;
+    color: black;
+}
+
+
+
+/*
+// ======================================
+// MEDIA QUERIES
+// ======================================
+*/
+
+
+@media (min-width: 550px) {
+
+    .insights-card-item-positive-negative-neutral-grid-container {
+        width: 40%;
+    	font-size: .65em;
+    }
+
+
+    
+
+}
+
+
+@media (min-width: 600px) {
+
+    .insights-card-item-wrapper {
+        width: 60vw;
+    }
+
+}
+
+
+
+@media (min-width: 700px) {
+
+    .insights-card-item-wrapper {
+        width: 50vw;
+    }
+
+}
+
+
+@media (min-width: 800px) {
+
+    .insights-card-item-positive-negative-neutral-grid-container {
+        width: 40%;
+    	font-size: .65em;
+    }
+
+    .insights-card-item-wrapper {
+
+    	width: 45vw;
+    }
+
+
+    .insights-card-player-shirt {
+        width: 7.75em;
+        height: 7.75em;
+    }
+
+}
+
+
+
+@media (min-width: 1000px) {
+
+
+    .insights-card-item-wrapper {
+
+    	width: 35vw;
+    }
+
+
+}
+
+
+@media (min-width: 1200px) {
+
+
+    .insights-card-item-wrapper {
+		height: 50vh;
+    	width: 45vw;
+        min-height: 425px;
+    	font-size: 1.1em;
+    }
+
+    .insights-card-item-player-image-container {
+        height: 25vh;
+        min-height: 200px;
+    }
+
+
+    .insights-card-player-shirt {
+        width: 9em;
+        height: 9em;
+    }
+
+    .insights-card-player-name-inner {
+        font-size: 2.25em;
+    }
+
+
+    .insights-card-item-player-name-header, .insights-card-item-rank-header {
+        font-size: .85em;
+    }
+
+    .insights-card-club-name {
+        
+        font-size: .75em;
+    }
+
+    .insights-card-item-positive-negative-neutral-grid-container {
+        font-size: .75em;
+    }
+
+    .insights-card-item-score-category {
+        font-size: .85em;
+    }
+
+    .insights-card-item-view-player-button {
+        font-size: .65em;
+    }
+
+
+}
+
+
+
+@media (min-width: 1400px) {
+
+
+    .insights-card-item-wrapper {
+		height: 55vh;
+        min-height: 450px;
+    	width: 40vw;
+    	font-size: 1.2em;
+    }
+
+
+    .insights-card-item-player-image-container {
+        height: 30vh;
+    }
+
+}
+
+
+
+@media (min-width: 1600px) {
+
+
+    .insights-card-item-wrapper {
+        width: 35vw;
+    }
+
+}
+
+
+
+@media (min-width: 1600px) {
+
+
+    .insights-card-item-wrapper {
+        width: 30vw;
+    }
+
+}
+
+
+

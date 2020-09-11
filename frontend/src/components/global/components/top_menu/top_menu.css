@@ -1,0 +1,22 @@
+/*
+// ======================================
+// This file contains the CSS for the top menu container used globally
+// ======================================
+*/
+
+
+
+.top-menu-container {
+	position: fixed;
+    top: 0;
+    width: 100vw;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    z-index: 100;
+}
+
+.logo {
+	font-size: 1.25em;
+	letter-spacing: .1em;
+}

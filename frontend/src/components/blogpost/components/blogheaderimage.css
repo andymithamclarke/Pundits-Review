@@ -1,0 +1,58 @@
+/*
+// ======================================
+// CSS for Blog Header Image
+// ======================================
+*/
+
+
+.blog-header-image {
+	width: 60vw;
+    height: 50vh;
+    background-position: top;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border: solid black 5px;
+}
+
+
+
+
+/*
+// ======================================
+// MEDIA QUERIES
+// ======================================
+*/
+
+
+
+@media (min-width: 750px) {
+
+	.blog-header-image {
+		
+		width: 50vw;
+
+	}
+}
+
+
+
+@media (min-width: 1000px) {
+
+	.blog-header-image {
+		
+		width: 40vw;
+
+	}
+}
+
+
+
+@media (min-width: 1400px) {
+
+	.blog-header-image {
+		
+		width: 30vw;
+    	height: 60vh;
+
+	}
+}

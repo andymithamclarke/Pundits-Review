@@ -1,0 +1,66 @@
+/*
+// ======================================
+// CSS for Blog Home Component 
+// ======================================
+*/
+
+
+.blog-page-wrapper {
+	margin-top: 10vh;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+
+
+.blog-page-title {
+	font-size: 1.5em;
+	letter-spacing: .1em;
+	margin-bottom: 2em;
+}
+
+.blog-page-description {
+	font-size: 1.25em;
+    letter-spacing: .2em;
+}
+
+
+
+/*
+// ======================================
+// MEDIA QUERIES
+// ======================================
+*/
+
+
+
+@media (min-width: 550px) {
+
+	.blog-page-title {
+		
+		font-size: 2em;
+
+	}
+
+	.blog-page-description {
+		font-size: 1.5em;
+	    
+	}
+}
+
+
+
+@media (min-width: 1000px) {
+
+	.blog-page-title {
+		
+		font-size: 2.5em;
+
+	}
+
+	.blog-page-description {
+		font-size: 2em;
+	    
+	}
+}

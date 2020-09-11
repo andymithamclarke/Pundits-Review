@@ -1,0 +1,117 @@
+/*
+// ======================================
+// CSS for TOP/BOTTOM toggle menu
+// ======================================
+*/
+
+
+.insights-top-bottom-control-wrapper {
+
+	display: flex;
+	flex-direction: column;
+	
+}
+
+.top-bottom-toggle-wrapper {
+	display: flex;
+	justify-content: center;
+	align-self: center;
+    width: 80vw;
+    margin-bottom: .5em;
+}
+
+.top-bottom-inner-container {
+	width: 50%;
+	border-bottom: solid #dadada 1px;
+	color: #dadada;
+	cursor: pointer;
+	padding: 1em 1em;
+	display: flex;
+	transition: border-bottom 1s ease,
+				color 1s ease;
+}
+
+#top-toggle {
+	justify-content: flex-end;
+}
+
+.insights-toggle-active {
+	border-bottom: solid black 1px;
+	color: black;
+}
+
+.top-bottom-menu-text {
+	font-size: 1.75em;
+	letter-spacing: .1em;
+	margin: 0 1em;
+
+}
+
+
+
+/*
+// ======================================
+// MEDIA QUERIES
+// ======================================
+*/
+
+@media (min-width: 550px) {
+
+
+    .top-bottom-menu-text {
+		font-size: 2em;
+	}
+
+}
+
+
+@media (min-width: 600px) {
+
+
+    .top-bottom-toggle-wrapper {
+		width: 70vw;
+	}
+
+}
+
+
+
+@media (min-width: 800px) {
+
+
+    .top-bottom-toggle-wrapper {
+		width: 60vw;
+	}
+
+}
+
+
+
+@media (min-width: 1200px) {
+
+
+    .top-bottom-toggle-wrapper {
+		width: 50vw;
+	}
+
+
+	.top-bottom-menu-text {
+		font-size: 2.25em;
+
+	}
+
+}
+
+
+
+@media (min-width: 1500px) {
+
+
+    .top-bottom-toggle-wrapper {
+		width: 40vw;
+	}
+
+
+}
+
+

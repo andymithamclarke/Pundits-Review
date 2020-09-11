@@ -1,0 +1,53 @@
+/*
+// ======================================
+// CSS for the Filter Button
+// ======================================
+*/
+
+.filter-button-container {
+	height: 2.5em;
+	width: 100%;
+	display: flex;
+	align-items: flex-start;
+	z-index: 1;
+}
+
+.filter-button {
+	display: flex;
+    align-items: center;
+    justify-content: center;
+    border: solid black 1px;
+    width: 34.5%;
+    height: 100%;
+    font-size: .75em;
+    letter-spacing: .2em;
+    background-color: white;
+    cursor: pointer;
+}
+
+
+/*
+// ======================================
+// MEDIA QUERIES
+// ======================================
+*/
+
+
+
+@media (min-width: 550px) {
+
+    .filter-button {
+        font-size: .85em
+    }
+
+}
+
+
+@media (min-width: 1200px) {
+
+    .filter-button {
+        font-size: .9em;
+        letter-spacing: .25em;
+    }
+
+}
