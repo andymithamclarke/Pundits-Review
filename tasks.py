@@ -2,8 +2,6 @@
 # File contains tasks to be scheduled on Heroku Server
 # ================
 
-#
-
 # SCHEDULED TASKS:
 # ---------------
 # This file is scheduled to run daily on the Heroku server
@@ -31,7 +29,7 @@ from main.models import VisitedURL
 # =======================================
 
 # Crawler temporarily paused
-if datetime.datetime.today().weekday() == 9:
+if datetime.datetime.today().weekday() == 0:
 
 	# =============
 	#  TASK 1 - crawl

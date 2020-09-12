@@ -1,6 +1,6 @@
 // ======================================
 // PLAYERS Agree / Disagree Button Component allowing users to interact with player / club pages depending on their opinion
-// Will post to the DB with number of agrees / disagrees
+// Will 'put' to the DB with number of agrees / disagrees
 // ======================================
 
 
@@ -40,26 +40,26 @@ export class AgreeDisagreeContainer extends Component {
 
 	componentDidMount() {
 
+		// Retrieve specific player agree & disagree scores
 		this.props.setPlayersAgreeDisagreeScore(this.props.playerName)
 
 	}
 
 	_handleClickAgree(e) {
 
+		// Select player info
 		let currentPlayer = this.props.playersViewed[this.props.playersViewed.length - 1];
 
+		// Put update to DB
 		updatePlayersAgreeDisagreeScore(currentPlayer, true);
 
+		// Locally update score object
 		let newScoreObject = this.props.agreeDisagreeScores[this.props.agreeDisagreeScores.length -1];
 
 		newScoreObject.agree_score += 1;
 
+		// Update redux store with local update object
 		this.props.locallyUpdateAgreeDisagreeScore(newScoreObject);
-
-		// // Change Presentation of button
-		// const currentScore = parseInt(document.querySelector('#agree-score').innerHTML)
-		// const button = document.querySelector('#agree-score')
-		// button.innerHTML = currentScore + 1
 
 		// Disable the button
 		this.setState({
@@ -70,20 +70,19 @@ export class AgreeDisagreeContainer extends Component {
 
 	_handleClickDisagree(e) {
 
+		// Select player info
 		let currentPlayer = this.props.playersViewed[this.props.playersViewed.length - 1];
 
+		// Put update to DB
 		updatePlayersAgreeDisagreeScore(currentPlayer, false);
 
+		// Locally update score object
 		let newScoreObject = this.props.agreeDisagreeScores[this.props.agreeDisagreeScores.length -1];
 
 		newScoreObject.disagree_score += 1;
 
+		// Update redux store with local update object
 		this.props.locallyUpdateAgreeDisagreeScore(newScoreObject);
-
-		// // Change Presentaton of button
-		// const currentScore = parseInt(document.querySelector('#disagree-score').innerHTML)
-		// const button = document.querySelector('#disagree-score')
-		// button.innerHTML = currentScore + 1
 
 		// Disable the button
 		this.setState({

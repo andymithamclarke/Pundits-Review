@@ -26,6 +26,7 @@ import './blogpost.css';
 
 export const BlogPost = props => {
 
+	// Display loading screen until Promise resolved & blog post content has loaded
 	const { promiseInProgress } = usePromiseTracker();
 
 	let result;

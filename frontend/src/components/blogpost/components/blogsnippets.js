@@ -26,6 +26,7 @@ import './blogsnippets.css';
 
 export class BlogSnippetsWrapper extends Component {
 
+	// Set player in redux store according to player named in blog post DB entry
 	componentDidMount = () => {
 
 		if (this.props.playersViewed.length === 0) {
@@ -53,9 +54,10 @@ export class BlogSnippetsWrapper extends Component {
 
 		if (this.props.playersViewed.length) {
 
+			// Return the player db record associated with the specific date of the blog post
 			let snippets = setReviewSentencesSpecificDate(this.props.playersViewed[this.props.playersViewed.length - 1], this.props.specificDate);
 
-
+			// Render empty span if player name not supplied 
 			if (this.props.playerName !== '""') {
 
 				result = (

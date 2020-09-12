@@ -30,6 +30,8 @@ export class AgreeDisagreeScoreWrapper extends Component {
 
 	render() {
 
+
+		// Declare array choice according to club or player prop
 		let arrayChoice;
 
 		if (this.props.clubOrPlayer === 'club') {

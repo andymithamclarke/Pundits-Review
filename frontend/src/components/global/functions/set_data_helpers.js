@@ -1,13 +1,35 @@
 // ======================================
-// Helper Functions to set data depending on player/club in view
+// Helper Functions to set & manipulate data in app
 // ======================================
 
+
+
+// ===============
+// FUNCTION INDEX
+// ===============
+
+// 1. Set review score
+// 2. Set review sentences
+// 3. Set review sentences for a specific date
+// 4. Set CSS class of player flag
+// 5. Set CSS class of club badge
+// 6. Shuffle array
+// 7. Sort / Rank Array of objects by object value
+// 8. Delete specified item from array
+// 9. Pass player through position filter test
+// 10. Pass player through club filter test
+// 11. Pass player through nationality filter test
+// 12. Pass player through all filter tests
+// 13. Function to parse root url
+// 14. Return array of unique objects
+// 15. Function to calculate average score from scores array 
+// 16. Calculate total positive negative scores from an array of scores
+// 17. Return array value where date matches current date
+// 18. Return array value where date matches specific date
 
 // ===========
 // IMPORTS 
 // ===========
-
-
 
 // Local JS Imports
 import { previousMonday, localCrawlDate } from "../../constants/dates";
@@ -15,7 +37,8 @@ import { country_codes } from '../resources/ISO_COUNTRY_CODES';
 import { club_badges } from '../resources/club_badges';
 
 
-// Function to set review score
+
+// 1. Set review score
 
 export function setReviewScore(targetData, clubOrPlayer) {
 
@@ -39,6 +62,8 @@ export function setReviewScore(targetData, clubOrPlayer) {
 
 	if (latestReviewScore[0]) {
 
+		// Only return a score value if record meets the threshold of positive + negative greater than 3
+
 		if (latestReviewScore[0].n_positive + latestReviewScore[0].n_negative > 3) {
 			sentiment_score = Math.round(latestReviewScore[0].sentiment_score * 100)
 		} else {
@@ -56,7 +81,7 @@ export function setReviewScore(targetData, clubOrPlayer) {
 }
 
 
-// Function to set review sentences
+// 2. Set review sentences
 
 export function setReviewSentences(targetData, clubOrPlayer) {
 
@@ -84,7 +109,7 @@ export function setReviewSentences(targetData, clubOrPlayer) {
 	}
 }
 
-// Function to set review sentences for a specific date
+// 3. Set review sentences for a specific date
 
 export function setReviewSentencesSpecificDate(targetData, specificDate, clubOrPlayer) {
 
@@ -112,7 +137,8 @@ export function setReviewSentencesSpecificDate(targetData, specificDate, clubOrP
 	}
 }
 
-// Function to set player flag
+
+// 4. Set CSS class of player flag
 
 export function flagFinder(playerNationality) {
 
@@ -120,6 +146,7 @@ export function flagFinder(playerNationality) {
 
 	let playerNationalitySearchTerm = playerNationality
 
+	// Group UK nationalities together 
 	if (playerNationality == "England" || playerNationality == "Scotland" || playerNationality == "Northern Ireland" || playerNationality == "Wales") {
 
 		playerNationalitySearchTerm = "United Kingdom of Great Britain and Northern Ireland"
@@ -128,6 +155,7 @@ export function flagFinder(playerNationality) {
 	country_codes.forEach(function(country) {
 
 
+		// Dynamically set CSS class according to match with param nationality
 		if (country.name.toString() === playerNationalitySearchTerm) {
 
 			countryCode = "flag-icon-player-page-info-container flag-icon flag-icon-" + country["alpha-2"].toString().toLowerCase();
@@ -140,12 +168,13 @@ export function flagFinder(playerNationality) {
 }
 
 
-// Function to set player club badge
+// 5. Set CSS class of club badge
 
 export function badgeFinder(playerClub) {
 
 	let clubBadgeClassName;
 
+	// Dynamically set CSS class according to match with param playerClub
 	Object.keys(club_badges).forEach(function(club) {
 
 		if (playerClub.toString() === club.toString()) {
@@ -160,7 +189,7 @@ export function badgeFinder(playerClub) {
 
 
 
-// Function to shuffle array
+// 6. Shuffle array
 // Code taken from Stack Overflow post by community wiki / CoolAJ86 on Feb 22 2020
 // https://stackoverflow.com/questions/2450954/how-to-randomize-shuffle-a-javascript-array
 // Accessed August 13 2020
@@ -187,6 +216,7 @@ export function shuffleArray(array) {
 
 // End of referenced code
 
+// 7. Sort / Rank Array of objects by object value
 export function sortArray(list, propertyValue, reverse) {
 
 	// Code to sort array adapted from flaviocopes post on Dec 06 2018
@@ -203,14 +233,14 @@ export function sortArray(list, propertyValue, reverse) {
 }
 
 
-// Function to delete specified item from array
+// 8. Delete specified item from array
 export function deleteItemFromArray(list, item) {
 
 	return list.filter(element => element != item);
 }
 
 
-// Function to set position filter
+// 9. Pass player through position filter test
 function setPositionFilter(player, filterSettings) {
 
 	if (filterSettings.position.length) {
@@ -231,7 +261,7 @@ function setPositionFilter(player, filterSettings) {
 
 }
 
-// Function to set club filter
+// 10. Pass player through club filter test
 function setClubFilter(player, filterSettings) {
 
 	if (filterSettings.club.length) {
@@ -252,7 +282,7 @@ function setClubFilter(player, filterSettings) {
 
 }
 
-// Function to set nationality filter
+// 11. Pass player through nationality filter test
 function setNationalityFilter(player, filterSettings) {
 
 	if (filterSettings.nationality.length) {
@@ -272,7 +302,9 @@ function setNationalityFilter(player, filterSettings) {
 	return true;
 
 }
-// Function to set filter 
+
+
+// 12. Pass player through all filter tests
 export function setFilter(player, filterSettings) {
 
 	let positionFilterTest = setPositionFilter(player, filterSettings);
@@ -293,13 +325,19 @@ export function setFilter(player, filterSettings) {
 	}
 }
 
-// Function to get root url
+
+
+// 13. Function to parse root url
+// Code taken from stack overflow post 'How to extract the hostname portion of a URL in JavaScript' by danorton on Sep 6 2012
+// https://stackoverflow.com/questions/1368264/how-to-extract-the-hostname-portion-of-a-url-in-javascript
+// Accessed 01/09/2020
 export function getRootUrl(url) {
   return url.toString().replace(/^(.*\/\/[^\/?#]*).*$/,"$1");
 }
+// End of referenced code
 
 
-// Function to return array of unique objects 
+// 14. Return array of unique objects 
 // Code taken from Stack Overflow post by Mμ on Jun 17 2017
 // https://stackoverflow.com/questions/2218999/remove-duplicates-from-an-array-of-objects-in-javascript
 // Accessed Aug 16 2020 
@@ -312,11 +350,12 @@ export function uniqueArrayOfObjects(myData) {
  // End of referenced code
 
 
- // Function to calculate average score from scores array 
+ // 15. Function to calculate average score from scores array 
  export let calculateAvg = function(scoresArray) {
 
 	  let scoreCounter = 0;
 	  
+	  // Check that score object meets threshold before factoring it into avg score
 	  scoresArray.forEach(function(scoreItem) {
 
 	    if (scoreItem.sentiment_score > -1 && (scoreItem.n_negative + scoreItem.n_positive) > 5) {
@@ -343,7 +382,7 @@ export function uniqueArrayOfObjects(myData) {
 
 
 
- // Function to calculate  ---> total positive negative scores from an array of scores
+ // 16. Calculate total positive negative scores from an array of scores
  export let calculateSeasonScores = function(scoresArray) {
 
 	  let positiveCounter = 0;
@@ -364,7 +403,7 @@ export function uniqueArrayOfObjects(myData) {
 }
 
 
-// Function to return array value where date matches current date
+// 17. Return array value where date matches current date
 export function returnDateMatchArray(scoresArray) {
 
 	let correctDateArray = [];
@@ -380,7 +419,7 @@ export function returnDateMatchArray(scoresArray) {
 
 }
 
-
+// 18. Return array value where date matches specific date
 export function returnSpecificDateMatchArray(scoresArray, specificDate) {
 
 	let correctDateArray = [];

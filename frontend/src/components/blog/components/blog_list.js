@@ -26,8 +26,9 @@ import './blog_list.css';
 
 export const BlogListWrapper = props => {
 
-	const { promiseInProgress } = usePromiseTracker();
 
+	// Display Loading screen until promise has resolved
+	const { promiseInProgress } = usePromiseTracker();
 
 	let result;
 
@@ -84,6 +85,3 @@ const mapStateToProps = state => {
 
 
 export const BlogList = connect(mapStateToProps)(BlogListWrapper);
-
-
-

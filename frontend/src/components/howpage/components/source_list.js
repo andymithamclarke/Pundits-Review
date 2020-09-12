@@ -27,6 +27,7 @@ import './source_list.css';
 
 export const  SourceListWrapper = props => {
 
+	// Display loading component whilst promise resolves
 	const { promiseInProgress } = usePromiseTracker();
 
 	let result;

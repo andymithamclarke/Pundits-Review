@@ -1,7 +1,7 @@
 // ======================================
 // Contains an object to control settings on the insights page
 // Keys 	---> Insights Category
-// Values 	---> 
+// Values 	---> redux arrary key, category variable name, calculation variable, category display name
 // ======================================
 
 

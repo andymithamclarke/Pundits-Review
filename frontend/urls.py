@@ -1,3 +1,7 @@
+# ================
+# URL patterns available for front-end site: https://www.punditsreview.com/
+# ================
+
 from django.urls import re_path
 from django.urls import path
 from . import views
@@ -13,6 +17,6 @@ urlpatterns = [
     path('howitworks', views.index ),
     path('blog', views.index ),
     path('blogpost/<str:post_name>', views.blog),
+    # Redirect any other URL to front end - Unregisted patterns are handled by React rather than Django
     re_path('.*/', views.index ),
-
 ]

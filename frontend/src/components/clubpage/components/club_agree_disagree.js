@@ -1,6 +1,6 @@
 // ======================================
 // CLUBS - Agree / Disagree Button Component allowing users to interact with club pages depending on their opinion
-// Will post to the DB with number of agrees / disagrees
+// Will update the specific DB entry with number of agrees / disagrees
 // ======================================
 
 
@@ -41,21 +41,26 @@ export class ClubAgreeDisagreeContainer extends Component {
 
 	componentDidMount() {
 
-
+		// Set the agree disagree score for the current club
 		this.props.setClubsAgreeDisagreeScore(this.props.clubName)
 
 	}
 
 	_handleClickAgree(e) {
 
+		// Get club info
 		let currentClub = this.props.clubsViewed[this.props.clubsViewed.length - 1];
 
+		// Update DB entry
 		updateClubsAgreeDisagreeScore(currentClub, true);
 
+		// Get agree disagree score from store
 		let newScoreObject = this.props.clubAgreeDisagreeScores[this.props.clubAgreeDisagreeScores.length -1];
 
+		// Increment agree score
 		newScoreObject.agree_score += 1;
 
+		// Update the store to change display of agree score 
 		this.props.locallyUpdateAgreeDisagreeScoreClubs(newScoreObject);
 
 		// Disable the button
@@ -67,14 +72,19 @@ export class ClubAgreeDisagreeContainer extends Component {
 
 	_handleClickDisagree(e) {
 
+		// Get club info
 		let currentClub = this.props.clubsViewed[this.props.clubsViewed.length - 1];
 
+		// Update DB entry
 		updateClubsAgreeDisagreeScore(currentClub, false);
 
+		// Get agree disagree score from store
 		let newScoreObject = this.props.clubAgreeDisagreeScores[this.props.clubAgreeDisagreeScores.length -1];
 
+		// Increment agree score
 		newScoreObject.disagree_score += 1;
 
+		// Update the store to change display of agree score 
 		this.props.locallyUpdateAgreeDisagreeScoreClubs(newScoreObject);
 
 		// Disable the button
@@ -116,7 +126,7 @@ export class ClubAgreeDisagreeContainer extends Component {
 
 
 // ===============
-// Connect redux state container to PlayerPage component
+// Connect component to redux store
 // ===============
 
 

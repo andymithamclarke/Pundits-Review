@@ -2,6 +2,7 @@
 // References to CSS classes containing background colors for each of the Premier League Clubs
 // ======================================
 
+// Currently accurate as of Premier Leauge 2019/20 season
 
 export var club_colors = {
 

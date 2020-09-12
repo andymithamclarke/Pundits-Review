@@ -1,5 +1,5 @@
 // ======================================
-// This file contains the FILTER component - button and overlay screen
+// This file contains the FILTER component - button to activate filter component
 // Allows users to filter players on the insights page by nationality, position and club
 // ======================================
 
@@ -33,7 +33,7 @@ export class FilterWrapper extends Component {
 		// Activate the filter page
 		this.props.setFilterActive(true);
 
-
+		// Reset filter settings 
 		let filterSettings = {
 
 			position: [],

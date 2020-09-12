@@ -2,6 +2,7 @@
 // References to Short names for clubs
 // ======================================
 
+// Currently accurate as of Premier Leauge 2019/20 season
 
 export var club_short_names = {
 

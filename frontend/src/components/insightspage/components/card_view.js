@@ -3,6 +3,9 @@
 // Will display data according to supplied props
 // ======================================
 
+// __Note:__
+// 	- Swiper framework used to handle carousel
+
 // ===========
 // IMPORTS 
 // ===========
@@ -38,7 +41,7 @@ export const InsightsCardsWrapper = props => {
 
 	let result;
 
-	// Track promise request
+	// Display loading screen until promise resolves 
 	const { promiseInProgress } = usePromiseTracker();
 
 	// Save reference to current insights array & variable name -- depending on the category chosen by the user
@@ -52,6 +55,7 @@ export const InsightsCardsWrapper = props => {
 		let sortedGridArray;
 		let counter;
 
+		// Sort array either by top results or in reverse for bottom results
 		if (props.topBottomInsights === "TOP") {
 
 			sortedGridArray = sortArray(currentInsightsArray, currentInsightsVariableName, true);

@@ -28,6 +28,7 @@ import './nationality_filter.css';
 
 export class NationalityFilterWrapper extends Component {
 
+	// Animate the plus / minus icon
 	_handlePlusMinusAnimation = () => {
 
 		var container = document.querySelector("#nationality-container-plus-minus");
@@ -45,6 +46,7 @@ export class NationalityFilterWrapper extends Component {
 
 	}
 
+	// Dropdown the filter options
 	_toggleActiveDisplay() {
 
 		document.querySelector(".nationality-filter-element-wrapper").classList.toggle('filter-container-active');

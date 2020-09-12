@@ -1,5 +1,5 @@
 // ======================================
-// Club Info Container Component for use within the Club page - club_name, image, stadium and ranking
+// Club Info Container Component for use within the Club page - club_name, image & stadium
 // ======================================
 
 

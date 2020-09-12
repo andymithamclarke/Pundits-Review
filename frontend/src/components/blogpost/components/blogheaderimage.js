@@ -23,6 +23,7 @@ import './blogheaderimage.css';
 
 export const BlogHeaderImage = props => {
 
+	// Inline background image style
 	let imageStyle = {
 
 		backgroundImage: "url(" + props.imageURL + ")"

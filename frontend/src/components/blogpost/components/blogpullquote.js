@@ -26,7 +26,7 @@ export const BlogPullQuote = props => {
 
 	let result;
 
-
+	// Return an empty span if pull quote represented by empty string in DB
 	if (props.text !== '""') {
 
 		result = (

@@ -1,6 +1,6 @@
 // ======================================
 // This file contains the image component that is used to cover the background of the landing page
-// Used within landingpage.js
+// Used within landingpage
 // ======================================
 
 // ===========

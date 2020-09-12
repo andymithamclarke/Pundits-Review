@@ -16,9 +16,8 @@ import thunk from "redux-thunk";
 const storeEnhancers = window.__REDUX_DEVTOOLS_EXTENSION_COMPOSE__ || compose;
 
 // ===========
-// Create Redux Store 
+// Create Redux Store & set reducer
 // ===========
-
 
 const store = createStore(
 	rootReducer,

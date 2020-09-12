@@ -30,8 +30,6 @@ export class SearchDropdown extends Component {
 
 		let targetClicked = e.target.innerText
 
-		console.log(e)
-
 		// Set redux state 	
 
 		// Clear the previous search results

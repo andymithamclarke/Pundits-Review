@@ -22,6 +22,7 @@ import './../playerpage/playerpage.css';
 
 export const ClubPageLoader = props => {
 
+	// Display loading screen whilst promise is being resolved
 	const { promiseInProgress } = usePromiseTracker();
 
 	let result;

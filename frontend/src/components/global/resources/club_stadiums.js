@@ -2,6 +2,7 @@
 // References to each Premier League Club's stadium name
 // ======================================
 
+// Currently accurate as of Premier Leauge 2019/20 season
 
 export var stadiumNames = {
 

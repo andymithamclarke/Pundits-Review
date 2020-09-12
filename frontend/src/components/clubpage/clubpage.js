@@ -40,6 +40,7 @@ import './../playerpage/playerpage.css';
 
 export class ClubPageWrapper extends Component {
 
+	// Save specific club data inside of component state
 	constructor(props) {
     super(props);
     this.state = {
@@ -73,6 +74,7 @@ export class ClubPageWrapper extends Component {
 
 		if (this.props.clubsViewed.length && this.props.clubsViewed[this.props.clubsViewed.length - 1] !== this.state.clubData) {
 
+			// Get a record of all crawl dates for season performance graph
 			this.props.getCrawlDates();
 
 			this.setState({ 
@@ -92,6 +94,8 @@ export class ClubPageWrapper extends Component {
 
 	render() {
 
+
+		// Set the content of the club page
 		let result = <EmptyPlayerClubPage playerOrClub={"club"} />
 
 		if (this.state.loading === false) {

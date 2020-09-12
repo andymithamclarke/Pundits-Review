@@ -27,6 +27,7 @@ import './club_filter.css';
 
 export class ClubFilter extends Component {
 
+	// Animate the plus / minus icon
 	_handlePlusMinusAnimation = () => {
 
 		var container = document.querySelector("#club-container-plus-minus");
@@ -44,6 +45,7 @@ export class ClubFilter extends Component {
 
 	}
 
+	// Dropdown the filter options
 	_toggleActiveDisplay() {
 
 		document.querySelector(".club-filter-element-wrapper").classList.toggle('filter-container-active');

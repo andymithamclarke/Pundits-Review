@@ -37,6 +37,7 @@ export class CategoryDropdownWrapper extends Component {
 
 	_handleMenuOpen(e) {
 
+		// Toggle the menu open display
 		document.querySelector('.custom-options').classList.toggle('open');
 		document.querySelector('.category-dropdown-menu-wrapper').classList.toggle('open');
 
@@ -44,6 +45,7 @@ export class CategoryDropdownWrapper extends Component {
 
 	_handleMenuClick(e) {
 
+		// Set new category on click
 		let newCategory = e.target.innerText;
 
 		this.props.setInsightsCategory(newCategory)
@@ -52,6 +54,7 @@ export class CategoryDropdownWrapper extends Component {
 
 	}
 
+	// Allow Dropdown to be accessed by keyboard
 	_handleKeyDownMenuOpen(e) {
 
 		// Trigger Open on Enter
@@ -61,6 +64,7 @@ export class CategoryDropdownWrapper extends Component {
   		}
 	}
 
+	// Allow Dropdown to be accessed by keyboard
 	_handleKeyDownSelect(e) {
 
 		// Trigger Open on Enter

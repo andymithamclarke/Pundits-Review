@@ -41,8 +41,11 @@ import './top_level_css/club_badges.css';
 import './top_level_css/club_shirts.css';
 import './top_level_css/club_colors.css';
 
+// Swiper Framework - SCSS Imports
 import 'swiper/swiper.scss';
 import 'swiper/components/navigation/navigation.scss';
+
+
 
 // ===============
 // App Component 
@@ -51,7 +54,7 @@ import 'swiper/components/navigation/navigation.scss';
 
 class App extends Component {
 
-
+  // Router function to direct url towards specific blog post
   renderBlogPost = (routerProps) => {
 
     let postName = routerProps.match.params.post_name;
@@ -60,6 +63,7 @@ class App extends Component {
 
   }
 
+  // Router function to direct url towards specific player page
   renderPlayerPage = (routerProps) => {
 
     let playerName = routerProps.match.params.player_name;
@@ -68,7 +72,7 @@ class App extends Component {
 
   }
 
-
+  // Router function to direct url towards specific club page
   renderClubPage = (routerProps) => {
 
     let clubName = routerProps.match.params.club_name;
@@ -112,8 +116,11 @@ class App extends Component {
 
 export default App;
 
+// Find template container in 'index.html'
 const container = document.getElementById("app");
 
+
+// Wrap App Component in BrowserRouter & Redux Store Provider before rendering
 render(
   <Provider store={store}>
     <BrowserRouter>

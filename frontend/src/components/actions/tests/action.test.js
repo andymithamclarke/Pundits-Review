@@ -39,7 +39,6 @@
 
 
 // General Imports
-
 import configureStore from 'redux-mock-store';
 import thunk from 'redux-thunk';
 import fetchMock from 'fetch-mock';
@@ -916,7 +915,7 @@ describe('Redux Action Tests', () => {
 
 
 	// ===========
-	// TEST 25. Check that resetErrorBoundary resets the error status store
+	// TEST 25. Check that resetErrorBoundary resets the error status in store
 	// ===========
 
 	describe('resetErrorBoundary', () => {

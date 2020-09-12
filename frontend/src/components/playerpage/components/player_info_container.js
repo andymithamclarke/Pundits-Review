@@ -29,6 +29,7 @@ import './player_info_container.css';
 
 export class PlayerInfo extends Component {
 
+	// Set the club - on link click
 	_handleClubClick(clubName) {
 
 		this.props.setClub(this.props.playerData.club_name);
@@ -37,6 +38,7 @@ export class PlayerInfo extends Component {
 
 	render() {
 
+		// Set specific club URL
 		let clubNameParam = "/clubs/" + encodeURIComponent(this.props.playerData.club_name);
 
 		let result = (

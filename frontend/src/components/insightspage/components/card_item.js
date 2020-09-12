@@ -1,6 +1,6 @@
 // ======================================
 // CARD ITEM component - Individual container for each player in the insights page
-// Rendered within a carousel
+// Rendered within Swiper carousel
 // ======================================
 
 // ===========
@@ -28,6 +28,7 @@ import './card_item.css';
 
 export class CardItemWrapper extends Component {
 
+	// Set player in redux store on button click
 	_handleLinkClick = () => {
 
 		this.props.setPlayer(this.props.playerName)
@@ -36,6 +37,7 @@ export class CardItemWrapper extends Component {
 
 	render() {
 
+		// Declare specific player page url
 		let playerNameParam = "/players/" + encodeURIComponent(this.props.playerName);
 
 		let result = (

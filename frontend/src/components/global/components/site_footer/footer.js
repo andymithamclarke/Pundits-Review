@@ -1,6 +1,6 @@
 // ======================================
 // Footer Component - Wraps other elements within the footer
-// Site Footer appears on all pages except landing page
+// Site Footer appears on all pages except landing page & results page
 // ======================================
 
 // ===========

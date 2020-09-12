@@ -1,5 +1,5 @@
 // ======================================
-// Empty Player Club Page Component - Shows user that no results were found for their query
+// Empty Player Club Page Component - Shows user that no players or clubs have been found at the specific club/player url
 // ======================================
 
 

@@ -26,6 +26,7 @@ import './position_filter.css';
 
 export class PositionFilter extends Component {
 
+	// Animate the plus / minus icon
 	_handlePlusMinusAnimation = () => {
 
 		var bar = document.querySelector("#position-bar-plus-minus");
@@ -42,6 +43,7 @@ export class PositionFilter extends Component {
 
 	}
 
+	// Dropdown the filter options
 	_toggleActiveDisplay() {
 
 		document.querySelector(".position-filter-elements-wrapper").classList.toggle('filter-container-active');

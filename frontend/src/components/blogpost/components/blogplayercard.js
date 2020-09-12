@@ -27,6 +27,7 @@ import './blogplayercard.css';
 
 export class BlogPlayerCardWrapper extends Component {
 
+	// Set player in redux store according to player named in blog post DB entry
 	componentDidMount = () => {
 
 		if (this.props.playersViewed.length === 0) {
@@ -52,11 +53,13 @@ export class BlogPlayerCardWrapper extends Component {
 
 		let result;
 
+
 		if (this.props.playersViewed.length) {
 
-
+			// Render empty span if player name not supplied 
 			if (this.props.playerName !== '""') {
 
+				// Return the player db record associated with the specific date of the blog post
 				let scoresArray = returnSpecificDateMatchArray(this.props.playersViewed[this.props.playersViewed.length - 1].scores, this.props.specificDate)
 
 				result = (

@@ -25,12 +25,14 @@ import './our_sources.css';
 
 export class OurSources extends Component {
 
+	// Retrieve list of sources 
 	componentDidMount = () => {
 
 		this.props.getSourcesList();
 
 	}
 
+	// Display sources list on button click
 	_handleClick = () => {
 
 		document.querySelector('.source-list-wrapper').style.display = "flex";

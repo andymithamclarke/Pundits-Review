@@ -2,6 +2,7 @@
 // References to CSS classes containing image urls of each of the Premier League Club SHIRTS
 // ======================================
 
+// Currently accurate as of Premier Leauge 2019/20 season
 
 export var club_shirts = {
 

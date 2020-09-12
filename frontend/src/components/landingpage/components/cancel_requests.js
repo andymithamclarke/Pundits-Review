@@ -1,5 +1,5 @@
 // ======================================
-// Function to prevent unneccessary requests
+// Function to prevent unneccessary requests ---> used within liveSearch method (Search Component)
 // ======================================
 
 

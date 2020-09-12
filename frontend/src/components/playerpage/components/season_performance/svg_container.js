@@ -1,5 +1,5 @@
 // ======================================
-// SeasonPerformanceGraph Component - Contains the SVG to contol the season performance visualisation
+// SeasonPerformanceGraph Component - Contains the SVG to contol the season performance visualisation (D3)
 // ======================================
 
 // ===========
@@ -22,6 +22,8 @@ import './svg_container.css';
 
 export class SeasonPerformanceGraphWrapper extends Component {
 
+
+	// Redraw the graph when component updates
 	componentDidUpdate() {
 
 		// Clear the graph first
@@ -36,7 +38,7 @@ export class SeasonPerformanceGraphWrapper extends Component {
 
 	drawGraph() {
 
-
+		// Set dynamic height & width according to container
 		let height = document.querySelector('#performance-graph-svg-container').getBoundingClientRect().height;
 		let width = document.querySelector('#performance-graph-svg-container').getBoundingClientRect().width;
 
@@ -51,6 +53,7 @@ export class SeasonPerformanceGraphWrapper extends Component {
 		var x = d3.scalePoint()
 					.domain(Object.values(this.props.crawlDates).map(function(d) { 
 
+						// Create a date label for each crawl date record
 						let parsedDate = d3.timeParse("%Y-%m-%d")(d.date)	
 						
 						let month = months[parsedDate.getMonth()];
@@ -63,7 +66,7 @@ export class SeasonPerformanceGraphWrapper extends Component {
 					}))
 					.range([0, width])
 
-		// Append 'g' element
+		// Append 'g' element & call x axis function
 		svg.append("g")
 			.attr("transform", "translate(0," + height + ")")
 			.call(d3.axisBottom(x));
@@ -76,7 +79,7 @@ export class SeasonPerformanceGraphWrapper extends Component {
 					.domain([0, 100])
 					.range([height, 0]);
 
-		// Append 'g' element
+		// Append 'g' element limiting number of ticks (4)
 		svg.append("g")
 			.call(d3.axisLeft(y).ticks(4));
 
@@ -90,6 +93,7 @@ export class SeasonPerformanceGraphWrapper extends Component {
 		// https://bl.ocks.org/d3noob/c506ac45617cf9ed39337f99f8511218
 		// Accessed 01 Sept, 2020
 
+		// Gridlines dynamically created for each crawl date
 
 		// gridlines in x axis function
 		function make_x_gridlines() {		
@@ -134,6 +138,7 @@ export class SeasonPerformanceGraphWrapper extends Component {
 			.append("circle")
 				.attr("cx", function(d) {
 
+					// Plot x value according to date
 					let parsedDate = d3.timeParse("%Y-%m-%d")(d.date);
 					let month = months[parsedDate.getMonth()];
 					let day = parsedDate.getDate();
@@ -147,6 +152,7 @@ export class SeasonPerformanceGraphWrapper extends Component {
 
 						let score = Math.round(d.sentiment_score * 100);
 
+						// Plot y value according to review score
 						return y(score);
 
 					}
@@ -154,6 +160,7 @@ export class SeasonPerformanceGraphWrapper extends Component {
 				})
 				.attr("r", function(d) {
 
+					// Hide data values where threshold is not met
 					if (d.n_positive + d.n_negative > 3) {
 
 						return 5;
@@ -162,6 +169,8 @@ export class SeasonPerformanceGraphWrapper extends Component {
 					}
 				})
         		.attr("fill", function(d) {
+
+        			// Color circle according to high-medium-low data value
 
         			if (Math.round(d.sentiment_score * 100) >= 70 && Math.round(d.sentiment_score * 100) < 101) {
 

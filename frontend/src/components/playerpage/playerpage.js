@@ -38,6 +38,7 @@ import './playerpage.css';
 
 export class PlayerPageWrapper extends Component {
 
+	// Set player info in component state
 	constructor(props) {
     super(props);
     this.state = {
@@ -95,6 +96,7 @@ export class PlayerPageWrapper extends Component {
 
 	render() {
 
+		// Render an 'empty' player club page if player not specified
 		let result = <EmptyPlayerClubPage playerOrClub={"player"}/>
 
 		if (this.state.loading === false) {

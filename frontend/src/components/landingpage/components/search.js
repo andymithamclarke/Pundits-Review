@@ -1,5 +1,5 @@
 // ======================================
-// This file contains the search bar component allowing users to enter a player/club search query
+// Search bar component allowing users to enter a player/club search query
 // ======================================
 
 // ===========
@@ -42,6 +42,7 @@ export class Search extends Component {
 
   	}
 
+  	// Keep search term inside search input box on results page
   	componentDidMount = () => {
 
   		if (this.props.searchTerms.length && this.props.history.location.pathname === "/results") {
@@ -54,6 +55,7 @@ export class Search extends Component {
   	}
 
 
+  	// Predictive search ---> updates search options when search term changes
   	liveSearch = async val => {
 
   		// Set the state to loading

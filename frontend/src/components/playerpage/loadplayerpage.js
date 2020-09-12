@@ -22,6 +22,7 @@ import './playerpage.css';
 
 export const PlayerPageLoader = props => {
 
+	// Display loading component until promise has resolved
 	const { promiseInProgress } = usePromiseTracker();
 
 	let result;

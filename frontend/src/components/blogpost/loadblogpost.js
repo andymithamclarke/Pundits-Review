@@ -1,5 +1,5 @@
 // ======================================
-// Blog Post Loading Component - Ensures that the blog post list has loaded before rendering the correct blog post
+// Blog Post Loading Functional Component - Ensures that the blog post list has loaded before rendering the correct blog post
 // ======================================
 
 // ===========
@@ -25,7 +25,7 @@ import './blogpost.css';
 
 export class LoadBlogPostWrapper extends Component {
 
-
+	// Load the blog post if not already in redux store
 	componentDidMount() {
 
 		if (this.props.blogPostList.length === 0) {

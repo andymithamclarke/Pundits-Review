@@ -3,6 +3,10 @@
 // All other INSIGHTS PAGE components will be directed through this component
 // ======================================
 
+
+// __Note:___
+// 	- 'Insights' now renamed to 'Player Rankings' on site
+
 // ===========
 // IMPORTS 
 // ===========

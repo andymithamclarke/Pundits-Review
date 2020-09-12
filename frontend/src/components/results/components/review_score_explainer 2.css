@@ -1,0 +1,33 @@
+/*
+// ======================================
+// CSS for Review Score Explainer
+// ======================================
+*/
+
+.review-score-explainer-wrapper {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	padding: 1em 0;
+	transform: scale(0.6);
+}
+
+.review-score-explainer-text {
+	font-size: .95em;
+	letter-spacing: .2em;
+	margin-left: 1em;
+}
+
+
+/*
+// ======================================
+// MEDIA QUERIES
+// ======================================
+*/
+
+@media (min-width: 1000px) {
+
+	.review-score-explainer-text {
+		font-size: 1.25em;
+	}
+}

@@ -23,6 +23,7 @@ import './blogpostheadline.css';
 
 export const BlogHeadline = props => {
 
+	// Convert headline to uppercase
 	let headlineText = props.headline;
 
 	if (headlineText) {

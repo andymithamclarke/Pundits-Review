@@ -1,5 +1,5 @@
 // ======================================
-// Set Player Page Component - Ensures that the correct player has been specified before loading the player page
+// Set Player Page Functional Component - Ensures that the correct player has been specified before loading the player page
 // ======================================
 
 // ===========
@@ -28,7 +28,7 @@ export class SetPlayerPageWrapper extends Component {
 
 	componentDidMount() {
 
-
+		// Retrieve player_name param from URL & set player in redux store if not already
 		let decodedPlayerName = decodeURIComponent(this.props.playerName);
 
 		if (this.props.playersViewed.length === 0) {

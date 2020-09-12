@@ -26,7 +26,7 @@ export const BlogParagraph = props => {
 
 	let result;
 
-
+	// If empty string provided ---> return an empty span / otherwise return the par text
 	if (props.text !== '""') {
 
 		result = (

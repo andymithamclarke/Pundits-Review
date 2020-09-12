@@ -27,6 +27,8 @@ import './club_player_list_player_item.css';
 
 export class ClubPlayerListPlayerItemWrapper extends Component {
 
+
+	// Set the player on click
 	_handleClick(playerName) {
 
 		this.props.setPlayer(this.props.playerName);
@@ -56,7 +58,7 @@ export class ClubPlayerListPlayerItemWrapper extends Component {
 
 
 // ===============
-// Connect redux state container to ClubPlayerListPlayerItem component
+// Connect component to redux store
 // ===============
 
 

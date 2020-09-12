@@ -1,5 +1,5 @@
 // ======================================
-// Review Score Question Component - Contains review score circle and illustration 
+// Review Score Question Component - Contains illustration of how page top image
 // ======================================
 
 // ===========

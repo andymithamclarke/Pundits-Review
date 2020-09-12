@@ -1,6 +1,65 @@
 // ======================================
-// Actions to pass to the reducer
+// Actions to pass to the redux reducer
 // ======================================
+
+// __Notes:__
+//   - Actions return dispatch functions which set data in redux store
+//   - Controls a significant amount of the projects API calls & other data setting functions
+//   - Promise Tracker used in API calls to tell react hooks to render loading page until promise finishes
+//   - Get requests handled with 'fetch' - 'put' requests handled with axios
+
+
+
+// ===============
+// ACTIONS INDEX
+// ===============
+
+// PLAYER / CLUB PAGE ACTIONS
+// --------------------------
+// 1. Set the Search Term
+// 2. Retrieve players and clubs data - Searching by CLUB
+// 3. Retrieve players and clubs data  - Searching by PLAYER
+// 4. Clear the search results - New Search
+// 5. Set the current PLAYER 
+// 6. Set the current CLUB
+// 7. Set the Agree Disagree Scores of a Player 
+// 8. Locally update Agree Disagree Score - PLAYERS
+// 9. Locally update Agree Disagree Score - CLUBS
+// 10. Update the Agree Disagree Scores of a Player - Server PUT Request
+// 11. Dispatcher for the newly updated playerAgreeDisagreeScore
+// 12. Set the agree disagree scores of a Club 
+// 13. Update the Agree Disagree Scores of a Club - Server PUT Request
+// 14. Dispatcher for the newly updated clubAgreeDisagreeScore
+// 15. Set This Week Everyone Toggle status
+
+// INSIGHTS (Player Ranking) PAGE ACTIONS
+// --------------------------
+// 16. Toggle between grid and card views
+// 17. Set filter active status
+// 18. Toggle between top and bottom data view on insights page
+// 19. Set the new insights category
+// 20. Get player review scores array
+// 21. Clear player review scores
+// 22. Get player total reviews
+// 23. Get player avg score
+// 24. Add position filter to insights page
+// 25. Remove position filter from insights page
+// 26. Add club filter to insights page
+// 27. Remove club filter from insights page
+// 28. Add nationality filter to insights page
+// 29. Remove nationality filter from insights page
+// 30. Clear all Insights filters
+// 31. Apply filters to player review scores array
+// 32. Apply filter to player total scores
+// 33. Apply filter to player avg scores
+
+// OTHER (misc) ACTIONS
+// --------------------------
+// 34. Set list of blog posts 
+// 35. Clear sources list 
+// 36. Get sources list
+// 37. Get array of crawl dates
+// 38. Reset error boundary
 
 // ===========
 // IMPORTS 
@@ -18,9 +77,17 @@ import { cleanSearchParam } from './clean_search_query';
 import { agreeDisagreeDate, localCrawlDate } from '../constants/dates';
 import { setFilter, getRootUrl, uniqueArrayOfObjects, calculateAvg, calculateSeasonScores, returnDateMatchArray } from '../global/functions/set_data_helpers';
 
+
+
 // ===========
 // ACTIONS 
 // ===========
+
+
+// ======================================
+// PLAYER / CLUB PAGE ACTIONS
+// ======================================
+
 
 // 1. Set the Search Term
 
@@ -34,7 +101,9 @@ export function defineSearchTerm(searchTerm) {
 }
 
 
-// 2. Retrieve the data - Searching by CLUB
+
+
+// 2. Retrieve players and clubs data - Searching by CLUB
 
 export function searchByClub(queryParam, everyone) {
 
@@ -84,8 +153,10 @@ export function searchByClub(queryParam, everyone) {
   };
 }
 
-// 3. Retrieve the data - Searching by PLAYER
 
+
+
+// 3. Retrieve players and clubs data  - Searching by PLAYER
 
 export function searchByPlayer(queryParam, everyone) {
 
@@ -138,7 +209,7 @@ export function clearSearchResults() {
 
 
 
-// 5. Set the PLAYER from a search results click
+// 5. Set the current PLAYER
 
 export function setPlayer(playerName) {
 
@@ -164,7 +235,7 @@ export function setPlayer(playerName) {
 
 }
 
-// 5. Set the CLUB from a search results click
+// 6. Set the current CLUB 
 
 export function setClub(clubName) {
 
@@ -191,7 +262,7 @@ export function setClub(clubName) {
 }
 
 
-// 5. Set the Agree Disagree Scores of a Player 
+// 7. Set the Agree Disagree Scores of a Player 
 
 export function setPlayersAgreeDisagreeScore(playerName) {
 
@@ -216,7 +287,7 @@ export function setPlayersAgreeDisagreeScore(playerName) {
   };
 }
 
-// Function to locally update Agree Disagree Score - PLAYERS
+// 8. Locally update Agree Disagree Score - PLAYERS
 export function locallyUpdateAgreeDisagreeScore(newScoreObject) {
 
   return function(dispatch) {
@@ -227,7 +298,7 @@ export function locallyUpdateAgreeDisagreeScore(newScoreObject) {
 }
 
 
-// Function to locally update Agree Disagree Score - CLUBS
+// 9. Locally update Agree Disagree Score - CLUBS
 export function locallyUpdateAgreeDisagreeScoreClubs(newScoreObject) {
 
   return function(dispatch) {
@@ -238,10 +309,10 @@ export function locallyUpdateAgreeDisagreeScoreClubs(newScoreObject) {
 }
 
 
-// 5. Update the Agree Disagree Scores of a Player 
+// 10. Update the Agree Disagree Scores of a Player - Server PUT Request
 export function updatePlayersAgreeDisagreeScore(currentPlayer, agreeOrDisagree) {
 
-
+      // Declare Player info
       let playerId = currentPlayer.id;
       let playerName = currentPlayer.player;
       let requestDateParam = agreeDisagreeDate;
@@ -249,14 +320,17 @@ export function updatePlayersAgreeDisagreeScore(currentPlayer, agreeOrDisagree) 
       let agreeScore = currentPlayer.player_agree_disagree[currentPlayer.player_agree_disagree.length - 1].agree_score;
       let disagreeScore = currentPlayer.player_agree_disagree[currentPlayer.player_agree_disagree.length - 1].disagree_score;
 
+      // Set query url
       let putRequestUrl = '/api/playeragreedisagree/' + agreeDisagreeId.toString() + '/'
 
+      // Update either agree or disagree score
       if (agreeOrDisagree) {
         agreeScore += 1
       } else {
         disagreeScore += 1
       }
 
+      // Get token & make request
       let csrftoken = Cookies.get("csrftoken");
 
       axios({
@@ -288,7 +362,7 @@ export function updatePlayersAgreeDisagreeScore(currentPlayer, agreeOrDisagree) 
 };
 
 
-// 5. Dispatcher for the newly updated playerAgreeDisagreeScore
+// 11. Dispatcher for the newly updated playerAgreeDisagreeScore
 
 export function dispatchUpdatedPlayerAgreeDisagreeScore(data) {
 
@@ -301,7 +375,7 @@ export function dispatchUpdatedPlayerAgreeDisagreeScore(data) {
 
 
 
-// 5. Set the agree disagree scores for CLUBS
+// 12. Set the agree disagree scores for CLUBS
 export function setClubsAgreeDisagreeScore(clubName) {
 
   let queryString = "/api/clubagreedisagree/?clubname=" + encodeURI(clubName) + "&date=" + agreeDisagreeDate;
@@ -326,10 +400,10 @@ export function setClubsAgreeDisagreeScore(clubName) {
   };
 }
 
-// 5. Update the agree disagree scores for CLUBS
+// 13. Update the Agree Disagree Scores of a Club - Server PUT Request
 export function updateClubsAgreeDisagreeScore(currentClub, agreeOrDisagree) {
 
-
+      // Declare club info
       let clubId = currentClub.id;
       let clubName = currentClub.club;
       let requestDateParam = agreeDisagreeDate;
@@ -337,14 +411,17 @@ export function updateClubsAgreeDisagreeScore(currentClub, agreeOrDisagree) {
       let agreeScore = currentClub.club_agree_disagree[currentClub.club_agree_disagree.length - 1].agree_score;
       let disagreeScore = currentClub.club_agree_disagree[currentClub.club_agree_disagree.length - 1].disagree_score;
 
+      // Set query url
       let putRequestUrl = '/api/clubagreedisagree/' + agreeDisagreeId.toString() + '/'
 
+      // Update either agree or disagree score
       if (agreeOrDisagree) {
         agreeScore += 1
       } else {
         disagreeScore += 1
       }
 
+      // Get token and make request
       let csrftoken = Cookies.get("csrftoken");
 
       axios({
@@ -376,7 +453,7 @@ export function updateClubsAgreeDisagreeScore(currentClub, agreeOrDisagree) {
 };
 
 
-// 5. Dispatcher for the newly updated clubAgreeDisagreeScore
+// 14. Dispatcher for the newly updated clubAgreeDisagreeScore
 export function dispatchUpdatedClubAgreeDisagreeScore(data) {
 
   return function(dispatch) {
@@ -387,7 +464,7 @@ export function dispatchUpdatedClubAgreeDisagreeScore(data) {
 }
 
 
-// Dispatcher to set This Week Everyone Toggle
+// 15. Set This Week Everyone Toggle status
 export function setThisWeekEveryoneToggleStatus(choice) {
 
   return function(dispatch) {
@@ -398,13 +475,11 @@ export function setThisWeekEveryoneToggleStatus(choice) {
 }
 
 
-
-
 // ======================================
 // INSIGHTS ACTIONS
 // ======================================
 
-// Dispatcher to toggle between grid and card views
+// 16. Toggle between grid and card views
 export function setGridCardView(choice) {
 
   return function(dispatch) {
@@ -413,7 +488,7 @@ export function setGridCardView(choice) {
   }
 }
 
-// Dispatcher to set filter active state
+// 17. Set filter active status
 export function setFilterActive(choice) {
 
   return function(dispatch) {
@@ -423,7 +498,7 @@ export function setFilterActive(choice) {
 }
 
 
-// Dispatcher to toggle between top and bottom data on insights page
+// 18. Toggle between top and bottom data view on insights page
 export function setTopBottomInsights(choice) {
 
   return function(dispatch) {
@@ -432,7 +507,7 @@ export function setTopBottomInsights(choice) {
   }
 }
 
-// Dispatcher to set the new insights category
+// 19. Set the new insights category
 export function setInsightsCategory(choice) {
 
   return function(dispatch) {
@@ -442,7 +517,7 @@ export function setInsightsCategory(choice) {
 }
 
 
-// Dispatcher to get player review scores
+// 20. Get player review scores array
 export function getPlayerReviewScores() {
 
   // Declare the query string
@@ -454,8 +529,10 @@ export function getPlayerReviewScores() {
           .then(response => response.json())
           .then(json => {
 
+            // Loop through response object
             json.forEach(function(item) {
 
+                // Check that player score matches correct crawl date and reaches threshold of more than 5 positive + negative reviews
                 if (item.date == localCrawlDate && (item.n_negative + item.n_positive) > 5) {
 
                     dispatch({type: GET_PLAYER_REVIEW_SCORES, payload: item});
@@ -476,7 +553,7 @@ export function getPlayerReviewScores() {
 }
 
 
-// Dispatcher to clear player review scores
+// 21. Clear player review scores
 export function clearPlayerReviewScores() {
 
   return function(dispatch) {
@@ -488,7 +565,7 @@ export function clearPlayerReviewScores() {
 
 
 
-// Dispatcher to get player total reviews
+// 22. Get player total reviews
 export function getPlayerTotalReviews() {
 
   // Declare the query string
@@ -500,8 +577,10 @@ export function getPlayerTotalReviews() {
           .then(response => response.json())
           .then(json => {
 
+            // Loop through response
             json.forEach(function(item) {
 
+                // Check that player score matches correct crawl date
                 if (item.date == localCrawlDate) {
 
                     dispatch({type: GET_PLAYER_TOTAL_REVIEWS, payload: item});
@@ -522,7 +601,7 @@ export function getPlayerTotalReviews() {
 }
 
 
-// Dispatcher to get player avg score
+// 23. Get player avg score
 export function getPlayerAvgScore() {
 
   // Declare the query string
@@ -534,10 +613,12 @@ export function getPlayerAvgScore() {
           .then(response => response.json())
           .then(json => {
 
+            // Loop through response
             json.forEach(function(item) {
 
                 if (item.scores.length) {
 
+                  // Set Avg Score Object Manually - calculateAvg() && calculateSeasonScores()
                   let avgScoreObj = {"player_name": item.player, "club": item.club_name, "field_position": item.position, "nationality": item.nationality, "avg_score": calculateAvg(item.scores), "n_positive": calculateSeasonScores(item.scores)[0], "n_negative": calculateSeasonScores(item.scores)[1], "total_reviews": calculateSeasonScores(item.scores)[2]};
 
                   if (avgScoreObj["avg_score"] !== null) {
@@ -563,7 +644,7 @@ export function getPlayerAvgScore() {
 
 
 
-// Dispatcher to add position filter to insights page
+// 24. Add position filter to insights page
 export function addPositionFilter(position) {
 
   return function(dispatch) {
@@ -572,7 +653,7 @@ export function addPositionFilter(position) {
   }
 }
 
-// Dispatcher to remove position filter from insights page
+// 25. Remove position filter from insights page
 export function removePositionFilter(position) {
 
   return function(dispatch) {
@@ -582,7 +663,7 @@ export function removePositionFilter(position) {
 }
 
 
-// Dispatcher to add club filter to insights page
+// 26. Add club filter to insights page
 export function addClubFilter(club) {
 
   return function(dispatch) {
@@ -591,7 +672,7 @@ export function addClubFilter(club) {
   }
 }
 
-// Dispatcher to remove club filter from insights page
+// 27. Remove club filter from insights page
 export function removeClubFilter(club) {
 
   return function(dispatch) {
@@ -600,7 +681,7 @@ export function removeClubFilter(club) {
   }
 }
 
-// Dispatcher to add nationality filter to insights page
+// 28. Add nationality filter to insights page
 export function addNationalityFilter(nationality) {
 
   return function(dispatch) {
@@ -609,7 +690,7 @@ export function addNationalityFilter(nationality) {
   }
 }
 
-// Dispatcher to remove nationality filter from insights page
+// 29. Remove nationality filter from insights page
 export function removeNationalityFilter(nationality) {
 
   return function(dispatch) {
@@ -619,7 +700,7 @@ export function removeNationalityFilter(nationality) {
 }
 
 
-// Dispatcher to remove nationality filter from insights page
+// 30. Clear all Insights filters
 export function clearAllFilters() {
 
   return function(dispatch) {
@@ -628,7 +709,7 @@ export function clearAllFilters() {
   }
 }
 
-// Dispatcher to apply filter to player review scores
+// 31. Apply filter to player review scores
 export function applyFilterPlayerReviewScores(originalReviewScoreArray, filterSettings) {
 
   return function(dispatch) {
@@ -649,7 +730,7 @@ export function applyFilterPlayerReviewScores(originalReviewScoreArray, filterSe
   }
 }
 
-// Dispatcher to apply filter to player review scores
+// 32. Apply filter to player total scores
 export function applyFilterPlayerTotalScores(originalTotalScoreArray, filterSettings) {
 
   return function(dispatch) {
@@ -672,7 +753,7 @@ export function applyFilterPlayerTotalScores(originalTotalScoreArray, filterSett
 
 
 
-// Dispatcher to apply filter to player review scores
+// 33. Apply filter to player avg scores
 export function applyFilterPlayerAvgScores(originalAvgScoreArray, filterSettings) {
 
   return function(dispatch) {
@@ -696,10 +777,11 @@ export function applyFilterPlayerAvgScores(originalAvgScoreArray, filterSettings
 
 
 // ==============================
-// BLOG ACTIONS 
+// OTHER ACTIONS 
 // ==============================
 
-// Dispatcher to set list of blog posts 
+
+// 34. Set list of blog posts 
 export function getBlogPostList() {
 
   // Declare the query string
@@ -710,8 +792,6 @@ export function getBlogPostList() {
       return trackPromise(fetch(queryString)
           .then(response => response.json())
           .then(json => {
-
-            console.log(json)
 
             dispatch({type: GET_BLOGPOST_LIST, payload: json})
 
@@ -727,12 +807,7 @@ export function getBlogPostList() {
 }
 
 
-// ==============================
-// OTHER ACTIONS 
-// ==============================
-
-
-// Dispatcher to clear sources list 
+// 35. Clear sources list 
 export function clearSourcesList() {
 
   return function(dispatch) {
@@ -742,7 +817,7 @@ export function clearSourcesList() {
 }
 
 
-// Dispatcher to get sources list
+// 36. Get sources list
 export function getSourcesList() {
 
   // Declare the query string
@@ -756,8 +831,10 @@ export function getSourcesList() {
 
             let sources_array = [];
 
+            // Loop through response
             json.forEach(function(item) {
               
+              // Push new source object to sources array & then dispatch all at once
               sources_array.push({"media_source": item.media_source, "url": getRootUrl(item.url)})
 
             });
@@ -778,7 +855,7 @@ export function getSourcesList() {
 
 
 
-// Dispatcher to get array of crawl dates
+// 37. Get array of crawl dates
 export function getCrawlDates() {
 
   // Declare the query string
@@ -813,7 +890,7 @@ export function getCrawlDates() {
 
 
 
-// Dispatcher to reset error boundary
+// 38. Reset error boundary
 
 export function resetErrorBoundary() {
 

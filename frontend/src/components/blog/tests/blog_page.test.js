@@ -31,14 +31,13 @@ import { BlogList } from '.././components/blog_list';
 import { BlogListItem } from '.././components/blog_list_item';
 
 import { getBlogPostList } from '../../actions/actions';
-import fetch from './__mocks__/fetch';
 import store from '../../store/store';
 import { WrapStore } from '../../global/functions/test_helpers';
 
 
 // Configurations
 Enzyme.configure({ adapter: new Adapter() })
-global.fetch = fetch;
+
 
 // ===========
 // Suppression of SSL Warning 

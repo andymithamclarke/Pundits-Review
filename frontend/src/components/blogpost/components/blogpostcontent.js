@@ -1,5 +1,5 @@
 // ======================================
-// Blog Post Inner Content Component - Acts as a wrapper for the inner content within a blog post
+// Blog Post Inner Content Component - Controls the inner content within a blog post
 // ======================================
 
 // ===========

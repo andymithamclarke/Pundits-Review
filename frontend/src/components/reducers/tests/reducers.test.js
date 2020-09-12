@@ -1,5 +1,5 @@
 // ======================================
-// This file tests for REDUX REDUCERS listed in the REDUCERS sub-directory
+// This file tests for behaviour in REDUX REDUCER conditions listed in the REDUCERS sub-directory
 // ======================================
 
 

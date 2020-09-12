@@ -25,13 +25,13 @@ import './no_results_found.css';
 
 export class ErrorPageWrapper extends Component {
 
+
+	// Error Boundary is automatically reset but handle click ensures that there are no exceptions
 	_handleClick = () => {
 
 		this.props.resetErrorBoundary();
 
 	}
-
-
 
 	render() {
 

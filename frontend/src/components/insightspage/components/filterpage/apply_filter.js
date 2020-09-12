@@ -26,6 +26,7 @@ export class ApplyFilterButtonWrapper extends Component {
 
 	_handleClick = () => {
 
+		// Select the filter options 
 		let filterSettings = {
 
 			position: this.props.positionFilters,

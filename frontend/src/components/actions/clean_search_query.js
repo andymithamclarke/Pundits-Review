@@ -21,7 +21,7 @@ export function cleanSearchParam(queryParam) {
     	clean = clean.slice(0, dashIndex) + "-" + clean.slice(dashIndex + 1) 
     }
 
-    // Temporary fix for Brighton and Hove Albion
+    // Temporary fix for 'Brighton and Hove Albion'
     if (queryParam.includes("Brighton")) {
     	clean = queryParam;
     }

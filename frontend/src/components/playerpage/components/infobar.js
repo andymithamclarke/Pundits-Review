@@ -21,12 +21,15 @@ import './infobar.css';
 
 export class InfoBar extends Component {
 
+
+	// Trigger 'scroll' event listener when component mounts 
 	componentDidMount() {
 
 		window.addEventListener('scroll', this.onScroll);
 
 	}
 
+	// Remove 'scroll' event listener when component unmounts 
 	componentWillUnmount() {
 
 		window.removeEventListener('scroll', this.onScroll);
@@ -34,10 +37,12 @@ export class InfoBar extends Component {
 
 	onScroll() {
 
+		// Get dynamic position of review score container
 		const reviewContainer = document.querySelector('.review-score-container-wrapper').getBoundingClientRect();
 
 		const infoBarElement = document.querySelector('.info-bar-wrapper');
 
+		// Make transition
 		if (reviewContainer.top < 50) {
 
 			infoBarElement.style.top = "50px";

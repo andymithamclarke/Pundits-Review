@@ -1,6 +1,6 @@
 // ======================================
 // Error Boundary Component - Redirects Users to Error Page if error is caught
-// Wraps components making API calls 
+// Wraps all components and checks for errors inside children
 // ======================================
 
 // ===========
@@ -27,6 +27,8 @@ import { resetErrorBoundary } from '../../actions/actions';
 export class ErrorBoundaryWrapper extends Component {
 
 	componentDidUpdate() {
+
+		// If any kind of error is thrown ---> redirect user to error page
 
 		if (this.props.errorExists && this.props.history.location.pathname !== "/error") {
 

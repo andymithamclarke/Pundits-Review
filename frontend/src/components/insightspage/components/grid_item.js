@@ -1,5 +1,6 @@
 // ======================================
 // GRID ITEM component - Individual container for each player in the insights page
+// Links to specific player page on click
 // ======================================
 
 // ===========
@@ -25,6 +26,8 @@ import './grid_item.css';
 
 
 export class GridItemWrapper extends Component {
+
+	// Set specific class names for grid item to account for grey / white alternating colors
 	constructor(props) {
 		super(props);
 		this.state = {
@@ -79,12 +82,14 @@ export class GridItemWrapper extends Component {
 
 	_handleClick() {
 
+		// Link Click ---> Set the player in redux store
 		this.props.setPlayer(this.props.playerName);
 
 	}
 
 	render() {
 
+		// Define specific player page url
 		let playerNameParam = "/players/" + encodeURIComponent(this.props.playerName);
 
 		let result = (

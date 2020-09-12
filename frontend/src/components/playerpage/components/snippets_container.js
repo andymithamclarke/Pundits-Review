@@ -1,5 +1,5 @@
 // ======================================
-// Snippets Container Component to be used as a carousel to allow user to flick through individual reviews
+// Snippets Container Component to be used as a carousel allowing users to flick through individual reviews
 // ======================================
 
 // ===========
@@ -37,9 +37,8 @@ export class SnippetsContainer extends Component {
 
 	render() {
 
+		// Shuffle the snippets array
 		let shuffledSnippetsArray = shuffleArray(this.props.snippets);
-
-		console.log(this.props.snippets.length)
 
 		let result;
 

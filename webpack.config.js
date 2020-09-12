@@ -1,3 +1,7 @@
+// # ================
+// # Config file for webpack
+// # ================
+
 module.exports = {
   module: {
     rules: [

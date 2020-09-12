@@ -29,7 +29,7 @@ export class ClearAllButtonWrapper extends Component {
 		// Clear all filters
 		this.props.clearAllFilters();
 
-		// Toggle display of all ticks 
+		// Remove display of all ticks 
 		document.querySelectorAll('.filter-tick-container').forEach(function(element) {
 			element.className = "filter-tick-container";
 		})

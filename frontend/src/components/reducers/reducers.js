@@ -1,6 +1,59 @@
 // ======================================
-// Reducers to produce the application state
+// Reducer to create and store data in the applications redux store
 // ======================================
+
+
+// ===========
+// REDUCER LOGIC INDEX
+// ===========
+
+
+// PLAYERS & CLUBS LOGIC
+// ======================
+// 1. Set the search term
+// 2. Set This Week Everyone Toggle status
+// 3. Set the loaded PLAYERS data for THIS WEEK
+// 4. Set the loaded PLAYERS data for EVERYONE 
+// 5. Set the loaded CLUBS data
+// 6. Clear the search results upon a new search
+// 7. Set the player in view
+// 8. Set the club in view
+// 9. Set the PLAYERS agree disagree scores 
+// 10. Set the CLUBS agree disagree scores
+// 11. Locally update PLAYERS agree disagree scores
+// 12. Locally update CLUBS agree disagree scores
+
+// INSIGHTS LOGIC
+// ======================
+// 13. Set either a grid or a card view
+// 14. Activate/deactivate the insights filter
+// 15. Set top or bottom data to be displayed on insights page
+// 16. Set the review scores array for players
+// 17. Set the total reviews array for players
+// 18. Set the avg review scores array for players
+// 19. Clear the player review, total & avg scores arrays
+// 20. Set Insights Category
+
+// FILTER LOGIC
+// ===============
+// 21. Add a position filter
+// 22. Remove a position filter
+// 23. Add a club filter
+// 24. Remove a club filter
+// 25. Add a nationality filter
+// 26. Remove a nationality filter
+// 27. Clear all filters
+// 28. Apply filter to player review score array
+// 29. Apply filter to player total reviews array
+// 30. Apply filter to player avg review scores array
+
+// OTHER LOGIC
+// ===============
+// 31. Retrieve & store list of blog posts
+// 32. Set sources list
+// 33. Clear sources list
+// 34. Set crawl dates array
+// 35. Set error status
 
 // ===========
 // IMPORTS 
@@ -51,7 +104,7 @@ export const initialState = {
 
 export function rootReducer(state = initialState, action) {
 
-	// Logic to set the search term
+	// 1. Set the search term
   	if (action.type === DEFINE_SEARCH_TERM) {
 
     	return Object.assign({}, state, {
@@ -60,7 +113,7 @@ export function rootReducer(state = initialState, action) {
 
   	}
 
-    // Logic to set search request status
+    // 2. Set This Week Everyone Toggle status
     if (action.type === SET_THISWEEK_EVERYONE_TOGGLE) {
 
       return Object.assign({}, state, {
@@ -69,13 +122,15 @@ export function rootReducer(state = initialState, action) {
 
     }
 
-  	// Logic to set the loaded PLAYERS data for THIS WEEK
+  	// 3. Set the loaded PLAYERS data for THIS WEEK
   	if (action.type === PLAYER_DATA_LOADED) {
 
         let player_data = [];
 
+        // Loop through action payload and filter out player that don't meet the score threshold 
         action.payload.forEach(function(player) {
 
+            // Find the matching date array
             let dateArray = returnDateMatchArray(player.scores);
 
             if (dateArray.length) {
@@ -98,7 +153,7 @@ export function rootReducer(state = initialState, action) {
 
   	}
 
-    // Logic to set the loaded PLAYERS data for EVERYONE 
+    // 4. Set the loaded PLAYERS data for EVERYONE 
 
     if (action.type === PLAYER_DATA_LOADED_EVERYONE) {
 
@@ -115,7 +170,7 @@ export function rootReducer(state = initialState, action) {
 
     }
 
-  	// Logic to set the loaded CLUBS data
+  	// 5. Set the loaded CLUBS data
   	if (action.type === CLUB_DATA_LOADED) {
 
     	return Object.assign({}, state, {
@@ -124,7 +179,7 @@ export function rootReducer(state = initialState, action) {
 
   	} 
 
-    // Logic to clear the search results upon a new search
+    // 6. Clear the search results upon a new search
     if (action.type === CLEAR_SEARCH_RESULTS) {
 
       return Object.assign({}, state, {
@@ -134,7 +189,7 @@ export function rootReducer(state = initialState, action) {
 
     }
 
-    // Logic to set the player from a search result click
+    // 7. Set the player in view
     if (action.type === SET_PLAYER) {
       
       return Object.assign({}, state, {
@@ -142,7 +197,7 @@ export function rootReducer(state = initialState, action) {
       });
     }
 
-    // Logic to set the club from a search result click
+    // 8. Set the club in view
     if (action.type === SET_CLUB) {
 
       return Object.assign({}, state, {
@@ -150,7 +205,7 @@ export function rootReducer(state = initialState, action) {
       });
     }
 
-    // Logic to set the agree disagree scores
+    // 9. Set the PLAYERS agree disagree scores 
     if (action.type === SET_AGREE_DISAGREE_SCORES) {
 
       if (typeof(action.payload) !== undefined ) {
@@ -163,7 +218,7 @@ export function rootReducer(state = initialState, action) {
 
     }
 
-    // Logic to set the CLUBS agree disagree scores
+    // 10. Set the CLUBS agree disagree scores
     if (action.type === SET_CLUB_AGREE_DISAGREE_SCORES) {
 
       if (typeof(action.payload) !== undefined ) {
@@ -177,7 +232,7 @@ export function rootReducer(state = initialState, action) {
     }
 
 
-    // Logic to locally update agree disagree scores
+    // 11. Locally update PLAYERS agree disagree scores
     if (action.type === AGREE_DISAGREE_LOCAL_UPDATE) {
       
       return Object.assign({}, state, {
@@ -186,7 +241,7 @@ export function rootReducer(state = initialState, action) {
     }
 
 
-    // Logic to locally update agree disagree scores
+    // 12. Locally update CLUBS agree disagree scores
     if (action.type === AGREE_DISAGREE_LOCAL_UPDATE_CLUBS) {
       
       return Object.assign({}, state, {
@@ -194,8 +249,12 @@ export function rootReducer(state = initialState, action) {
       });
     }
 
+    // ==================
     // INSIGHTS ACTIONS
-    // Logic to set either a grid or a card view
+    // ==================
+
+
+    // 13. Set either a grid or a card view
     if (action.type === SET_GRID_CARD_VIEW) {
 
       return Object.assign({}, state, {
@@ -204,7 +263,7 @@ export function rootReducer(state = initialState, action) {
 
     }
 
-    // Logic to activate/deactivate the insights filter
+    // 14. Activate/deactivate the insights filter
     if (action.type === SET_FILTER_ACTIVE_STATE) {
 
       return Object.assign({}, state, {
@@ -213,7 +272,7 @@ export function rootReducer(state = initialState, action) {
 
     }
 
-    // Logic to set top or bottom data to be displayed on insights page
+    // 15. Set top or bottom data to be displayed on insights page
     if (action.type === SET_TOP_BOTTOM_INSIGHTS) {
 
       return Object.assign({}, state, {
@@ -222,7 +281,7 @@ export function rootReducer(state = initialState, action) {
 
     }
 
-    // Logic to set the review scores for players with over 10 reviews
+    // 16. Set the review scores array for players
     if (action.type === GET_PLAYER_REVIEW_SCORES) {
 
       return Object.assign({}, state, {
@@ -232,7 +291,7 @@ export function rootReducer(state = initialState, action) {
 
     }
 
-    // Logic to set the number of reviews for players
+    // 17. Set the total reviews array for players
     if (action.type === GET_PLAYER_TOTAL_REVIEWS) {
 
       return Object.assign({}, state, {
@@ -242,7 +301,7 @@ export function rootReducer(state = initialState, action) {
 
     }
 
-    // Logic to set the avg review scores for each player
+    // 18. Set the avg review scores array for players
     if (action.type === GET_PLAYER_AVG_SCORE) {
 
       return Object.assign({}, state, {
@@ -252,7 +311,7 @@ export function rootReducer(state = initialState, action) {
 
     }
 
-    // Logic to clear the player review scores
+    // 19. Clear the player review, total & avg scores arrays
     if (action.type === CLEAR_PLAYER_REVIEW_SCORES) {
 
       return Object.assign({}, state, {
@@ -266,7 +325,7 @@ export function rootReducer(state = initialState, action) {
 
     }
 
-    // Logic to clear the player review scores
+    // 20. Set Insights Category
     if (action.type === SET_INSIGHTS_CATEGORY) {
 
       return Object.assign({}, state, {
@@ -275,8 +334,11 @@ export function rootReducer(state = initialState, action) {
 
     }
 
+    // ===============
     // FILTER ACTIONS
-    // Logic to add a position filter
+    // ===============
+
+    // 21. Add a position filter
     if (action.type === ADD_POSITION_FILTER) {
 
       return Object.assign({}, state, {
@@ -285,7 +347,7 @@ export function rootReducer(state = initialState, action) {
 
     }
 
-    // Logic to remove a position filter
+    // 22. Remove a position filter
     if (action.type === REMOVE_POSITION_FILTER) {
 
       return Object.assign({}, state, {
@@ -294,7 +356,7 @@ export function rootReducer(state = initialState, action) {
 
     }
 
-    // Logic to add a club filter
+    // 23. Add a club filter
     if (action.type === ADD_CLUB_FILTER) {
 
       return Object.assign({}, state, {
@@ -303,7 +365,7 @@ export function rootReducer(state = initialState, action) {
 
     }
 
-    // Logic to remove a club filter
+    // 24. Remove a club filter
     if (action.type === REMOVE_CLUB_FILTER) {
 
       return Object.assign({}, state, {
@@ -312,7 +374,7 @@ export function rootReducer(state = initialState, action) {
 
     }
 
-    // Logic to add a nationality filter
+    // 25. Add a nationality filter
     if (action.type === ADD_NATIONALITY_FILTER) {
 
       return Object.assign({}, state, {
@@ -321,7 +383,7 @@ export function rootReducer(state = initialState, action) {
 
     }
 
-    // Logic to remove a nationality filter
+    // 26. Remove a nationality filter
     if (action.type === REMOVE_NATIONALITY_FILTER) {
 
       return Object.assign({}, state, {
@@ -330,7 +392,7 @@ export function rootReducer(state = initialState, action) {
 
     }
 
-    // Logic to clear all filters
+    // 27. Clear all filters
     if (action.type === CLEAR_ALL_FILTERS) {
 
       return Object.assign({}, state, {
@@ -341,7 +403,7 @@ export function rootReducer(state = initialState, action) {
 
     }
 
-    // Logic to apply filter to player review score array
+    // 28. Apply filter to player review score array
     if (action.type === APPLY_REVIEW_SCORE_FILTER) {
 
       return Object.assign({}, state, {
@@ -350,7 +412,7 @@ export function rootReducer(state = initialState, action) {
 
     }
 
-    // Logic to apply filter to player total reviews array
+    // 29. Apply filter to player total reviews array
     if (action.type === APPLY_TOTAL_SCORES_FILTER) {
 
       return Object.assign({}, state, {
@@ -359,7 +421,7 @@ export function rootReducer(state = initialState, action) {
 
     }
 
-    // Logic to apply filter to player avg review scores array
+    // 30. Apply filter to player avg review scores array
     if (action.type === APPLY_AVG_SCORES_FILTER) {
 
       return Object.assign({}, state, {
@@ -368,10 +430,13 @@ export function rootReducer(state = initialState, action) {
 
     }
 
+
     // ==============
-    // BLOG ACTIONS
+    // OTHER ACTIONS
     // ==============
 
+
+    // 31. Retrieve & store list of blog posts
     if (action.type === GET_BLOGPOST_LIST) {
 
       return Object.assign({}, state, {
@@ -381,12 +446,7 @@ export function rootReducer(state = initialState, action) {
     }
 
 
-
-    // ==============
-    // OTHER ACTIONS
-    // ==============
-
-    // Logic to set sources list
+    // 32. Set sources list
     if (action.type === GET_SOURCES_LIST) {
 
       return Object.assign({}, state, {
@@ -395,7 +455,7 @@ export function rootReducer(state = initialState, action) {
 
     }
 
-    // Logic to clear sources list
+    // 33. Clear sources list
     if (action.type === CLEAR_SOURCES_LIST) {
 
       return Object.assign({}, state, {
@@ -405,7 +465,7 @@ export function rootReducer(state = initialState, action) {
     }
 
 
-    // Logic to set crawl array
+    // 34. Set crawl dates array
     if (action.type === GET_ARRAY_CRAWL_DATES) {
 
       return Object.assign({}, state, {
@@ -415,7 +475,7 @@ export function rootReducer(state = initialState, action) {
     }
 
 
-    // Logic to set crawl array
+    // 35. Set error status
     if (action.type === SET_ERROR_STATUS) {
 
       return Object.assign({}, state, {

@@ -16,7 +16,6 @@ import './blog_list_dot.css';
 
 
 
-
 // ===========
 // Blog List Dot Component 
 // ===========

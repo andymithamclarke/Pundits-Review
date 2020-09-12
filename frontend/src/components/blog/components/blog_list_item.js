@@ -1,5 +1,5 @@
 // ======================================
-// Blog List Item Component - Displays One blog item - headline, image, & description
+// Blog List Item Component - Displays One blog item thumbnail - headline, image, & description
 // ======================================
 
 // ===========
@@ -28,11 +28,13 @@ export class BlogListItem extends Component {
 
 	render() {
 
+		// Inline style for background-image
 		let itemStyle = {
 
 			backgroundImage: "url(" + this.props.imageURL + ")",
 		}
 
+		// Specific Blog post URL
 		let blogPostAddress = "/blogpost/" + this.props.postName; 
 
 		let result = (

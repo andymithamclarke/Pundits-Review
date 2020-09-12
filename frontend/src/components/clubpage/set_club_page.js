@@ -1,5 +1,5 @@
 // ======================================
-// Set Club Page Component - Ensures that the correct club has been specified before loading the club page
+// Set Club Page Functional Component - Ensures that the correct club has been specified before loading the club page
 // ======================================
 
 // ===========
@@ -28,7 +28,7 @@ export class SetPlayerPageWrapper extends Component {
 
 	componentDidMount() {
 
-
+		// Decode the club_name URL parameter & set club in redux store if not already set
 		let decodedClubName = decodeURIComponent(this.props.clubName);
 
 		if (this.props.clubsViewed.length === 0) {

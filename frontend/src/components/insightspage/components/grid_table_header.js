@@ -1,6 +1,6 @@
 // ======================================
 // GRID Table Header Component - Contains Table column headings for grid view on insights page
-// Columns - Rank, Player, Club, PR Score, Form
+// Columns - Rank, Player, Club, Category
 // ======================================
 
 // ===========
