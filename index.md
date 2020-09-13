@@ -276,7 +276,6 @@ File directory for Pundits Review repository. Contains links to sub-directories 
 	│   │   │   │   ├── <a href="https://github.com/andyclarkemedia/Pundits-Review/blob/master/frontend/src/components/results/resultspage.js">resultspage.js</a><br>
 	│   │   │   │   └── <a href="https://github.com/andyclarkemedia/Pundits-Review/blob/master/frontend/src/components/results/tests/">tests</a><br>
 	│   │   │   │   &nbsp;&nbsp;&nbsp; ├── <a href="https://github.com/andyclarkemedia/Pundits-Review/blob/master/frontend/src/components/results/tests/__snapshots__/">__snapshots__</a><br>
-	│   │   │   │   &nbsp;&nbsp;&nbsp; │   ├── <a href="https://github.com/andyclarkemedia/Pundits-Review/blob/master/frontend/src/components/results/tests/__snapshots__/results.test.js%202.snap">results.test.js 2.snap</a><br>
 	│   │   │   │   &nbsp;&nbsp;&nbsp; │   └── <a href="https://github.com/andyclarkemedia/Pundits-Review/blob/master/frontend/src/components/results/tests/__snapshots__/results.test.js.snap">results.test.js.snap</a><br>
 	│   │   │   │   &nbsp;&nbsp;&nbsp; └── <a href="https://github.com/andyclarkemedia/Pundits-Review/blob/master/frontend/src/components/results/tests/results.test.js">results.test.js</a><br>
 	│   │   │   ├── <a href="https://github.com/andyclarkemedia/Pundits-Review/blob/master/frontend/src/components/store/">store</a><br>
