@@ -2,3 +2,6 @@
 
 # Pundits-Review
 11/09/2020 - Complete directory for Pundits Review web application. https://www.punditsreview.com/
+
+
+### <a href="https://andyclarkemedia.github.io/Pundits-Review/" target="_blank">Project File Structure Map</a>
