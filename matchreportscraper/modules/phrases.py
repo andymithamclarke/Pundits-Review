@@ -16,10 +16,6 @@
 # Then apply lemmatization and stopwords removal to the phrase
 
 
-
-#__Note:__
-
-
 # =============
 #  IMPORTS 
 # =============
@@ -29,9 +25,6 @@ from datetime import datetime
 
 # Local imports - NEW
 from ..modules import lemmatize_remove_stopwords as lemmatize_remove_stopwords
-
-# Local imports - OLD
-#import modules.lemmatize_remove_stopwords as lemmatize_remove_stopwords
 
 
 

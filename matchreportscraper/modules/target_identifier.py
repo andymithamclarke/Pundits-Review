@@ -7,8 +7,7 @@
 # Function will loop through the rows in the dataframe
 # It will then loop through the players in the teams listed 
 # Using the function 'identify_nsubj_pobj' it will identify players/teams listed in the sentence from their identifiers listed in 'players dictionary'
-# It will add a list of the target players/teams to the dataframe's corresponding row
-# Finally it will return a dataframe in which rows without targets have been removed
+# It will add a list of the target players/teams to the dictionaries corresponding entry
 
 
 # =============
@@ -20,14 +19,9 @@
 from matchreportscraper.modules import players_dictionary as players_dictionary
 from matchreportscraper.modules import identify_nsubj_pobj as identify_nsubj_pobj
 
-# Local imports - OLD
-#import modules.players_dictionary as players_dictionary
-#import modules.identify_nsubj_pobj as identify_nsubj_pobj
-
-
 
 # =============
-#  The Function
+# TARGET IDENTIFIER
 # =============
 
 def target_identifier(dictionary):
@@ -35,8 +29,7 @@ def target_identifier(dictionary):
     # Define an empty players list
     player_list = []
     
-
-        
+    
     # Create an empty dictionary to store players as keys and player identifiers as values
     d = {}
 

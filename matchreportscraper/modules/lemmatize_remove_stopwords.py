@@ -19,12 +19,8 @@ from nltk import word_tokenize
 # Local imports - NEW
 from ..modules import stopwords as stopwords
 
-# Local imports - OLD
-#import modules.stopwords as stopwords
-
-
 # =============
-#  The Function
+# LEMMATIZE / REMOVE STOPWORDS
 # =============
 
 def lemmatize_remove_stopwords(phrase):

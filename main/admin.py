@@ -1,5 +1,5 @@
 # =========================
-# This file will register my models with the 'main' app
+# Configure the 'main' app with the admin interface
 # =========================
 
 
@@ -112,7 +112,7 @@ class BlogPostDisplay(admin.ModelAdmin):
 
 
 # ================
-# Register your models here
+# Register models 
 # ================
 admin.site.register(Score, ScoreDisplay)
 admin.site.register(Sentence, SentenceDisplay)

@@ -13,7 +13,7 @@ from . import views
 
 
 
-# Define the url patterns here
+# Define the url patterns
 
 urlpatterns = [
     path('api/blogposts/', views.BlogPostListCreate.as_view()),

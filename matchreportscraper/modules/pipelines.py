@@ -58,7 +58,7 @@ class IdentifySentimentPipeline:
 
 class CalculateScorePipeline:
 
-	# Attribute to store
+	# Attribute to store players results as they are passed through the pipeline
 	targets_dictionary = {}
 
 	def close_spider(self, spider):
@@ -196,12 +196,7 @@ class CalculateScorePipeline:
 
 
 
-
-
-
-
-
-
+	# Process the results as they come through the pipeline
 	def process_item(self, item, spider):
 
 

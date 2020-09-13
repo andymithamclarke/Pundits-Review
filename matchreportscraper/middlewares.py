@@ -1,5 +1,7 @@
 # -*- coding: utf-8 -*-
 
+# Automatically generated middlewares file
+
 # Define here the models for your spider middleware
 #
 # See documentation in:

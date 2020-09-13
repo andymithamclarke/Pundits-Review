@@ -31,7 +31,9 @@ from ..modules import players_dictionary as players_dictionary
 
 
 
-# The function
+# =============
+# IDENTIFY TEAMS  
+# =============
 def identify_teams(article_p_list):
 
 

@@ -10,6 +10,11 @@ For the full list of settings and their values, see
 https://docs.djangoproject.com/en/3.0/ref/settings/
 """
 
+
+# =============
+# DEPLOYMENT SETTINGS - use for deployment on heroku server
+# =============
+
 import os
 import dj_database_url
 import dotenv
@@ -32,7 +37,7 @@ SECRET_KEY = '&at(223r3d@kjb%4$%dul0r9ud-*^uere#!%$e%h*h7y70^v03'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = False
 
-ALLOWED_HOSTS = ['*']
+ALLOWED_HOSTS = ['https://www.punditsreview.com/', 'https://punditsreview.herokuapp.com/']
 
 
 # ==================
@@ -175,10 +180,10 @@ STATICFILES_STORAGE = 'whitenoise.storage.CompressedManifestStaticFilesStorage'
 # End of referenced code
 
 
-# This should already be in your settings.py
+
 django_heroku.settings(locals())
 
-# This is new
+
 del DATABASES['default']['OPTIONS']['sslmode']
 
 

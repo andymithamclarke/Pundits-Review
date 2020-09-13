@@ -1,5 +1,5 @@
 # =========================
-# This file contains helper functions to support the sources dictionary in findin gthe correct landing URLs to visit.
+# This file contains helper functions to support the sources dictionary in finding the correct landing URLs to visit.
 # =========================
 
 

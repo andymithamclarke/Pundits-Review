@@ -1,5 +1,5 @@
 # =========================
-# This file contains the loop to initialise the population of the players model in the Database
+# This file contains the loop to initally populate the players model in the Database
 #
 # --------
 #
@@ -13,9 +13,6 @@
 
 # Local Imports - NEW
 from .modules.players_dictionary import premier_league_players_dictionary
-
-# Local Imports - OLD
-#from modules.players_dictionary import premier_league_players_dictionary
 
 # Accessing top level
 import sys

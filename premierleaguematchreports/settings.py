@@ -10,6 +10,11 @@ For the full list of settings and their values, see
 https://docs.djangoproject.com/en/3.0/ref/settings/
 """
 
+
+# =============
+# LOCAL SETTINGS - use for running project locally 
+# =============
+
 import os
 
 

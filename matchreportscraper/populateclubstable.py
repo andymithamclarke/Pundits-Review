@@ -15,9 +15,6 @@
 # Local Imports - NEW
 from .modules.players_dictionary import premier_league_players_dictionary
 
-# Local Imports - OLD
-#from modules.players_dictionary import premier_league_players_dictionary
-
 # Accessing top level
 import sys
 sys.path.append("..")

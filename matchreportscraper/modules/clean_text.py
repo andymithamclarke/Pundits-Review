@@ -27,10 +27,11 @@ import re
 # Function to remove tags 
 # Code taken from stack overflow post by Amber on Mar 12 '12
 # https://stackoverflow.com/questions/9662346/python-code-to-remove-html-tags-from-a-string/12982689
+# Accessed 01/05/2020
 def remove_tags(text):
 	TAG_RE = re.compile(r'<[^>]+>')
 	return TAG_RE.sub('', text)
-
+# End of referenced code
 
 # Core function that is called by article_scraper
 def clean_text(full_text_list):

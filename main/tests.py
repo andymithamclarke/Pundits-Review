@@ -2,6 +2,81 @@
 # This file contains unit tests for the 'main' app
 # =========================
 
+# ================
+# TEST COVERAGE
+# ================
+
+# MODEL TESTS
+# ================
+#
+# Visited URL
+# -------------
+# 1. URL can be created and found
+# 2. URL does not return true when it doesn't exist
+#
+# Clubs
+# -------------
+# 3. Create new club
+#
+# Players
+# -------------
+# 4. Create new player with club relationship
+#
+# Scores
+# -------------
+# 5. Create new score  with relationships
+#
+# Sentences 
+# -------------
+# 6. Create new sentence with relationships
+#
+# Club Scores
+# -------------
+# 7. Create new club score with relationships
+#
+# Club Sentences
+# -------------
+# 8. Create new club sentence with relationships
+#
+# API CONNECTION TESTS – ensure that a connection can be made to the REST API
+# ================
+# 9. Check connection to API - CLUBS
+# 10. Check connection to API - PLAYERS
+# 11. Check connection to API - SCORES
+# 12. Check connection to API - SENTENCES
+# 13. Check connection to API - CLUB SENTENCES
+# 14. Check connection to API - CLUB SCORES
+# 
+# API DATA RETRIEVAL PLAIN – ensure that data can be retrieved from the REST API
+# ================
+# 15. Retrieve from API - CLUBS
+# 16. Retrieve from API - PLAYERS
+# 17. Retrieve from API - CLUB SCORES
+# 18. Retrieve from API - CLUB SENTENCES
+# 19. Retrieve from API - PLAYER SCORES
+# 20. Retrieve from API - PLAYER SENTENCES
+# 
+# API DATA RETRIEVAL WITH FILTER – ensure that data can be retrieved from the REST API using a filter query
+# =================
+# 21. Retrieve from API - CLUBS (CORRECTLY specified FILTER)
+# 22. Retrieve from API - CLUBS (INCORRECTLY specified FILTER)
+# 23. Retrieve from API - CLUBS (INCORRECTLY specified QUERY PARAM)
+# 24. Retrieve from API - PLAYERS (CORRECTLY specified filter)
+# 25. Retrieve from API - PLAYERS (INCORRECTLY specified filter)
+# 26. Retrieve from API - PLAYERS (INCORRECTLY specified QUERY PARAM)
+# 27. Retrieve from API - SCORES (CORRECTLY specified FILTER)
+# 28. Retrieve from API - SCORES (INCORRECTLY specified FILTER)
+# 29. Retrieve from API - SCORES (INCORRECTLY specified QUERY PARAM)
+# 30. Retrieve from API - SENTENCES (CORRECTLY specified FILTER)
+# 31. Retrieve from API - SENTENCES (INCORRECTLY specified FILTER)
+# 32. Retrieve from API - SENTENCES (INCORRECTLY specified QUERY PARAM)
+# 33. Retrieve from API - CLUB SENTENCES (CORRECTLY specified Filter)
+# 34. Retrieve from API - CLUB SENTENCES (INCORRECTLY specified Filter)
+# 35. Retrieve from API - CLUB SENTENCES (INCORRECTLY specified QUERY PARAM)
+# 36. Retrieve from API - CLUB SCORES (CORRECTLY specified FILTER)
+# 37. Retrieve from API - CLUB SCORES (INCORRECTLY specified FILTER)
+# 38. Retrieve from API - CLUB SCORES (INCORRECTLY specified QUERY PARAM)
+
 
 # ============
 # IMPORTS
@@ -26,11 +101,13 @@ class TestModels(TestCase):
 	# VisitedURL
 	# ============
 
+	# 1. URL can be created and found
 	def test_visited_url_create_exists(self):
 		"""Test should return True that a URL was created and found in the DB"""
 		test_url_entry = VisitedURL.objects.create(url="https://www.valentinog.com/blog/testing-django/", date_visited=datetime.datetime.now().date())
 		self.assertEqual(VisitedURL.objects.filter(url="https://www.valentinog.com/blog/testing-django/").exists(), True)
 
+	# 2. URL does not return true when it doesn't exist
 	def test_visited_url_does_not_exit(self):
 		"""Test should return False that URL does not exist in DB"""
 		self.assertEqual(VisitedURL.objects.filter(url="https://stackoverflow.com/questions/14186055/django-test-app-error-got-an-error-creating-the-test-database-permission-deni").exists(), False)
@@ -40,6 +117,7 @@ class TestModels(TestCase):
 	# Clubs
 	# ============
 
+	# 3. Create new club
 	def test_new_club(self):
 		"""Test should return True - new club exists in DB """
 		test_club_entry = Club.objects.create(club="Testy Test")
@@ -51,6 +129,7 @@ class TestModels(TestCase):
 	# Players - Relationship with Club & Player exists
 	# ============
 
+	# 4. Create new player with club relationship
 	def test_new_player(self):
 		"""Test should return True - new player exists in DB. Also that a relationship with new club exists"""
 
@@ -72,6 +151,7 @@ class TestModels(TestCase):
 	# Players Scores - Relationship between player and club || Relationship between player and score
 	# ============
 
+	#  5. Create new score  with relationships
 	def test_new_player_score(self):
 		"""Test should assert that a score can be created with a relationship to a player - and that player also has a relationship to a club"""
 
@@ -105,6 +185,7 @@ class TestModels(TestCase):
 	# Players Sentences - Relationship between player and club || Relationship between player and sentence
 	# ============
 
+	# 6. Create new sentence with relationships
 	def test_new_player_sentence(self):
 		"""Test should assert that new player sentence exists and that there is a relationship between the player and the sentence- and that player also has a relationship to a club"""
 		test_club_entry = Club.objects.create(club="Testy Test")
@@ -133,6 +214,7 @@ class TestModels(TestCase):
 	# Club Scores -  Relationship between club and score
 	# ============
 
+	# 7. Create new club score with relationships
 	def test_new_club_score(self):
 		"""Test should assert that new club score exists and that score has a relationship to a club"""
 		test_club_entry = Club.objects.create(club="Testy Test")
@@ -156,6 +238,7 @@ class TestModels(TestCase):
 	# Club Sentence -  Relationship between club and sentence
 	# ============
 
+	# 8. Create new club sentence with relationships
 	def test_new_club_sentence(self):
 		"""Test should assert that new club sentence exists and that sentence has a relationship to a club"""
 		test_club_entry = Club.objects.create(club="Testy Test")
@@ -183,7 +266,7 @@ class TestModels(TestCase):
 class TestAPIConnection(TestCase):
 
 	# ============
-	# Check connection to API - CLUBS
+	# 9. Check connection to API - CLUBS
 	# ============
 	def test_club_data_access(self):
 		"""Test should assert that API connection to '/api/clubs/ returns a status code 200"""
@@ -196,7 +279,7 @@ class TestAPIConnection(TestCase):
 		# End of referenced code
 
 	# ============
-	# Check connection to API - PLAYERS
+	# 10. Check connection to API - PLAYERS
 	# ============
 
 	def test_player_data_access(self):
@@ -207,7 +290,7 @@ class TestAPIConnection(TestCase):
 
 
 	# ============
-	# Check connection to API - SCORES
+	# 11. Check connection to API - SCORES
 	# ============
 
 	def test_scores_data_access(self):
@@ -217,7 +300,7 @@ class TestAPIConnection(TestCase):
 
 
 	# ============
-	# Check connection to API - SENTENCES
+	# 12. Check connection to API - SENTENCES
 	# ============
 
 	def test_sentences_data_access(self):
@@ -227,7 +310,7 @@ class TestAPIConnection(TestCase):
 
 
 	# ============
-	# Check connection to API - CLUB SENTENCES
+	# 13. Check connection to API - CLUB SENTENCES
 	# ============
 
 	def test_clubsentences_data_access(self):
@@ -237,7 +320,7 @@ class TestAPIConnection(TestCase):
 
 
 	# ============
-	# Check connection to API - CLUB SCORES
+	# 14. Check connection to API - CLUB SCORES
 	# ============
 
 	def test_clubscores_data_access(self):
@@ -254,7 +337,7 @@ class TestAPIConnection(TestCase):
 class TestAPIDataRetrieval(TestCase):
 
 	# ============
-	# Retrieve from API - CLUBS
+	# 15. Retrieve from API - CLUBS
 	# ============
 
 	def test_clubs_data_retrieval(self):
@@ -271,7 +354,7 @@ class TestAPIDataRetrieval(TestCase):
 
 
 	# ============
-	# Retrieve from API - PLAYERS
+	# 16. Retrieve from API - PLAYERS
 	# ============
 
 	def test_players_data_retrieval(self):
@@ -294,7 +377,7 @@ class TestAPIDataRetrieval(TestCase):
 		self.assertEqual(len(response.data), 1)
 
 	# ============
-	# Retrieve from API - CLUB SCORES
+	# 17. Retrieve from API - CLUB SCORES
 	# ============
 
 	def test_clubscores_data_retrieval(self):
@@ -320,7 +403,7 @@ class TestAPIDataRetrieval(TestCase):
 
 
 	# ============
-	# Retrieve from API - CLUB SENTENCES
+	# 18. Retrieve from API - CLUB SENTENCES
 	# ============
 
 	def test_clubsentences_data_retrieval(self):
@@ -345,7 +428,7 @@ class TestAPIDataRetrieval(TestCase):
 
 
 	# ============
-	# Retrieve from API - PLAYER SCORES
+	# 19. Retrieve from API - PLAYER SCORES
 	# ============
 
 	def test_playerscores_data_retrieval(self):
@@ -381,7 +464,7 @@ class TestAPIDataRetrieval(TestCase):
 
 
 	# ============
-	# Retrieve from API - PLAYER SENTENCES
+	# 20. Retrieve from API - PLAYER SENTENCES
 	# ============
 
 	def test_playersentences_data_retrieval(self):
@@ -420,7 +503,7 @@ class TestAPIDataRetrieval(TestCase):
 class TestAPIDataRetrievalWithFilter(TestCase):
 
 	# ============
-	# Retrieve from API - CLUBS (CORRECTLY specified FILTER)
+	# 21. Retrieve from API - CLUBS (CORRECTLY specified FILTER)
 	# ============
 
 	def test_clubs_data_filter(self):
@@ -437,7 +520,7 @@ class TestAPIDataRetrievalWithFilter(TestCase):
 
 
 	# ============
-	# Retrieve from API - CLUBS (INCORRECTLY specified FILTER)
+	# 22. Retrieve from API - CLUBS (INCORRECTLY specified FILTER)
 	# ============
 	def test_clubs_data_filter_incorrect_filter(self):
 		"""Test should assert that newly created club object CANNOT be retrieved through the route '/api/clubs/?clubname=Testy%20TestWRONG'"""
@@ -453,7 +536,7 @@ class TestAPIDataRetrievalWithFilter(TestCase):
 
 
 	# ============
-	# Retrieve from API - CLUBS (INCORRECTLY specified QUERY PARAM)
+	# 23. Retrieve from API - CLUBS (INCORRECTLY specified QUERY PARAM)
 	# ============
 	def test_clubs_data_filter_incorrect_query(self):
 		"""Test should assert that newly created club object CANNOT be retrieved through the route '/api/clubs/?club_name=Testy%20Test' - instead this should return all clubs"""
@@ -470,7 +553,7 @@ class TestAPIDataRetrievalWithFilter(TestCase):
 
 
 	# ============
-	# Retrieve from API - PLAYERS (CORRECTLY specified filter)
+	# 24. Retrieve from API - PLAYERS (CORRECTLY specified filter)
 	# ============
 
 	def test_players_data_filter(self):
@@ -496,7 +579,7 @@ class TestAPIDataRetrievalWithFilter(TestCase):
 
 
 	# ============
-	# Retrieve from API - PLAYERS (INCORRECTLY specified filter)
+	# 25. Retrieve from API - PLAYERS (INCORRECTLY specified filter)
 	# ============
 
 	def test_players_data_filter_incorrect_filter(self):
@@ -521,7 +604,7 @@ class TestAPIDataRetrievalWithFilter(TestCase):
 		self.assertEqual(len(response.data), 0)
 
 	# ============
-	# Retrieve from API - PLAYERS (INCORRECTLY specified QUERY PARAM)
+	# 26. Retrieve from API - PLAYERS (INCORRECTLY specified QUERY PARAM)
 	# ============
 
 	def test_players_data_filter_incorrect_query(self):
@@ -554,7 +637,7 @@ class TestAPIDataRetrievalWithFilter(TestCase):
 
 
 	# ============
-	# Retrieve from API - SCORES (CORRECTLY specified FILTER)
+	# 27. Retrieve from API - SCORES (CORRECTLY specified FILTER)
 	# ============
 
 	def test_scores_data_filter(self):
@@ -593,7 +676,7 @@ class TestAPIDataRetrievalWithFilter(TestCase):
 
 
 	# ============
-	# Retrieve from API - SCORES (INCORRECTLY specified FILTER)
+	# 28. Retrieve from API - SCORES (INCORRECTLY specified FILTER)
 	# ============
 
 	def test_scores_data_filter_incorrect_filter(self):
@@ -633,7 +716,7 @@ class TestAPIDataRetrievalWithFilter(TestCase):
 
 
 	# ============
-	# Retrieve from API - SCORES (INCORRECTLY specified QUERY PARAM)
+	# 29. Retrieve from API - SCORES (INCORRECTLY specified QUERY PARAM)
 	# ============
 
 	def test_scores_data_filter_incorrect_query(self):
@@ -694,7 +777,7 @@ class TestAPIDataRetrievalWithFilter(TestCase):
 
 
 	# ============
-	# Retrieve from API - SENTENCES (CORRECTLY specified FILTER)
+	# 30. Retrieve from API - SENTENCES (CORRECTLY specified FILTER)
 	# ============
 
 	def test_sentences_data_filter(self):
@@ -731,7 +814,7 @@ class TestAPIDataRetrievalWithFilter(TestCase):
 
 
 	# ============
-	# Retrieve from API - SENTENCES (INCORRECTLY specified FILTER)
+	# 31. Retrieve from API - SENTENCES (INCORRECTLY specified FILTER)
 	# ============
 
 	def test_sentences_data_filter_incorrect_filter(self):
@@ -767,7 +850,7 @@ class TestAPIDataRetrievalWithFilter(TestCase):
 
 
 	# ============
-	# Retrieve from API - SENTENCES (INCORRECTLY specified QUERY PARAM)
+	# 32. Retrieve from API - SENTENCES (INCORRECTLY specified QUERY PARAM)
 	# ============
 
 	def test_sentences_data_filter_incorrect_query(self):
@@ -822,7 +905,7 @@ class TestAPIDataRetrievalWithFilter(TestCase):
 
 
 	# ============
-	# Retrieve from API - CLUB SENTENCES (CORRECTLY specified Filter)
+	# 33. Retrieve from API - CLUB SENTENCES (CORRECTLY specified Filter)
 	# ============
 
 	def test_clubsentences_data_filter(self):
@@ -850,7 +933,7 @@ class TestAPIDataRetrievalWithFilter(TestCase):
 
 
 	# ============
-	# Retrieve from API - CLUB SENTENCES (INCORRECTLY specified Filter)
+	# 34. Retrieve from API - CLUB SENTENCES (INCORRECTLY specified Filter)
 	# ============
 
 	def test_clubsentences_data_filter_incorrect_filter(self):
@@ -878,7 +961,7 @@ class TestAPIDataRetrievalWithFilter(TestCase):
 
 
 	# ============
-	# Retrieve from API - CLUB SENTENCES (INCORRECTLY specified QUERY PARAM)
+	# 35. Retrieve from API - CLUB SENTENCES (INCORRECTLY specified QUERY PARAM)
 	# ============
 
 	def test_clubsentences_data_filter_incorrect_query(self):
@@ -920,7 +1003,7 @@ class TestAPIDataRetrievalWithFilter(TestCase):
 
 
 	# ============
-	# Retrieve from API - CLUB SCORES (CORRECTLY specified FILTER)
+	# 36. Retrieve from API - CLUB SCORES (CORRECTLY specified FILTER)
 	# ============
 
 	def test_clubscores_data_filter(self):
@@ -950,7 +1033,7 @@ class TestAPIDataRetrievalWithFilter(TestCase):
 
 
 	# ============
-	# Retrieve from API - CLUB SCORES (INCORRECTLY specified FILTER)
+	# 37. Retrieve from API - CLUB SCORES (INCORRECTLY specified FILTER)
 	# ============
 
 	def test_clubscores_data_filter_incorrect_filter(self):
@@ -979,7 +1062,7 @@ class TestAPIDataRetrievalWithFilter(TestCase):
 
 
 	# ============
-	# Retrieve from API - CLUB SCORES (INCORRECTLY specified QUERY PARAM)
+	# 38. Retrieve from API - CLUB SCORES (INCORRECTLY specified QUERY PARAM)
 	# ============
 
 	def test_clubscores_data_filter_incorrect_filter(self):

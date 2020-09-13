@@ -1,5 +1,5 @@
 # ================
-# File contains a function to run the scraper
+# Function to run the scraper - called by top level 'tasks.py' on Heroku server
 # ================
 
 # ================

@@ -10,11 +10,10 @@
 	# 4. Next each new article url is crawled
 	# 5. The text is gathered from each article - according to specific article_characteristics described in the sources dictionary
 	# 6. The text is then processed -- (cleaned, stopwords removed, teams identified, lemmatized and split into phrases)
-	# 7. The output is a dataframe for each article with the structure outlined below
-	# 8. Before returning, the dataframes are concatenated
+	# 7. The output is a dictionary for each article 
+	# 8. Before returning, the dictionaries are concatenated
 
 
-# Output ---->  pd.DataFrame ----> 'date' | 'lemmatized_no_stopwords_phrase' | 'media_source' | 'original_sentence' | 'phrase' | 'teams' | 'time' | 'url'
 
 
 # =============
@@ -41,15 +40,6 @@ from ..modules import match_info as match_info
 from ..modules import phrases as phrases
 from ..modules.items import VisitedURLItem as VisitedURLItem
 
-
-# Local Imports - OLD
-#import modules.target_identifier as target_identifier
-#import modules.sources_dictionary as sources_dictionary
-#import modules.clean_text as clean_text
-#import modules.items as items
-#import modules.match_info as match_info
-#import modules.phrases as phrases
-#from modules.items import VisitedURLItem
 
 # Accessing top level - main.models
 import sys
@@ -89,7 +79,7 @@ def filter(parsed_response):
 
 
 # ================
-# The Spider class which will return article links from each of the sources listed in the source dictionary
+# The Spider class which scrapes and processes articles
 # ================
 
 class ArticleSpider(scrapy.Spider):
@@ -164,7 +154,7 @@ class ArticleSpider(scrapy.Spider):
 		# Identify the teams in the match report
 		teams = match_info.identify_teams(full_text)
 
-		# Append the df_list with the result of the phrases.phraseify() function ---> Output is a dataframe for each of the articles in the same format as described in this documents header
+		# Add entries to dictionary from the result of the phrases.phraseify() function 
 		item_list = phrases.phraseify(full_text, teams, url, media_source)
 
 		for item in item_list:

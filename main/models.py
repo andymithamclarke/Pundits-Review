@@ -1,5 +1,5 @@
 # =========================
-# This file contains the Django Models used to store sentiment scores and original sentences. (CLUBS & PLAYERS) ---- Also players/clubs model (initialised in set-up and not again)
+# This file contains the Django Models (Database Tables)
 # =========================
 
 
@@ -8,8 +8,6 @@
 # =============
 
 from django.db import models
-
-
 
 # =============
 # Club Model 	 ----> Fields ----->  club	
@@ -29,7 +27,6 @@ class Club(models.Model):
 	# Specify the ordering of the data
 	class Meta:
 		ordering = ['club']
-
 
 
 # =============
@@ -276,7 +273,7 @@ class VisitedURL(models.Model):
 
 # =============
 # POST Model ----> Fields -----> post_name 	| 	header_image_url	 |   	headline 		| thumbs_par | crawl_date | player_one_name | player_two_name | player_three_name | player_four_name  | player_five_name | club_one_name  | club_two_name | date_text | par_one  | par_two | par_three | par_four | par_five | par_six | par_seven | par_eight | pull_quote_one | pull_quote_two | pull_quote_three | player_one_rank | player_two_rank | player_three_rank
-# 				   Types
+#
 # =============
 
 

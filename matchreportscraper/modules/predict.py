@@ -3,7 +3,7 @@
 # =========================
 
 
-# The function uses a trained classifier and vectorizer which have been pickled and saved in the pickles directory of this project
+# The function uses a trained classifier and vectorizer which have been pickled and saved as 'gzip' files in the pickles directory of this project
 
 # It will loop through the dictionary passed as a parameter and extract a list of lemmatized no stopwords phrases
 # It will then make a prediction based on a vectorized form of the lemmatized no stopwords phrases
@@ -43,7 +43,7 @@ vectorizer_infile.close()
 
 
 # =============
-# The Function 
+# PREDICT
 # =============
 
 

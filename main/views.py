@@ -4,9 +4,6 @@
 
 
 
-#__NOTE:__
-# May need to revisit the use of filters to add more features - in order to make it easier for the front end to access features like 'Team of the Week'
-
 # =============
 # IMPORTS 
 # =============
@@ -83,7 +80,7 @@ class SentenceListCreate(generics.ListCreateAPIView):
 
 
 #===================
-# The Player Agree Disagree GET API view - Filter by playername
+# The Player Agree Disagree GET API view - Filter by playername & date
 #===================
 class PlayerAgreeDisagreeListCreate(APIView):
 	
@@ -156,7 +153,7 @@ class PlayerListCreate(generics.ListCreateAPIView):
 
 
 #===================
-# The Club Search API view - Filter by clubname
+# The Player Search API view - Filter by playername
 #===================
 class PlayerSearchListCreate(generics.ListCreateAPIView):
 
@@ -169,9 +166,9 @@ class PlayerSearchListCreate(generics.ListCreateAPIView):
 
 	# Setting the filter options
 	def get_queryset(self):
-		""" Optionally restricts the returned clubs to a user by filtering against a `clubname` query parameter in the URL. """
+		""" Optionally restricts the returned players to a user by filtering against a `playername` query parameter in the URL. """
 
-		# Initially set the returned objects to be all club sentences
+		# Initially set the returned objects to be all players
 		queryset = Player.objects.all()
 
 		# Access the request params
@@ -307,7 +304,7 @@ class ClubListCreate(generics.ListCreateAPIView):
 	def get_queryset(self):
 		""" Optionally restricts the returned clubs to a user by filtering against a `clubname` query parameter in the URL. """
 
-		# Initially set the returned objects to be all club sentences
+		# Initially set the returned objects to be all clubs
 		queryset = Club.objects.all()
 
 		# Access the request params
@@ -336,7 +333,7 @@ class ClubSearchListCreate(generics.ListCreateAPIView):
 	def get_queryset(self):
 		""" Optionally restricts the returned clubs to a user by filtering against a `clubname` query parameter in the URL. """
 
-		# Initially set the returned objects to be all club sentences
+		# Initially set the returned objects to be all clubs
 		queryset = Club.objects.all()
 
 		# Access the request params
