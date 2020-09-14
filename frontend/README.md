@@ -15,3 +15,10 @@ Contains main.js - automatically generated file used to compile React app
 #### <a href="https://github.com/andyclarkemedia/Pundits-Review/tree/master/frontend/templates/frontend">Templates/Frontend</a>
 Contains index.html - HTML template used to load react app
 
+
+#### <a href="https://github.com/andyclarkemedia/Pundits-Review/tree/master/frontend/urls.py">URLS</a>
+Defines website URL patterns
+
+
+#### <a href="https://github.com/andyclarkemedia/Pundits-Review/tree/master/frontend/views.py">Views</a>
+Defines views used to retreive information from URL parameters
