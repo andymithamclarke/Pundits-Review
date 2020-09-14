@@ -3,8 +3,8 @@
 # Pundits-Review
 11/09/2020 - Complete directory for Pundits Review web application. https://www.punditsreview.com/
 
-### <a href="https://andyclarkemedia.github.io/Pundits-Review/" target="_blank">Site Walkthrough Video</a>
-### <a href="https://www.youtube.com/watch?v=q8o1yvzkMKY" target="_blank">Project File Structure Map</a>
+### <a href="https://www.youtube.com/watch?v=q8o1yvzkMKY" target="_blank">Site Walkthrough Video</a>
+### <a href="https://andyclarkemedia.github.io/Pundits-Review/" target="_blank">Project File Structure Map</a>
 ##
 
 > Pundits Review scrapes and processes news articles about the Premier League in order to give players and teams a review score each week. Each Monday, the project collects articles, divides them into phrases, identifies the player or club being referred to and then predicts the sentiment of the phrase. See more on how it works <a href="https://www.punditsreview.com/howitworks">here</a>!
