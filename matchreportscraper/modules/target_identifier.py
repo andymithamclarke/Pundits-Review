@@ -1,10 +1,10 @@
 # =========================
-# This file contains a function to loop through the dataframe and return target players and teams
+# This file contains a function to loop through the dictionary and return target players and teams
 # =========================
 
 
 
-# Function will loop through the rows in the dataframe
+# Function will loop through the dictionary entries
 # It will then loop through the players in the teams listed 
 # Using the function 'identify_nsubj_pobj' it will identify players/teams listed in the sentence from their identifiers listed in 'players dictionary'
 # It will add a list of the target players/teams to the dictionaries corresponding entry
