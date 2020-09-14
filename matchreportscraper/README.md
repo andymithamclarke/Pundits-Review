@@ -1,6 +1,6 @@
 <img src="https://i.ibb.co/ZXVNVY5/pr-logo-plain-opauq.png" width="7.5%" height="7.5%">
 
-# Frontend
+# Match Report Scraper
 11/09/2020 - Scrapy Pipeline - used to collect & process incoming data each week. Contains spider, pipelines, prediction model & entity extraction module
 
 ## Contents
