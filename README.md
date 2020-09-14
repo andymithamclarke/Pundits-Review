@@ -3,11 +3,11 @@
 # Pundits-Review
 11/09/2020 - Complete directory for Pundits Review web application. https://www.punditsreview.com/
 
+> Pundits Review scrapes and processes news articles about the Premier League in order to give players and teams a review score each week. Each Monday, the project collects articles, divides them into phrases, identifies the player or club being referred to and then predicts the sentiment of the phrase. See more on how it works <a href="https://www.punditsreview.com/howitworks">here</a>!
+
 ### <a href="https://www.youtube.com/watch?v=q8o1yvzkMKY" target="_blank">Site Walkthrough Video</a>
 ### <a href="https://andyclarkemedia.github.io/Pundits-Review/" target="_blank">Project File Structure Map</a>
 ##
-
-> Pundits Review scrapes and processes news articles about the Premier League in order to give players and teams a review score each week. Each Monday, the project collects articles, divides them into phrases, identifies the player or club being referred to and then predicts the sentiment of the phrase. See more on how it works <a href="https://www.punditsreview.com/howitworks">here</a>!
 
 ## About this repository
 This repository holds the directory used to deploy the Pundits Review project on Heroku. Intended as a legacy repository as part of my contribution to the MSc Computational and Data Journalism at Cardiff University, the files inside represent the front and backend of the website as presented in the walkthrough video - 10/09/2020
